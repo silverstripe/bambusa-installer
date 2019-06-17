@@ -1,15 +1,6 @@
 ## Overview
 
-Base project for the Common Web Platform Installer. See the [CWP home page](https://www.cwp.govt.nz/) for information.
-
-## Getting started
-
-Please see the [guide](https://www.cwp.govt.nz/developer-docs/en/2/getting_started/) for information on getting started 
-with the CWP installer.
-
-## Getting support
-
-For CWP related issues please raise a [Service Desk](https://www.cwp.govt.nz/service-desk/new-request/) ticket.
+Base project for the Bambusa demo.
 
 ## License
 

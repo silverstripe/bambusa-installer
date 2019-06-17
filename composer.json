@@ -1,37 +1,20 @@
 {
-    "name": "cwp/cwp-installer",
+    "name": "silverstripeltd/bambusa-installer",
     "type": "silverstripe-recipe",
-    "description": "CWP Project Template",
+    "description": "Bambusa Project Template",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.6.0",
+        "php": ">=7.2.0",
         "silverstripe/recipe-plugin": "^1",
-        "cwp/cwp-recipe-core": "2.3.x-dev",
-        "cwp/cwp-recipe-cms": "2.3.x-dev",
-        "silverstripe/recipe-blog": "1.3.x-dev",
-        "silverstripe/recipe-form-building": "1.3.x-dev",
-        "silverstripe/recipe-authoring-tools": "1.3.x-dev",
-        "silverstripe/recipe-collaboration": "1.3.x-dev",
-        "silverstripe/recipe-reporting-tools": "1.3.x-dev",
-        "cwp/cwp-recipe-search": "2.3.x-dev",
-        "silverstripe/recipe-services": "1.3.x-dev",
-        "silverstripe/subsites": "2.3.x-dev",
-        "tractorcow/silverstripe-fluent": "4.2.x-dev",
-        "silverstripe/registry": "2.2.x-dev",
-        "cwp/starter-theme": "3.0.x-dev"
-    },
-    "suggest": {
-        "silverstripe/recipe-content-blocks": "Supplement the CMS with a 'content block' approach to editing"
+        "silverstripe/recipe-cms": "^4.4.1",
+        "silverstripe/bambusa-theme": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
         "squizlabs/php_codesniffer": "^3"
     },
     "extra": {
-        "project-files": ["app/*"],
-        "branch-alias": {
-            "dev-master": "2.4.x-dev"
-        }
+        "project-files": ["app/*"]
     },
     "config": {
         "process-timeout": 600

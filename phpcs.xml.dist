@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="CWPInstaller">
+    <description>CodeSniffer ruleset for CWP coding conventions.</description>
+
+    <rule ref="PSR2" >
+        <!-- Allow classes to not declare a namespace - i.e. Page, PageController, and friends -->
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+
+        <!-- Allow non camel cased method names - SilverStripe convention for static::method_names() -->
+        <exclude name="PSR1.Methods.CamelCapsMethodName" />
+    </rule>
+</ruleset>

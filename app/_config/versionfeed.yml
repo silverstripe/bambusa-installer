@@ -1,0 +1,6 @@
+---
+Name: cwpversionfeed
+---
+SilverStripe\VersionFeed\VersionFeed:
+  allchanges_enabled: false
+  changes_enabled: false

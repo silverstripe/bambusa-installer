@@ -1,0 +1,9 @@
+---
+Name: cwpadmin
+---
+SilverStripe\Admin\LeftAndMain:
+  help_links:
+    # Direct users to CWP user help guides
+    'CMS User help': 'https://www.cwp.govt.nz/user-help/'
+SilverStripe\Control\Email\Email:
+  admin_email: 'no-reply@cwp.govt.nz'

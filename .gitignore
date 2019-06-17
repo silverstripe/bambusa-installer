@@ -1,0 +1,15 @@
+_ss_environment.php
+.buildpath
+.project
+.settings
+.solr
+.ea
+.idea
+.DS_Store
+.env
+/assets
+/silverstripe-cache
+/resources
+/public/resources
+/themes/starter
+/vendor

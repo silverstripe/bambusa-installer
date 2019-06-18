@@ -1,8 +1,8 @@
 <?php
 
-use CWP\CWP\PageTypes\BasePage;
+use SilverStripe\CMS\Model\SiteTree;
 
-class Page extends BasePage
+class Page extends SiteTree
 {
     
 }

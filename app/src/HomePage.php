@@ -1,8 +1,8 @@
 <?php
 
-use CWP\CWP\PageTypes\BaseHomePage;
+use Page;
 
-class HomePage extends BaseHomePage
+class HomePage extends Page
 {
     
 }

@@ -1,8 +1,8 @@
 <?php
 
-use CWP\CWP\PageTypes\BaseHomePageController;
+use PageController;
 
-class HomePageController extends BaseHomePageController
+class HomePageController extends PageController
 {
     
 }

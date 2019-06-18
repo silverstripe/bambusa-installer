@@ -1,8 +1,8 @@
 <?php
 
-use CWP\CWP\PageTypes\BasePageController;
+use SilverStripe\CMS\Controllers\ContentController;
 
-class PageController extends BasePageController
+class PageController extends ContentController
 {
     
 }

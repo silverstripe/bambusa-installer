@@ -4,10 +4,10 @@
     "description": "Bambusa Project Template",
     "license": "BSD-3-Clause",
     "repositories": [
-    	{
-    		"url": "https://github.com/silverstripeltd/bambusa-theme",
-    		"type": "vcs"
-    	}
+        {
+            "url": "https://github.com/silverstripeltd/bambusa-theme",
+            "type": "vcs"
+        }
     ],
     "require": {
         "php": ">=7.2.0",
@@ -20,7 +20,20 @@
         "squizlabs/php_codesniffer": "^3"
     },
     "extra": {
-        "project-files": ["app/*"]
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
+            "web.config"
+        ]
     },
     "config": {
         "process-timeout": 600

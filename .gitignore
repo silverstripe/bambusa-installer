@@ -7,9 +7,11 @@ _ss_environment.php
 .idea
 .DS_Store
 .env
+.vagrant
 /assets
 /silverstripe-cache
 /resources
 /public/resources
-/themes/starter
+/themes
+/public/assets
 /vendor

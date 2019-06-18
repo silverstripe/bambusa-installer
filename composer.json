@@ -13,7 +13,7 @@
         "php": ">=7.2.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.4.1",
-        "silverstripe/bambusa-theme": "*"
+        "silverstripeltd/bambusa-theme": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

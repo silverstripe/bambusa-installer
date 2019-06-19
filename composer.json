@@ -1,19 +1,19 @@
 {
-    "name": "silverstripeltd/bambusa-installer",
+    "name": "silverstripe/bambusa-installer",
     "type": "silverstripe-recipe",
     "description": "Bambusa Project Template",
     "license": "BSD-3-Clause",
     "repositories": [
         {
-            "url": "https://github.com/silverstripeltd/bambusa-theme.git",
-            "type": "git"
+            "url": "https://github.com/silverstripe/bambusa-theme",
+            "type": "vcs"
         }
     ],
     "require": {
         "php": ">=7.2.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.4.1",
-        "silverstripeltd/bambusa-theme": "*"
+        "silverstripe/bambusa-theme": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

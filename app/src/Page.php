@@ -1,8 +1,11 @@
 <?php
 
-use SilverStripe\CMS\Model\SiteTree;
+namespace {
 
-class Page extends SiteTree
-{
-    
+    use SilverStripe\CMS\Model\SiteTree;
+
+    class Page extends SiteTree
+    {
+
+    }
 }

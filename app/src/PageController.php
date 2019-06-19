@@ -1,8 +1,11 @@
 <?php
 
-use SilverStripe\CMS\Controllers\ContentController;
+namespace {
 
-class PageController extends ContentController
-{
-    
+    use SilverStripe\CMS\Controllers\ContentController;
+
+    class PageController extends ContentController
+    {
+
+    }
 }

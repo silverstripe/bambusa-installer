@@ -7,7 +7,7 @@
         "php": ">=7.2.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.4.1",
-        "silverstripe/bambusa-theme": "*"
+        "silverstripe/bambusa-theme": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -31,6 +31,15 @@
     },
     "config": {
         "process-timeout": 600
+    },
+    "autoload": {
+        "psr-4": {
+            "SilverStripe\\Bambusa\\": "app/src/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs app/src/ app/tests/",
+        "lint-clean": "phpcbf app/src/ app/tests/"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4502610332d4c069f2f17ee207b5da13",
+    "content-hash": "9aca5dedfec5e21be9e5a99b6f694812",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1369,6 +1369,44 @@
             "time": "2019-06-10T04:24:24+00:00"
         },
         {
+            "name": "silverstripe/bambusa-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/bambusa-theme.git",
+                "reference": "b7c87897ef8544714095850feefb40dac8f110ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b7c87897ef8544714095850feefb40dac8f110ae",
+                "reference": "b7c87897ef8544714095850feefb40dac8f110ae",
+                "shasum": ""
+            },
+            "require": {
+                "cwp/starter-theme": "^3.0.0"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "installer-name": "bambusa",
+                "expose": [
+                    "dist",
+                    "ico",
+                    "images"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "SilverStripe Bambusa theme",
+            "keywords": [
+                "bambusa",
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2019-06-19 22:17:26"
+        },
+        {
             "name": "silverstripe/campaign-admin",
             "version": "1.4.1",
             "source": {
@@ -2141,47 +2179,6 @@
                 "versioned"
             ],
             "time": "2019-05-19T21:28:01+00:00"
-        },
-        {
-            "name": "silverstripeltd/bambusa-theme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripeltd/bambusa-theme.git",
-                "reference": "679271265b4b3cfe9a5ef2dc50c5f626f2c8336f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripeltd/bambusa-theme/zipball/679271265b4b3cfe9a5ef2dc50c5f626f2c8336f",
-                "reference": "679271265b4b3cfe9a5ef2dc50c5f626f2c8336f",
-                "shasum": ""
-            },
-            "require": {
-                "cwp/starter-theme": "^3.0.0"
-            },
-            "type": "silverstripe-theme",
-            "extra": {
-                "installer-name": "bambusa",
-                "expose": [
-                    "dist",
-                    "ico",
-                    "images"
-                ]
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "SilverStripe Bambusa theme",
-            "keywords": [
-                "bambusa",
-                "silverstripe",
-                "theme"
-            ],
-            "support": {
-                "source": "https://github.com/silverstripeltd/bambusa-theme/tree/master",
-                "issues": "https://github.com/silverstripeltd/bambusa-theme/issues"
-            },
-            "time": "2019-06-18 03:11:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4037,6 +4034,47 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "silverstripeltd/bambusa-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripeltd/bambusa-theme.git",
+                "reference": "679271265b4b3cfe9a5ef2dc50c5f626f2c8336f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripeltd/bambusa-theme/zipball/679271265b4b3cfe9a5ef2dc50c5f626f2c8336f",
+                "reference": "679271265b4b3cfe9a5ef2dc50c5f626f2c8336f",
+                "shasum": ""
+            },
+            "require": {
+                "cwp/starter-theme": "^3.0.0"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "installer-name": "bambusa",
+                "expose": [
+                    "dist",
+                    "ico",
+                    "images"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "SilverStripe Bambusa theme",
+            "keywords": [
+                "bambusa",
+                "silverstripe",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/silverstripeltd/bambusa-theme/tree/master",
+                "issues": "https://github.com/silverstripeltd/bambusa-theme/issues"
+            },
+            "time": "2019-06-18 03:11:08"
+        },
+        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.4.2",
             "source": {
@@ -4141,7 +4179,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "silverstripe/bambusa-theme": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

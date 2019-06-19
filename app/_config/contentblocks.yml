@@ -1,0 +1,15 @@
+---
+Name: mysitecontentblocks
+---
+BlocksPage:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+
+---
+Name: contentblockssubsites
+Only:
+  moduleexists: dnadesign/silverstripe-elemental-subsites
+---
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - DNADesign\ElementalSubsites\Extensions\ElementalSubsiteExtension

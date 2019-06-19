@@ -7,7 +7,8 @@
         "php": ">=7.2.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.4.1",
-        "silverstripe/bambusa-theme": "dev-master"
+        "silverstripe/bambusa-theme": "dev-master",
+        "silverstripe/recipe-content-blocks": "^2.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -17,7 +18,9 @@
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/contentblocks.yml",
             "app/_config/mysite.yml",
+            "app/src/BlocksPage.php",
             "app/src/Page.php",
             "app/src/PageController.php"
         ],

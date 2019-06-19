@@ -14,6 +14,10 @@
     It is safe to remove this file for normal website operation.
 -->
 <phpunit bootstrap="vendor/silverstripe/framework/tests/bootstrap.php" colors="true">
+    <testsuite name="bambusa">
+        <directory>app/tests</directory>
+        <!-- <directory>vendor/silverstripe/framework/tests/php/</directory> -->
+    </testsuite>
 
     <testsuite name="Default">
         <directory>app/tests</directory>
@@ -64,7 +68,7 @@
         <directory>vendor/silverstripe/siteconfig/tests/php/</directory>
         <directory>vendor/silverstripe/reports/tests/</directory>
     </testsuite>
-    
+
     <groups>
         <exclude>
             <group>sanitychecks</group>

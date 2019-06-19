@@ -5,8 +5,8 @@
     "license": "BSD-3-Clause",
     "repositories": [
         {
-            "url": "https://github.com/silverstripeltd/bambusa-theme",
-            "type": "vcs"
+            "url": "https://github.com/silverstripeltd/bambusa-theme.git",
+            "type": "git"
         }
     ],
     "require": {
@@ -39,5 +39,8 @@
         "process-timeout": 600
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "lint": "phpcs -s app/"
+    }
 }

@@ -5,4 +5,5 @@ SilverStripe\View\SSViewer:
   themes:
     - '$public'
     - 'bambusa'
+    - 'starter'
     - '$default'

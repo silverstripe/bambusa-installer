@@ -45,5 +45,8 @@
         "lint-clean": "phpcbf app/src/ app/tests/"
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "lint": "phpcs -s app/"
+    }
 }

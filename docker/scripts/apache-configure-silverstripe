@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+echo "Executing $0" "$@"
+
+if [[ "$VERBOSE" = "yes" ]]; then
+    set -x
+fi
+
+/var/www/html/scripts/configure-silverstripe
+
+exec apache2-foreground

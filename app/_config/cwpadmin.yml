@@ -1,6 +1,5 @@
 ---
 Name: cwpadmin
 ---
-SilverStripe\Admin\LeftAndMain:
 SilverStripe\Control\Email\Email:
   admin_email: 'no-reply@silverstripe.com'

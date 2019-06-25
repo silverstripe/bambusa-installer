@@ -3,3 +3,6 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
+SilverStripe\Bambusa\Pages\HomePage:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\CarouselPageExtension

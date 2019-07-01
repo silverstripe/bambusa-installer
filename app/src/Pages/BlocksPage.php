@@ -21,6 +21,10 @@ class BlocksPage extends Page
         'HeaderElements' => ElementalArea::class,
     ];
 
+    private static $owns = [
+        'HeaderElements',
+    ];
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();

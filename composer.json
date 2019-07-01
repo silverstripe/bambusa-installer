@@ -12,7 +12,9 @@
         "silverstripe/crontask": "^2.1.2",
         "silverstripe/dynamodb": "^4.0.1",
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",
-        "dynamic/silverstripe-elemental-flexslider": "^2.0"
+        "dynamic/silverstripe-elemental-flexslider": "^2.0",
+        "jonom/silverstripe-betternavigator": "^4.1",
+        "silverstripe/sharedraftcontent": "^2.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

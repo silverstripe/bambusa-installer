@@ -6,3 +6,6 @@ SilverStripe\Core\Manifest\ModuleManifest:
 SilverStripe\Bambusa\Pages\HomePage:
   extensions:
     - SilverStripe\Bambusa\Extensions\CarouselPageExtension
+PageController:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\NavigatorInjection

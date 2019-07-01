@@ -1,0 +1,4 @@
+eo:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: 'Karuselaj elementoj'
+    SINGULARNAME: 'Karusela elemento'

@@ -1,0 +1,4 @@
+fi:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: 'Karusellin kohteet'
+    SINGULARNAME: 'Karusellin kohde'

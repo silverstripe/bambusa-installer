@@ -1,0 +1,4 @@
+mi:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: 'Ngā tuemi takawhawhe'
+    SINGULARNAME: 'Tuemi Takawhawhe'

@@ -3,12 +3,6 @@
     "type": "silverstripe-recipe",
     "description": "Bambusa Project Template",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:unclecheese/silverstripe-betternavigator"
-        }
-    ],
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",

@@ -1,0 +1,4 @@
+ar:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: 'العناصر الدائرية'
+    SINGULARNAME: 'عنصر دائرى'

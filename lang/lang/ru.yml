@@ -1,0 +1,4 @@
+ru:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: Слайдшоу
+    SINGULARNAME: Слайд

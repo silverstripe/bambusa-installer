@@ -2,7 +2,7 @@
 
   <%-- Determine if a carousel or single item --%>
   <% if $CarouselItems.Count > 1 %>
-      <div id="carousel-slide" data-ride="carousel" class="carousel slide text-center">
+      <div id="carousel-slide-carousel-$ID" data-ride="carousel" class="carousel slide text-center">
   <% else %>
       <div class="carousel slide text-center carousel-static">
   <% end_if %>
@@ -18,16 +18,16 @@
                     <div class="carousel-controls-inner-wrapper">
                         <ol class="carousel-indicators">
                           <% loop $CarouselItems %>
-                              <li data-target="#carousel-slide" data-slide-to="$Pos(0)" <% if $Pos == 1 %>class="active"<% end_if %> name="carousel-item-{$Pos}"></li>
+                              <li data-target="#carousel-slide-carousel-$Up.ID" data-slide-to="$Pos(0)" <% if $Pos == 1 %>class="active"<% end_if %> name="carousel-item-{$Pos}"></li>
                           <% end_loop %>
                         </ol>
 
                       <%-- Play or Pause --%>
                         <div class="carousel-play-controls">
-                            <button type="button" class="btn btn-link btn-sm" id="carousel-pause" aria-label="Autoplaying carousel with slides. <%t CwpCarousel.PAUSESLIDE "Click to pause carousel slides." %>">
+                            <button type="button" class="btn btn-link btn-sm carousel-pause" aria-label="Autoplaying carousel with slides. <%t CwpCarousel.PAUSESLIDE "Click to pause carousel slides." %>">
                                 <i class="fa fa-pause" aria-hidden="true"></i>
                             </button>
-                            <button type="button" class="btn btn-link btn-sm" id="carousel-play" aria-label="Paused carousel with slides. <%t CwpCarousel.PLAYSLIDE "Click to play carousel slides." %>" style="display:none;">
+                            <button type="button" class="btn btn-link btn-sm carousel-play" aria-label="Paused carousel with slides. <%t CwpCarousel.PLAYSLIDE "Click to play carousel slides." %>" style="display:none;">
                                 <i class="fa fa-play" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -37,11 +37,11 @@
 
               <%-- Controls --%>
                 <div class="carousel-controls">
-                    <button class="carousel-item-left carousel-control-prev" href="#carousel-slide" data-slide="prev">
+                    <button class="carousel-item-left carousel-control-prev" href="#carousel-slide-carousel-$ID" data-slide="prev">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="sr-only"><%t CwpCarousel.PREVIOUS "Go to previous slide." %></span>
                     </button>
-                    <button class="carousel-item-right carousel-control-next" href="#carousel-slide" data-slide="next">
+                    <button class="carousel-item-right carousel-control-next" href="#carousel-slide-carousel-$ID" data-slide="next">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                         <span class="sr-only"><%t CwpCarousel.NEXT "Go to next slide." %></span>
                     </button>

@@ -4,7 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d66258d4796655471073a7a9cb57e46e",
+=======
+<<<<<<< HEAD
+    "content-hash": "25dfa8449ea3af3ba3b3f01faa38935f",
+=======
+    "content-hash": "afc6af00f0d8c88db3853a8bf91a1a7c",
+>>>>>>> Initial commit of Carousel block
+>>>>>>> Initial commit of Carousel block
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1064,6 +1072,7 @@
         },
         {
             "name": "jonom/silverstripe-betternavigator",
+<<<<<<< HEAD
             "version": "4.1.1",
             "source": {
                 "type": "git",
@@ -1078,6 +1087,22 @@
             },
             "require": {
                 "silverstripe/framework": "^4.0"
+=======
+            "version": "dev-pulls/auto-injection",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-betternavigator.git",
+                "reference": "64c81e50834d5c86cf16148bf76ce6044496b0d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-betternavigator/zipball/64c81e50834d5c86cf16148bf76ce6044496b0d4",
+                "reference": "64c81e50834d5c86cf16148bf76ce6044496b0d4",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": ">= 4.2"
+>>>>>>> Initial commit of Carousel block
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -1093,7 +1118,10 @@
                     "JonoM\\BetterNavigator\\": "src/"
                 }
             },
+<<<<<<< HEAD
             "notification-url": "https://packagist.org/downloads/",
+=======
+>>>>>>> Initial commit of Carousel block
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1110,7 +1138,14 @@
                 "navigator",
                 "silverstripe"
             ],
+<<<<<<< HEAD
             "time": "2018-04-06T22:41:08+00:00"
+=======
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-betternavigator/tree/pulls/auto-injection"
+            },
+            "time": "2019-06-28 03:43:21"
+>>>>>>> Initial commit of Carousel block
         },
         {
             "name": "league/csv",
@@ -5477,7 +5512,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/bambusa-theme": 20
+        "silverstripe/bambusa-theme": 20,
+        "jonom/silverstripe-betternavigator": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

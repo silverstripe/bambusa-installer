@@ -16,11 +16,19 @@ class ImagePage extends Page
         'Image' => Image::class,
     ];
 
+    private static $owns = [
+        'Image',
+    ];
+
     private static $table_name = 'ImagePage';
 
-    private static $singular_name = 'ImagePage';
+    private static $singular_name = 'Image page';
 
-    private static $plural_name = 'ImagePages';
+    private static $plural_name = 'Image pages';
+
+    private static $description = 'A page that features an image upload with custom cropping';
+
+    private static $icon_class = 'font-icon-p-image';
 
     public function getCMSFields()
     {

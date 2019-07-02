@@ -44,13 +44,13 @@ install:
 
 
 script:
-  - true # vendor/bin/phpunit --testsuite bambusa
-  - true # composer run-script lint
-  - true # phpdbg -qrr vendor/bin/phpunit --testsuite bambusa --coverage-clover=coverage.xml
+  - vendor/bin/phpunit --testsuite bambusa
+  - composer run-script lint
+  - phpdbg -qrr vendor/bin/phpunit --testsuite bambusa --coverage-clover=coverage.xml
   - sh -e /etc/init.d/xvfb start
   - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
   - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
-  - true # vendor/bin/behat admin
+  - vendor/bin/behat admin
 
 deploy:
   provider: script

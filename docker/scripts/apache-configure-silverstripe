@@ -7,6 +7,6 @@ if [[ "$VERBOSE" = "yes" ]]; then
     set -x
 fi
 
-/var/www/html/scripts/configure-silverstripe
+configure-silverstripe
 
 exec apache2-foreground

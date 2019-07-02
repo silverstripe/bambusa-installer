@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+  solr:
+    image: solr4
+    restart: always
+    ports:
+      - 8983:8983
+    volumes:
+      - data:/opt/solr/server/solr/mycores
+  db:
+    image: mysql:5
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  web:
+    build: .
+    restart: always
+    ports:
+      - 8200:80
+    volumes:
+      - data:/var/www/html/.solr
+      # This overlays the folder copied in Dockerfile
+      - ..:/var/www/html
+    links:
+      - solr:solr
+      - db:db
+    entrypoint:
+      - docker/scripts/docker-entrypoint.sh
+      - docker/scripts/apache-configure-silverstripe
+    environment:
+      SS_ENVIRONMENT_TYPE: dev
+      SS_DATABASE_SERVER: db
+      SS_DATABASE_NAME: SS_mysite
+      SS_DATABASE_USERNAME: root
+      SS_DATABASE_PASSWORD: password
+      SS_DEFAULT_ADMIN_USERNAME: admin
+      SS_DEFAULT_ADMIN_PASSWORD: password
+      SOLR_SERVER: solr
+      SOLR_PORT: 8983
+      SOLR_PATH: /solr
+      SOLR_MODE: file
+      SOLR_INDEXSTORE_PATH: /var/www/html/.solr
+      SOLR_REMOTE_PATH: /opt/solr/server/solr/mycores
+volumes:
+  data:

@@ -11,6 +11,12 @@ This project is used to build the demonstration environment when a user request 
 It's not meant to be used directly by the community. However, there's nothing stopping third party from re-using it for their own demo. SilverStripe doesn't provide official support for this project.
     
 
+## Docker setup
+
+WARNING: The docker image is specifically crafted for our internal Kubernetes stack. It is not supposed to suit any other needs.
+
+[docker](./docker/README.md) contains the docker setup and the deploy scripts
+
 ## License
 
     Copyright (c) 2007-2018, SilverStripe Limited - www.silverstripe.com

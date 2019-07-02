@@ -2,6 +2,7 @@ language: php
 dist: trusty
 services:
   - mysql
+  - docker
 
 cache:
   directories:
@@ -50,6 +51,12 @@ script:
   - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
   - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
   - true # vendor/bin/behat admin
+
+deploy:
+  provider: script
+  script: bash docker/deploy.sh "$DOCKERHUB_USER" "$DOCKERHUB_PASSWORD" "$DOCKERHUB_IMAGE"
+  on:
+    branch: master
 
 after_failure:
   - php ./vendor/silverstripe/framework/tests/behat/travis-upload-artifacts.php --if-env ARTIFACTS_BUCKET,ARTIFACTS_KEY,ARTIFACTS_SECRET --target-path $TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID --artifacts-base-url https://s3.amazonaws.com/$ARTIFACTS_BUCKET/ --artifacts-path ./artifacts/

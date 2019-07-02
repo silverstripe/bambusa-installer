@@ -14,7 +14,8 @@
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",
         "dynamic/silverstripe-elemental-flexslider": "^2.0",
         "jonom/silverstripe-betternavigator": "^4.1",
-        "silverstripe/sharedraftcontent": "^2.3"
+        "silverstripe/sharedraftcontent": "^2.3",
+        "jonom/focuspoint": "^3.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

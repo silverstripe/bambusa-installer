@@ -2,7 +2,8 @@ version: '3.1'
 
 services:
   solr:
-    image: solr4
+    # Built locally from docker/solr-template through "docker build -t solr4 solr-template"
+    build: solr-template/
     restart: always
     ports:
       - "8983:8983"

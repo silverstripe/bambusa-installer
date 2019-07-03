@@ -28,7 +28,7 @@ class ImagePage extends Page
 
     private static $description = 'A page that features an image upload with custom cropping';
 
-    private static $icon_class = 'font-icon-p-image';
+    private static $icon_class = 'font-icon-image';
 
     public function getCMSFields()
     {

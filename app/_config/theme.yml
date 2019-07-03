@@ -7,3 +7,7 @@ SilverStripe\View\SSViewer:
     - 'bambusa'
     - 'starter'
     - '$default'
+
+Heyday\MenuManager\MenuSet:
+  default_sets:
+    - Footer

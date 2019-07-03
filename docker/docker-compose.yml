@@ -16,7 +16,9 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
   web:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     restart: always
     ports:
       - "8200:80"

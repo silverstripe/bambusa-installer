@@ -3,7 +3,6 @@
 
 namespace SilverStripe\Bambusa\Pages;
 
-
 use JonoM\FocusPoint\Forms\FocusPointField;
 use Page;
 use SilverStripe\AssetAdmin\Forms\UploadField;

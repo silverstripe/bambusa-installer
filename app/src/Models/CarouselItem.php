@@ -58,7 +58,7 @@ class CarouselItem extends DataObject
     public function getCMSFields()
     {
         $fields = new FieldList(
-        // Set title
+            // Set title
             TextField::create('Title', 'Title', null, 255),
             // Content
             HtmlEditorField::create('Content')

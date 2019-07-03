@@ -24,9 +24,6 @@ services:
       - data:/var/www/html/.solr
       # This overlays the folder copied in Dockerfile
       - ..:/var/www/html
-    links:
-      - solr:solr
-      - db:db
     entrypoint:
       - docker/scripts/docker-entrypoint.sh
       - docker/scripts/apache-configure-silverstripe

@@ -9,13 +9,45 @@ This project is meant to demonstrate key features of SilverStripe CMS. It combin
 This project is used to build the demonstration environment when a user request a SilverStripe demo from [SilverStripe.com](https://silverstripe.com). 
 
 It's not meant to be used directly by the community. However, there's nothing stopping third party from re-using it for their own demo. SilverStripe doesn't provide official support for this project.
-    
 
-## Docker setup
+## Local Development
 
-WARNING: The docker image is specifically crafted for our internal Kubernetes stack. It is not supposed to suit any other needs.
+This project is aimed to be deployed in an internal Kubernetes stack,
+as a set of Docker containers. You can approximate this setup locally
+by running it through [docker-compose](https://docs.docker.com/compose/).
 
-[docker](./docker/README.md) contains the docker setup and the deploy scripts
+```
+cd docker
+docker-compose up
+```  
+
+Once all containers have launched, you should be able to access the site
+under `http://localhost:8200`.
+
+If you need access to individual containers (e.g. SSH into the web container),
+you can use `docker-compose exec` to get an interactive shell
+with the webserver user:
+
+```
+docker-compose exec -u www-data web /bin/bash
+``` 
+
+## Docker Builds
+
+WARNING: The Docker image is specifically crafted for our internal Kubernetes stack. It is not supposed to suit any other needs.
+
+The `docker/deploy.sh` script is run on [TravisCI](../.travis.yml) on green builds after merge to master.  
+It builds a new docker image and publishes it to docker hub as [silverstripe/bambusa-installer](https://hub.docker.com/r/silverstripe/bambusa-installer)
+
+`.travis.yml` uses the following environment vars (these are supposed to be set on CI side):
+  - `DOCKERHUB_USER`, which is used to log in to docker hub (e.g. silverstripe)
+  - `DOCKERHUB_PASSWORD`, which is used to log in to docker hub (e.g. qwerty123)
+  - `DOCKERHUB_IMAGE`, which is the docker hub account+image (e.g. silverstripe/bambusa-installer)
+
+The image includes basic PHP + Apache setup, including the application source code with installed dependencies (--prefer-dist)
+
+The [docker/scripts](./docker/scripts) folder contains auxiliary tooling for running this image on our Kubernetes cluster
+
 
 ## License
 

@@ -6,3 +6,6 @@ SilverStripe\Core\Manifest\ModuleManifest:
 SilverStripe\Bambusa\Pages\HomePage:
   extensions:
     - SilverStripe\Bambusa\Extensions\CarouselPageExtension
+
+SilverStripe\SiteConfig\SiteConfig:
+  enable_theme_color_picker: true

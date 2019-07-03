@@ -1,3 +1,6 @@
+<% if $Title && $ShowTitle %>
+    <h2 class="carousel-element__title">$Title</h2>
+<% end_if %>
 <% if $CarouselItems %>
 
   <%-- Determine if a carousel or single item --%>

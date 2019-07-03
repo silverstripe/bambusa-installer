@@ -47,7 +47,8 @@
         }
     },
     "scripts": {
-        "lint": "phpcs -s app/"
+        "lint": "phpcs -s app/",
+        "lint-clean": "phpcbf app/"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"

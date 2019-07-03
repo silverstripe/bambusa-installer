@@ -1,4 +1,8 @@
-$HeaderElements
+<% if $HeaderElements %>
+<div class="header-elements">
+  $HeaderElements
+</div>
+<% end_if %>
 <div class="container">
     <div class="row">
         <section class="<% if $Children %>col-lg-12<% else %>col-lg-8 offset-lg-2<% end_if %>">

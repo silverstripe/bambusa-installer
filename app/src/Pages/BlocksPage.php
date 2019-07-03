@@ -31,9 +31,16 @@ class BlocksPage extends Page
         $headerArea = $fields->fieldByName('Root.Main.HeaderElements');
         $fields->removeByName('Root.Main.HeaderElements');
         $fields->addFieldToTab('Root.Main', $headerArea, 'ElementalArea');
-        $fields->addFieldToTab('Root.Main', HeaderField::create('HeaderBlocksHeader', 'Header blocks'), 'HeaderElements');
-        $fields->addFieldToTab('Root.Main', HeaderField::create('ContentBlocksHeader', 'Content blocks'), 'ElementalArea');
+        $fields->addFieldToTab(
+            'Root.Main',
+            HeaderField::create('HeaderBlocksHeader', 'Header blocks'),
+            'HeaderElements'
+        );
+        $fields->addFieldToTab(
+            'Root.Main',
+            HeaderField::create('ContentBlocksHeader', 'Content blocks'),
+            'ElementalArea'
+        );
         return $fields;
     }
-
 }

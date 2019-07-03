@@ -25,13 +25,12 @@ Once all containers have launched, you should be able to access the site
 under `http://localhost:8200`.
 
 If you need access to individual containers (e.g. SSH into the web container),
-you can use `docker-compose exec` to get an interactive shell:
+you can use `docker-compose exec` to get an interactive shell
+with the webserver user:
 
 ```
-docker-compose exec web /bin/bash
+docker-compose exec -u www-data web /bin/bash
 ``` 
-
-Note that you should run commands as the web user, through `gosu www-data`.
 
 ## Docker Builds
 

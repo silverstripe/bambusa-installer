@@ -5,7 +5,7 @@ services:
     image: solr4
     restart: always
     ports:
-      - 8983:8983
+      - "8983:8983"
     volumes:
       - data:/opt/solr/server/solr/mycores
   db:
@@ -18,7 +18,7 @@ services:
     build: .
     restart: always
     ports:
-      - 8200:80
+      - "8200:80"
     volumes:
       - data:/var/www/html/.solr
       # This overlays the folder copied in Dockerfile

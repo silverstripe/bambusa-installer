@@ -1,7 +1,8 @@
 <?php
 
-namespace SilverStripe\Bambusa\Models;
+namespace SilverStripe\Bambusa\Blocks;
 
+use SilverStripe\Bambusa\Blocks\CarouselBlock;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Versioned\Versioned;
 use SilverStripe\Core\Injector\Injector;
@@ -32,7 +33,7 @@ class CarouselItem extends DataObject
     ];
 
     private static $has_one = [
-        'Parent' => SiteTree::class,
+        'Parent' => CarouselBlock::class,
         'Image' => Image::class,
         'PrimaryCallToAction' => SiteTree::class,
         'SecondaryCallToAction' => SiteTree::class

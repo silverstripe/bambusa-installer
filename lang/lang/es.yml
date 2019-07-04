@@ -1,0 +1,4 @@
+es:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    PLURALNAME: 'Items del carrusel'
+    SINGULARNAME: 'Item del carrusel'

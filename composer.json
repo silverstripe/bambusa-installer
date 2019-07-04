@@ -12,7 +12,6 @@
         "silverstripe/crontask": "^2.1.2",
         "silverstripe/dynamodb": "^4.0.1",
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",
-        "dynamic/silverstripe-elemental-flexslider": "^2.0",
         "jonom/silverstripe-betternavigator": "^4.1",
         "silverstripe/sharedraftcontent": "^2.3",
         "jonom/focuspoint": "^3.1"
@@ -48,7 +47,8 @@
         }
     },
     "scripts": {
-        "lint": "phpcs -s app/"
+        "lint": "phpcs -s app/",
+        "lint-clean": "phpcbf app/"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"

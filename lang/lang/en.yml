@@ -1,0 +1,19 @@
+en:
+  SilverStripe\Bambusa\Blocks\CarouselItem:
+    CONTENT_HELPTIP: 'Recommended: Use less than 50 words. For carousel slides, use a similar amount of content as other items to ensure carousel height does not vary.'
+    IMAGE_HELPTIP: 'Recommended: Use high resolution images greater than 1600x900px.'
+    PLURALNAME: 'Carousel Items'
+    PLURALS:
+      one: 'A Carousel Item'
+      other: '{count} Carousel Items'
+    PRIMARYCALLTOACTION: 'Primary Call To Action Link'
+    SECONDARYCALLTOACTION: 'Secondary Call To Action Link'
+    SINGULARNAME: 'Carousel Item'  
+  SilverStripe\Bambusa\Blocks\CarouselBlock:
+    ADDNEW: 'Add new'
+    NOTE: 'NOTE: Carousel functionality will automatically be loaded when 2 or more items are added below'
+    TITLE: Hero/Carousel
+    NEXT: 'Go to next slide.'
+    PREVIOUS: 'Go to previous slide.'
+    PAUSESLIDE: 'Click to pause carousel slides.'
+    PLAYSLIDE: 'Click to play carousel slides.'

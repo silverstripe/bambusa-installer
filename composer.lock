@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d66258d4796655471073a7a9cb57e46e",
+    "content-hash": "bb582b1f2f78956d29edb818775768c4",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.103.1",
+            "version": "3.104.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2f6b31befa14d26a31dc8ce0adeac5f383db35d2"
+                "reference": "295706ab2134bf842837fa0b0162ff3aef8b0aa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2f6b31befa14d26a31dc8ce0adeac5f383db35d2",
-                "reference": "2f6b31befa14d26a31dc8ce0adeac5f383db35d2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/295706ab2134bf842837fa0b0162ff3aef8b0aa4",
+                "reference": "295706ab2134bf842837fa0b0162ff3aef8b0aa4",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-06-28T18:43:32+00:00"
+            "time": "2019-07-03T18:08:50+00:00"
         },
         {
             "name": "bramus/ansi-php",
@@ -577,125 +577,6 @@
             "time": "2018-08-21T18:01:43+00:00"
         },
         {
-            "name": "dynamic/flexslider",
-            "version": "4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dynamic/silverstripe-flexslider.git",
-                "reference": "ef75ef34c0ebdb2e7c06f1aa28e5013a0a2e6792"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-flexslider/zipball/ef75ef34c0ebdb2e7c06f1aa28e5013a0a2e6792",
-                "reference": "ef75ef34c0ebdb2e7c06f1aa28e5013a0a2e6792",
-                "shasum": ""
-            },
-            "require": {
-                "sheadawson/silverstripe-linkable": "^2.0",
-                "silverstripe/asset-admin": "^1.0",
-                "silverstripe/recipe-cms": "^1.0 || ^4.0",
-                "silverstripe/vendor-plugin": "^1.0",
-                "symbiote/silverstripe-gridfieldextensions": "^3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "css",
-                    "images",
-                    "thirdparty"
-                ],
-                "branch-alias": {
-                    "dev-master": "4.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dynamic\\FlexSlider\\": "src/",
-                    "Dynamic\\FlexSlider\\Test\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dynamic",
-                    "email": "dev@dynamicagency.com",
-                    "homepage": "http://www.dynamicagency.com"
-                }
-            ],
-            "description": "Display a FlexSlider on pages of your website",
-            "keywords": [
-                "flexslider",
-                "jquery",
-                "module",
-                "silverstripe",
-                "slider",
-                "slideshow"
-            ],
-            "time": "2019-05-30T18:43:27+00:00"
-        },
-        {
-            "name": "dynamic/silverstripe-elemental-flexslider",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dynamic/silverstripe-elemental-flexslider.git",
-                "reference": "24d1c370648c36313efbb9003a8bf835b47f057f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-flexslider/zipball/24d1c370648c36313efbb9003a8bf835b47f057f",
-                "reference": "24d1c370648c36313efbb9003a8bf835b47f057f",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^4.0",
-                "dynamic/flexslider": "^4.0",
-                "silverstripe/vendor-plugin": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dynamic\\Elements\\Flexslider\\": "src/",
-                    "Dynamic\\Elements\\Flexslider\\Test\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dynamic",
-                    "email": "dev@dynamicagency.com",
-                    "homepage": "http://www.dynamicagency.com"
-                }
-            ],
-            "description": "Flexslider slideshow content block for SilverStripe Elemental",
-            "keywords": [
-                "blocks",
-                "dynamic",
-                "elemental",
-                "silverstripe"
-            ],
-            "time": "2019-03-21T03:15:07+00:00"
-        },
-        {
             "name": "embed/embed",
             "version": "v3.4.0",
             "source": {
@@ -866,16 +747,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
@@ -933,7 +814,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-30T00:37:05+00:00"
+            "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "intervention/image",
@@ -1916,71 +1797,6 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "sheadawson/silverstripe-linkable",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sheadawson/silverstripe-linkable.git",
-                "reference": "b447a8b8c48db0fc685ce3cc003c91c9e3ae51ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/b447a8b8c48db0fc685ce3cc003c91c9e3ae51ea",
-                "reference": "b447a8b8c48db0fc685ce3cc003c91c9e3ae51ea",
-                "shasum": ""
-            },
-            "require": {
-                "embed/embed": "^3.0",
-                "silverstripe/framework": "^4.0",
-                "silverstripe/vendor-plugin": "^1.0",
-                "unclecheese/display-logic": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "suggest": {
-                "silverstripe/cms": "To allow for a linking of the SiteTree data object."
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "installer-name": "linkable",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                },
-                "expose": [
-                    "client"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sheadawson\\Linkable\\": "src/",
-                    "Sheadawson\\Linkable\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Marcus Nyeholt",
-                    "email": "marcus@silverstripe.com.au"
-                },
-                {
-                    "name": "Shea Dawson",
-                    "email": "shea@silverstripe.com.au"
-                }
-            ],
-            "description": "A couple of handy form fields and objects for managing external and internal links on DataObjects",
-            "homepage": "http://github.com/sheadawson/silverstripe-linkable",
-            "keywords": [
-                "cms",
-                "link",
-                "silverstripe"
-            ],
-            "time": "2018-06-07T07:05:33+00:00"
-        },
-        {
             "name": "silverstripe/admin",
             "version": "1.4.1",
             "source": {
@@ -2155,12 +1971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "29c2bea69faaeb63f320f437279482c7f20eb6c4"
+                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/29c2bea69faaeb63f320f437279482c7f20eb6c4",
-                "reference": "29c2bea69faaeb63f320f437279482c7f20eb6c4",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/7c8d7c19171706e4e7c00ae375ac878712b64f7c",
+                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c",
                 "shasum": ""
             },
             "require": {
@@ -2186,7 +2002,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-06-26 22:29:56"
+            "time": "2019-07-04 00:29:07"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -2409,16 +2225,16 @@
         },
         {
             "name": "silverstripe/dynamodb",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-dynamodb.git",
-                "reference": "e9b714cd79b5b2c6ced542635406dba676a2aaed"
+                "reference": "3e2cade53c3012023eb1d782afb74872faafe208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-dynamodb/zipball/e9b714cd79b5b2c6ced542635406dba676a2aaed",
-                "reference": "e9b714cd79b5b2c6ced542635406dba676a2aaed",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-dynamodb/zipball/3e2cade53c3012023eb1d782afb74872faafe208",
+                "reference": "3e2cade53c3012023eb1d782afb74872faafe208",
                 "shasum": ""
             },
             "require": {
@@ -2428,13 +2244,14 @@
                 "silverstripe/framework": "^4@dev"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
                 "installer-name": "silverstripe-dynamodb",
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -2463,7 +2280,7 @@
                 "dynamodb",
                 "silverstripe"
             ],
-            "time": "2017-11-20T04:21:34+00:00"
+            "time": "2019-07-01T23:46:23+00:00"
         },
         {
             "name": "silverstripe/elemental-bannerblock",
@@ -4040,66 +3857,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-03-25T07:48:46+00:00"
-        },
-        {
-            "name": "unclecheese/display-logic",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
-                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/845ab12189439422b6dcd1becd20c9d5a94eb558",
-                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "replace": {
-                "silverstripe/display-logic": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "se/selenium-server-standalone": "2.41.0",
-                "silverstripe/behat-extension": "^3@dev",
-                "silverstripe/serve": "^2"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "installer-name": "display-logic",
-                "expose": [
-                    "client"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "UncleCheese\\DisplayLogic\\": "src/",
-                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
-                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com"
-                }
-            ],
-            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
-            "keywords": [
-                "Forms",
-                "cms",
-                "display",
-                "logic",
-                "silverstripe"
-            ],
-            "time": "2018-11-14T23:16:44+00:00"
         },
         {
             "name": "webonyx/graphql-php",

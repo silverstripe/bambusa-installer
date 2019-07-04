@@ -41,7 +41,12 @@
             "install.php",
             "web.config"
         ],
-	"resources-dir": "_resources"
+	    "resources-dir": "_resources",
+        "expose": [
+            "app/js",
+            "app/images",
+            "app/css"
+        ]
     },
     "config": {
         "process-timeout": 600

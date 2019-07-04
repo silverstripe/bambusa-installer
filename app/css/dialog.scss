@@ -1,0 +1,74 @@
+// These styles are only use for the privacy modal. This is meant to look like sscom.
+
+$darkBlue: #142237;
+$brightBlue: #005B94;
+
+.sscom.modal {
+  text-align: center;
+
+  .modal-content {
+    border: none;
+  }
+
+  .modal-header {
+    background: $darkBlue;
+    height: 6rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    h1 {
+      width: 100%;
+    }
+
+    img {
+      margin: auto;
+      width: auto;
+      height: 2rem;
+      padding: 0 1rem;
+    }
+  }
+
+  .modal-body {
+    padding: 2rem 1rem;
+    font-family: Metropolis, 'Proxima Nova', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    h2 {
+      font-weight: inherit;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    .btn {
+      background: $brightBlue;
+      color: white;
+      border-radius: 2.5rem;
+      border-style: solid;
+      border-width: 0.1rem;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 1;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease;
+
+      &:hover,
+      &:focus {
+        background: $darkBlue;
+      }
+    }
+
+    @media only screen and (min-width: 576px) {
+      padding: 3rem;
+    }
+  }
+}

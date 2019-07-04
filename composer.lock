@@ -1971,12 +1971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "9747a69cce7dd30dc18694595d7b2a2cc1166923"
+                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/9747a69cce7dd30dc18694595d7b2a2cc1166923",
-                "reference": "9747a69cce7dd30dc18694595d7b2a2cc1166923",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/7c8d7c19171706e4e7c00ae375ac878712b64f7c",
+                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c",
                 "shasum": ""
             },
             "require": {
@@ -2002,7 +2002,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-03 01:15:22"
+            "time": "2019-07-04 00:29:07"
         },
         {
             "name": "silverstripe/campaign-admin",

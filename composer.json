@@ -21,7 +21,8 @@
         "heyday/silverstripe-menumanager": "^3.0",
         "sminnee/tagmanager": "^1.0@dev",
         "sminnee/silverstripe-amplitude": "dev-master",
-        "sminnee/silverstripe-asknicely": "^1.0@dev"
+        "sminnee/silverstripe-asknicely": "^1.0@dev",
+        "silverstripe/login-forms": "^4.0@beta"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

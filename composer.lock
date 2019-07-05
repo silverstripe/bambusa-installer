@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35487ac100e3f1aa7faaf3414bf3adf2",
+    "content-hash": "3977ad9b4381a10d3f13cca04716fea9",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -3359,6 +3359,53 @@
             "time": "2019-06-10T05:16:51+00:00"
         },
         {
+            "name": "silverstripe/login-forms",
+            "version": "4.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
+                "reference": "e809371d6fcb31240542f14bb249fcca94806165"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/e809371d6fcb31240542f14bb249fcca94806165",
+                "reference": "e809371d6fcb31240542f14bb249fcca94806165",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\LoginForms\\": "src/",
+                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A collection of templates for the CMS login screens",
+            "homepage": "https://github.com/silverstripe/login-forms",
+            "keywords": [
+                "login",
+                "silverstripe",
+                "styling",
+                "template"
+            ],
+            "time": "2019-06-26T21:48:50+00:00"
+        },
+        {
             "name": "silverstripe/recipe-cms",
             "version": "4.4.1",
             "source": {
@@ -6532,9 +6579,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
-        "sminnee/tagmanager": 20,
-        "sminnee/silverstripe-amplitude": 20,
-        "sminnee/silverstripe-asknicely": 20
+        "silverstripe/login-forms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

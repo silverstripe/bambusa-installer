@@ -10,8 +10,8 @@ _ss_environment.php
 .vagrant
 /assets
 /silverstripe-cache
-/resources
 /public/resources
+/public/_resources
 /themes
 /public/assets
 /vendor

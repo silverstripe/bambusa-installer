@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "643ecac7a42045bda0b273c91c71d848",
+    "content-hash": "b85a7ff8a1cb7b7f3152fd4b298d4778",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1286,6 +1286,48 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "heyday/silverstripe-menumanager",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heyday/silverstripe-menumanager.git",
+                "reference": "a2c2ad395599773762f005973f5f57a0cb4584f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heyday/silverstripe-menumanager/zipball/a2c2ad395599773762f005973f5f57a0cb4584f2",
+                "reference": "a2c2ad395599773762f005973f5f57a0cb4584f2",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0",
+                "symbiote/silverstripe-gridfieldextensions": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "dev-master": "3.0.x-dev"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Heyday\\MenuManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Heyday Developers",
+                    "email": "dev@heyday.co.nz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allows complex menu management to be handled through the CMS when a simple tree structure is not enough.",
+            "time": "2018-09-09T04:41:47+00:00"
         },
         {
             "name": "intervention/image",

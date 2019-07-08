@@ -31,7 +31,7 @@ jQuery(function ($) {
           .modal('show')
           .on('hide.bs.modal', function () {
               // Only set the cookie one the modal has been dismissed.
-              document.cookie = cookieKey + "=1";
+              document.cookie = cookieKey + '=1;path=/';
           });
     }
 

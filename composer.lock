@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3977ad9b4381a10d3f13cca04716fea9",
+    "content-hash": "c88280ea293bacac644815a1cc1b5fea",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.104.1",
+            "version": "3.105.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "295706ab2134bf842837fa0b0162ff3aef8b0aa4"
+                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/295706ab2134bf842837fa0b0162ff3aef8b0aa4",
-                "reference": "295706ab2134bf842837fa0b0162ff3aef8b0aa4",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3a1159eeb14f707780817bebf73dd3eeeeb710cc",
+                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-03T18:08:50+00:00"
+            "time": "2019-07-08T18:16:57+00:00"
         },
         {
             "name": "bramus/ansi-php",
@@ -3360,16 +3360,16 @@
         },
         {
             "name": "silverstripe/login-forms",
-            "version": "4.0.0-beta1",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
-                "reference": "e809371d6fcb31240542f14bb249fcca94806165"
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/e809371d6fcb31240542f14bb249fcca94806165",
-                "reference": "e809371d6fcb31240542f14bb249fcca94806165",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/0ba849e94468fd104c02349f83b6f18bab906adb",
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb",
                 "shasum": ""
             },
             "require": {
@@ -3381,6 +3381,9 @@
             },
             "type": "silverstripe-vendormodule",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
                 "expose": [
                     "client/dist"
                 ]
@@ -3403,7 +3406,7 @@
                 "styling",
                 "template"
             ],
-            "time": "2019-06-26T21:48:50+00:00"
+            "time": "2019-07-07T23:36:26+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b85a7ff8a1cb7b7f3152fd4b298d4778",
+    "content-hash": "5b682375ee8d95f3008f042ce080ffc5",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -2747,12 +2747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c"
+                "reference": "a50707a9d134024d07233adc06cad6452958c13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/7c8d7c19171706e4e7c00ae375ac878712b64f7c",
-                "reference": "7c8d7c19171706e4e7c00ae375ac878712b64f7c",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/a50707a9d134024d07233adc06cad6452958c13c",
+                "reference": "a50707a9d134024d07233adc06cad6452958c13c",
                 "shasum": ""
             },
             "require": {
@@ -2778,7 +2778,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-04T00:29:07+00:00"
+            "time": "2019-07-05T02:49:56+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",

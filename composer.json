@@ -41,7 +41,12 @@
             "install.php",
             "web.config"
         ],
-	"resources-dir": "_resources"
+	    "resources-dir": "_resources",
+        "expose": [
+            "app/js",
+            "app/images",
+            "app/css"
+        ]
     },
     "config": {
         "process-timeout": 600
@@ -52,8 +57,8 @@
         }
     },
     "scripts": {
-        "lint": "phpcs -s app/",
-        "lint-clean": "phpcbf app/"
+        "lint": "phpcs -s app/src",
+        "lint-clean": "phpcbf app/src"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"

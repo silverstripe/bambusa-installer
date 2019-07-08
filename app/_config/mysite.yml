@@ -6,3 +6,11 @@ SilverStripe\Core\Manifest\ModuleManifest:
 PageController:
   extensions:
     - SilverStripe\Bambusa\Extensions\NavigatorInjection
+
+SilverStripe\SiteConfig\SiteConfig:
+  enable_theme_color_picker: true
+  theme_colors:
+    default-accent:
+      Color: "#0049D6"
+    default-background:
+      Color: "#FFFFFF"

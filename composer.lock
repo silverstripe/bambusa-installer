@@ -5,8 +5,11 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
 =======
+=======
+>>>>>>> Rebase
 <<<<<<< HEAD
     "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
 =======
@@ -16,7 +19,13 @@
     "content-hash": "29f4a3a8c9192fbf1e4b9a453a065102",
 >>>>>>> Add blog module
 >>>>>>> Add blog module
+<<<<<<< HEAD
 >>>>>>> Add blog module
+=======
+=======
+    "content-hash": "5171bf867f4afce5117264a3bf02dcfe",
+>>>>>>> Rebase
+>>>>>>> Rebase
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -3062,8 +3071,11 @@
                 "theme"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-10 23:34:41"
 =======
+=======
+>>>>>>> Rebase
 <<<<<<< HEAD
             "time": "2019-07-09T04:45:13+00:00"
 =======
@@ -3071,6 +3083,9 @@
             "time": "2019-07-08T04:20:14+00:00"
 =======
             "time": "2019-07-04 00:29:07"
+=======
+            "time": "2019-07-08 04:20:14"
+>>>>>>> Rebase
         },
         {
             "name": "silverstripe/blog",
@@ -3134,9 +3149,15 @@
                 "silverstripe"
             ],
             "time": "2019-05-09T03:44:57+00:00"
+<<<<<<< HEAD
 >>>>>>> Add blog module
 >>>>>>> Add blog module
+<<<<<<< HEAD
 >>>>>>> Add blog module
+=======
+=======
+>>>>>>> Rebase
+>>>>>>> Rebase
         },
         {
             "name": "silverstripe/campaign-admin",

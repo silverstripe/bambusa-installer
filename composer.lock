@@ -4,7 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
+=======
+<<<<<<< HEAD
+    "content-hash": "a101da76142f070f88f4d345f5fe8a8e",
+=======
+    "content-hash": "bc0d1c062284be6fa97abf39e23f3ffc",
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -42,7 +50,12 @@
         },
         {
             "name": "aws/aws-sdk-php",
+<<<<<<< HEAD
             "version": "3.106.1",
+=======
+<<<<<<< HEAD
+            "version": "3.106.0",
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
@@ -50,8 +63,25 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
                 "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+=======
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9baaba0eef80774ba18a13666e735c84b9e32b9a",
+                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a",
+=======
+            "version": "3.105.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3a1159eeb14f707780817bebf73dd3eeeeb710cc",
+                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc",
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
                 "shasum": ""
             },
             "require": {
@@ -121,6 +151,7 @@
                 "s3",
                 "sdk"
             ],
+<<<<<<< HEAD
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
@@ -175,6 +206,13 @@
                 "styleguide"
             ],
             "time": "2018-09-13T04:51:42+00:00"
+=======
+<<<<<<< HEAD
+            "time": "2019-07-09T18:24:12+00:00"
+=======
+            "time": "2019-07-08T18:16:57+00:00"
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
         },
         {
             "name": "bramus/ansi-php",
@@ -1154,6 +1192,69 @@
             "time": "2019-06-23T11:12:03+00:00"
         },
         {
+            "name": "graze/monolog-extensions",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graze/monolog-extensions.git",
+                "reference": "22fe31a8f0199dbd222cc5de0d791f90b5a38568"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graze/monolog-extensions/zipball/22fe31a8f0199dbd222cc5de0d791f90b5a38568",
+                "reference": "22fe31a8f0199dbd222cc5de0d791f90b5a38568",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.7"
+            },
+            "require-dev": {
+                "adlawson/timezone": "^1.0",
+                "aws/aws-sdk-php": "^2.4.9|^3.0",
+                "filp/whoops": "^2.0",
+                "graze/standards": "^2",
+                "mindscape/raygun4php": "^1.0",
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": ">1.2.3",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Write records to AWS services like DynamoDb",
+                "filp/whoops": "Handle logs with Whoops handlers",
+                "mindscape/raygun4php": "Write records to Raygun.io"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Graze\\Monolog": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graze tech team",
+                    "homepage": "https://github.com/graze/MonologExtensions/graphs/contributors"
+                }
+            ],
+            "description": "Monolog extensions for use within Graze",
+            "keywords": [
+                "debug",
+                "debugging",
+                "error",
+                "exception",
+                "handler",
+                "handling",
+                "log",
+                "logger",
+                "logging"
+            ],
+            "time": "2019-06-05T16:07:27+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "source": {
@@ -1339,6 +1440,7 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "heyday/silverstripe-menumanager",
@@ -1381,6 +1483,8 @@
             ],
             "description": "Allows complex menu management to be handled through the CMS when a simple tree structure is not enough.",
             "time": "2018-09-09T04:41:47+00:00"
+=======
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
         },
         {
             "name": "intervention/image",
@@ -1928,6 +2032,56 @@
                 "topsort"
             ],
             "time": "2016-11-19T14:58:11+00:00"
+        },
+        {
+            "name": "mindscape/raygun4php",
+            "version": "v1.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MindscapeHQ/raygun4php.git",
+                "reference": "5a917d01c45b250f5ccd8bca451dbee6ae6fb16a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MindscapeHQ/raygun4php/zipball/5a917d01c45b250f5ccd8bca451dbee6ae6fb16a",
+                "reference": "5a917d01c45b250f5ccd8bca451dbee6ae6fb16a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Raygun4php": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mindscape",
+                    "email": "contact@mindscape.co.nz",
+                    "homepage": "http://www.mindscapehq.com"
+                }
+            ],
+            "description": "Raygun.io client for PHP 5.3, to send errors and exceptions automatically.",
+            "homepage": "http://raygun.io",
+            "keywords": [
+                "errors",
+                "exceptions",
+                "logging",
+                "raygun"
+            ],
+            "time": "2019-02-21T23:25:31+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2800,12 +2954,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
+<<<<<<< HEAD
                 "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/60f991421b5b2f84545b431c64c8b43bff0ece18",
                 "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18",
+=======
+                "reference": "b16388a18abc86336bb63a911048a5bdda773304"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b16388a18abc86336bb63a911048a5bdda773304",
+                "reference": "b16388a18abc86336bb63a911048a5bdda773304",
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
                 "shasum": ""
             },
             "require": {
@@ -2831,7 +2994,11 @@
                 "silverstripe",
                 "theme"
             ],
+<<<<<<< HEAD
             "time": "2019-07-09T04:45:13+00:00"
+=======
+            "time": "2019-07-09T01:35:05+00:00"
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3412,8 +3579,63 @@
             "time": "2019-06-10T05:16:51+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "silverstripe/login-forms",
             "version": "4.0.0-beta2",
+=======
+            "name": "silverstripe/raygun",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-raygun.git",
+                "reference": "ca9d26a4fd675f9ccd63b042948c78cbc9716f5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/ca9d26a4fd675f9ccd63b042948c78cbc9716f5c",
+                "reference": "ca9d26a4fd675f9ccd63b042948c78cbc9716f5c",
+                "shasum": ""
+            },
+            "require": {
+                "graze/monolog-extensions": "^2",
+                "mindscape/raygun4php": "^1",
+                "php": ">=5.6.0",
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Raygun\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "homepage": "http://github.com/sminnee"
+                }
+            ],
+            "description": "RayGun.io integration for SilverStripe",
+            "homepage": "http://github.com/silverstripe/silverstripe-raygun",
+            "keywords": [
+                "logging",
+                "raygun",
+                "silverstripe"
+            ],
+            "time": "2019-02-11T00:42:32+00:00"
+        },
+        {
+            "name": "silverstripe/recipe-cms",
+            "version": "4.4.1",
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
@@ -4089,6 +4311,7 @@
             "time": "2019-05-19T21:28:01+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "sminnee/silverstripe-amplitude",
             "version": "dev-master",
             "source": {
@@ -4177,6 +4400,14 @@
                 "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/be3d7404888d5b15bc043806965b2a5013efb75a",
                 "reference": "be3d7404888d5b15bc043806965b2a5013efb75a",
                 "shasum": ""
+=======
+            "name": "sminnee/tagmanager",
+            "version": "dev-feature/raygun",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-sausages/silverstripe-tagmanager.git",
+                "reference": "9e49bfc9749f9ba645cca11b1ba22be1016ca5dd"
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
             },
             "require": {
                 "silverstripe/cms": "^4",
@@ -4194,7 +4425,10 @@
                     "client"
                 ]
             },
+<<<<<<< HEAD
             "notification-url": "https://packagist.org/downloads/",
+=======
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4205,7 +4439,15 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
+<<<<<<< HEAD
             "time": "2019-07-10T03:13:36+00:00"
+=======
+<<<<<<< HEAD
+            "time": "2019-07-01T02:16:49+00:00"
+=======
+            "time": "2019-07-09T01:00:51+00:00"
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6631,14 +6873,25 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.0",
+            "alias_normalized": "1.0.0.0",
+            "version": "dev-feature/raygun",
+            "package": "sminnee/tagmanager"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
+<<<<<<< HEAD
         "sminnee/tagmanager": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10
+=======
+        "sminnee/tagmanager": 20
+>>>>>>> ADD Raygun integrations, env-var snapshot functionality
     },
     "prefer-stable": true,
     "prefer-lowest": false,

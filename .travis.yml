@@ -47,10 +47,11 @@ script:
   - vendor/bin/phpunit --testsuite bambusa
   - composer run-script lint
   - phpdbg -qrr vendor/bin/phpunit --testsuite bambusa --coverage-clover=coverage.xml
-  - sh -e /etc/init.d/xvfb start
-  - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
-  - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
-  - vendor/bin/behat admin
+# TODO https://github.com/silverstripe/bambusa-installer/issues/21
+#  - sh -e /etc/init.d/xvfb start
+#  - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
+#  - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
+#  - vendor/bin/behat admin
 
 deploy:
   provider: script

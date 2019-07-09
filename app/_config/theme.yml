@@ -11,3 +11,7 @@ SilverStripe\View\SSViewer:
 Heyday\MenuManager\MenuSet:
   default_sets:
     - Footer
+
+# If https://github.com/benmanu/silverstripe-simple-styleguide/pull/11 gets merged, we can get rid of this
+BenManu\SimpleStyleguide\SimpleStyleguideController:
+  placeholder_image_url: "/_resources/vendor/benmanu/silverstripe-simple-styleguide/images/placeholder.png"

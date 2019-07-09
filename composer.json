@@ -18,7 +18,8 @@
         "bringyourownideas/silverstripe-maintenance": "^2.2",
         "bringyourownideas/silverstripe-composer-security-checker": "^2.0",
         "bringyourownideas/silverstripe-composer-update-checker": "^2.0",
-        "heyday/silverstripe-menumanager": "^3.0"
+        "heyday/silverstripe-menumanager": "^3.0",
+        "benmanu/silverstripe-simple-styleguide": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

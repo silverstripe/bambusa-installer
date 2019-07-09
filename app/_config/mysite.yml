@@ -14,3 +14,10 @@ SilverStripe\SiteConfig\SiteConfig:
       Color: "#0049D6"
     default-background:
       Color: "#FFFFFF"
+  theme_fonts:
+    metropolis: Metropolis
+    nunito-sans: Nunito Sans
+    fira-sans: Fira Sans
+    merriweather: Merriweather
+SilverStripe\Fontpicker\Forms\FontPickerField:
+  default_font: metropolis

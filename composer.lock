@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b682375ee8d95f3008f042ce080ffc5",
+    "content-hash": "35487ac100e3f1aa7faaf3414bf3adf2",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -920,7 +920,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14 01:43:52"
+            "time": "2019-06-14T01:43:52+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -2778,7 +2778,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-09 01:35:05"
+            "time": "2019-07-09T01:35:05+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3103,7 +3103,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09 22:04:12"
+            "time": "2019-05-09T22:04:12+00:00"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3146,7 +3146,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18 02:49:23"
+            "time": "2018-12-18T02:49:23+00:00"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3443,7 +3443,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08 21:44:07"
+            "time": "2019-05-08T21:44:07+00:00"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -3984,6 +3984,125 @@
                 "versioned"
             ],
             "time": "2019-05-19T21:28:01+00:00"
+        },
+        {
+            "name": "sminnee/silverstripe-amplitude",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-amplitude.git",
+                "reference": "e351e932842172fc50dc3ace8e46adec95b70420"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-amplitude/zipball/e351e932842172fc50dc3ace8e46adec95b70420",
+                "reference": "e351e932842172fc50dc3ace8e46adec95b70420",
+                "shasum": ""
+            },
+            "require": {
+                "sminnee/tagmanager": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "Sminnee\\Amplitude\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
+            "time": "2019-02-21T04:04:18+00:00"
+        },
+        {
+            "name": "sminnee/silverstripe-asknicely",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-asknicely.git",
+                "reference": "cd273d593dff10928180b23185eab16fe8d390c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-asknicely/zipball/cd273d593dff10928180b23185eab16fe8d390c9",
+                "reference": "cd273d593dff10928180b23185eab16fe8d390c9",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4",
+                "sminnee/tagmanager": "^1"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "Adds an AskNicely NPS Web Survey to your site.",
+            "time": "2019-03-26T03:45:26+00:00"
+        },
+        {
+            "name": "sminnee/tagmanager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-tagmanager.git",
+                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/03858c5e446d7925b98f2ee06ac800f08c12a43c",
+                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4",
+                "symbiote/silverstripe-gridfieldextensions": "^3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
+            "time": "2019-07-01T02:16:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6412,7 +6531,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/bambusa-theme": 20
+        "silverstripe/bambusa-theme": 20,
+        "sminnee/tagmanager": 20,
+        "sminnee/silverstripe-amplitude": 20,
+        "sminnee/silverstripe-asknicely": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

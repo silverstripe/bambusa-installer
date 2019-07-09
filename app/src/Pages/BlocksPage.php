@@ -7,6 +7,9 @@ use DNADesign\Elemental\Models\ElementalArea;
 use SilverStripe\Forms\HeaderField;
 use Page;
 
+/**
+ * @mixin ElementalPageExtension
+ */
 class BlocksPage extends Page
 {
     private static $table_name = 'BlocksPage';
@@ -23,6 +26,10 @@ class BlocksPage extends Page
 
     private static $owns = [
         'HeaderElements',
+    ];
+
+    private static $casting = [
+        'BlockContent' => 'HTMLText'
     ];
 
     public function getCMSFields()
@@ -42,5 +49,18 @@ class BlocksPage extends Page
             'ElementalArea'
         );
         return $fields;
+    }
+
+    /**
+     * Override this method in the SEO extension to allow block content
+     * @return array
+     */
+    public function seoContentFields()
+    {
+        return [
+            'Content',
+            'ElementalArea',
+            'HeaderElements',
+        ];
     }
 }

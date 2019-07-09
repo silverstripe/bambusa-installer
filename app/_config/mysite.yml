@@ -21,3 +21,12 @@ SilverStripe\SiteConfig\SiteConfig:
     merriweather: Merriweather
 SilverStripe\Fontpicker\Forms\FontPickerField:
   default_font: metropolis
+---
+Name: bambusa-seo
+After:
+  - silverstripe-seo
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\SiteConfigExtension
+

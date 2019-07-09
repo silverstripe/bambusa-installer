@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "5b682375ee8d95f3008f042ce080ffc5",
@@ -920,7 +920,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14T01:43:52+00:00"
+            "time": "2019-06-14 01:43:52"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -2747,12 +2747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "25b98821762b43eaec48aed2cec2ce6f3013d95a"
+                "reference": "b16388a18abc86336bb63a911048a5bdda773304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/25b98821762b43eaec48aed2cec2ce6f3013d95a",
-                "reference": "25b98821762b43eaec48aed2cec2ce6f3013d95a",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b16388a18abc86336bb63a911048a5bdda773304",
+                "reference": "b16388a18abc86336bb63a911048a5bdda773304",
                 "shasum": ""
             },
             "require": {
@@ -2778,7 +2778,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-08T04:20:14+00:00"
+            "time": "2019-07-09 01:35:05"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3103,7 +3103,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09T22:04:12+00:00"
+            "time": "2019-05-09 22:04:12"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3146,7 +3146,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18T02:49:23+00:00"
+            "time": "2018-12-18 02:49:23"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3443,7 +3443,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08T21:44:07+00:00"
+            "time": "2019-05-08 21:44:07"
         },
         {
             "name": "silverstripe/recipe-core",

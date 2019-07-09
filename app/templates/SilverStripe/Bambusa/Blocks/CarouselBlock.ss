@@ -77,12 +77,12 @@
                         <% if $PrimaryCallToActionLabel || $SecondaryCallToActionLabel %>
                             <p>
                               <% if $PrimaryCallToActionLabel %>
-                                  <a class="btn btn-primary btn-lg" href="{$PrimaryCallToAction.Link}">
+                                  <a class="btn btn-light" href="{$PrimaryCallToAction.Link}">
                                     $PrimaryCallToActionLabel
                                   </a>
                               <% end_if %>
                               <% if $SecondaryCallToActionLabel %>
-                                  <a class="btn btn-lg btn-link" href="{$SecondaryCallToAction.Link}">
+                                  <a class="btn btn-outline-light" href="{$SecondaryCallToAction.Link}">
                                     $SecondaryCallToActionLabel
                                   </a>
                               <% end_if %>

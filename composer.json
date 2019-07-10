@@ -20,15 +20,14 @@
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",
         "jonom/silverstripe-betternavigator": "^4.1",
         "silverstripe/sharedraftcontent": "^2.3",
-<<<<<<< HEAD
         "jonom/focuspoint": "^3.1",
         "bringyourownideas/silverstripe-maintenance": "^2.2",
         "bringyourownideas/silverstripe-composer-security-checker": "^2.0",
         "bringyourownideas/silverstripe-composer-update-checker": "^2.0",
         "heyday/silverstripe-menumanager": "^3.0",
-        "sminnee/tagmanager": "^1.0@dev",
         "sminnee/silverstripe-amplitude": "dev-master",
         "sminnee/silverstripe-asknicely": "^1.0@dev",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "silverstripe/login-forms": "^4.0@beta",
         "benmanu/silverstripe-simple-styleguide": "^2.0"
@@ -39,6 +38,11 @@
         "sminnee/tagmanager": "dev-feature/raygun as 1.0"
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+        "silverstripe/login-forms": "^4.0@beta",
+        "silverstripe/raygun": "^3.0",
+        "sminnee/tagmanager": "dev-feature/raygun as 1.0"
+>>>>>>> Rebase, minor refactoring
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
 =======
@@ -13,6 +14,9 @@
     "content-hash": "bc0d1c062284be6fa97abf39e23f3ffc",
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+    "content-hash": "7171373abffb29f60b2c7cd657cb9827",
+>>>>>>> Rebase, minor refactoring
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -51,11 +55,15 @@
         {
             "name": "aws/aws-sdk-php",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "3.106.1",
 =======
 <<<<<<< HEAD
             "version": "3.106.0",
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+            "version": "3.106.1",
+>>>>>>> Rebase, minor refactoring
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
@@ -63,6 +71,7 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
                 "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
@@ -82,6 +91,10 @@
                 "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc",
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+>>>>>>> Rebase, minor refactoring
                 "shasum": ""
             },
             "require": {
@@ -152,6 +165,7 @@
                 "sdk"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
@@ -213,6 +227,9 @@
             "time": "2019-07-08T18:16:57+00:00"
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+            "time": "2019-07-10T18:29:49+00:00"
+>>>>>>> Rebase, minor refactoring
         },
         {
             "name": "bramus/ansi-php",
@@ -1011,7 +1028,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14T01:43:52+00:00"
+            "time": "2019-06-14 01:43:52"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1440,7 +1457,6 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
-<<<<<<< HEAD
         },
         {
             "name": "heyday/silverstripe-menumanager",
@@ -1483,8 +1499,6 @@
             ],
             "description": "Allows complex menu management to be handled through the CMS when a simple tree structure is not enough.",
             "time": "2018-09-09T04:41:47+00:00"
-=======
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
         },
         {
             "name": "intervention/image",
@@ -2954,21 +2968,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-<<<<<<< HEAD
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18"
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/60f991421b5b2f84545b431c64c8b43bff0ece18",
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18",
-=======
-                "reference": "b16388a18abc86336bb63a911048a5bdda773304"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b16388a18abc86336bb63a911048a5bdda773304",
-                "reference": "b16388a18abc86336bb63a911048a5bdda773304",
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
                 "shasum": ""
             },
             "require": {
@@ -2994,11 +2999,7 @@
                 "silverstripe",
                 "theme"
             ],
-<<<<<<< HEAD
-            "time": "2019-07-09T04:45:13+00:00"
-=======
-            "time": "2019-07-09T01:35:05+00:00"
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
+            "time": "2019-07-10 23:34:41"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3323,7 +3324,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09T22:04:12+00:00"
+            "time": "2019-05-09 22:04:12"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3366,7 +3367,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18T02:49:23+00:00"
+            "time": "2018-12-18 02:49:23"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3579,10 +3580,56 @@
             "time": "2019-06-10T05:16:51+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "silverstripe/login-forms",
             "version": "4.0.0-beta2",
-=======
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/0ba849e94468fd104c02349f83b6f18bab906adb",
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\LoginForms\\": "src/",
+                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A collection of templates for the CMS login screens",
+            "homepage": "https://github.com/silverstripe/login-forms",
+            "keywords": [
+                "login",
+                "silverstripe",
+                "styling",
+                "template"
+            ],
+            "time": "2019-07-07T23:36:26+00:00"
+        },
+        {
             "name": "silverstripe/raygun",
             "version": "3.0.0",
             "source": {
@@ -3631,57 +3678,6 @@
                 "silverstripe"
             ],
             "time": "2019-02-11T00:42:32+00:00"
-        },
-        {
-            "name": "silverstripe/recipe-cms",
-            "version": "4.4.1",
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
-                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/0ba849e94468fd104c02349f83b6f18bab906adb",
-                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                },
-                "expose": [
-                    "client/dist"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\LoginForms\\": "src/",
-                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "A collection of templates for the CMS login screens",
-            "homepage": "https://github.com/silverstripe/login-forms",
-            "keywords": [
-                "login",
-                "silverstripe",
-                "styling",
-                "template"
-            ],
-            "time": "2019-07-07T23:36:26+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -3768,7 +3764,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08T21:44:07+00:00"
+            "time": "2019-05-08 21:44:07"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4311,7 +4307,6 @@
             "time": "2019-05-19T21:28:01+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "sminnee/silverstripe-amplitude",
             "version": "dev-master",
             "source": {
@@ -4348,7 +4343,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21T04:04:18+00:00"
+            "time": "2019-02-21 04:04:18"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4385,10 +4380,11 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26T03:45:26+00:00"
+            "time": "2019-03-26 03:45:26"
         },
         {
             "name": "sminnee/tagmanager",
+<<<<<<< HEAD
             "version": "dev-master",
             "source": {
                 "type": "git",
@@ -4402,16 +4398,18 @@
                 "shasum": ""
 =======
             "name": "sminnee/tagmanager",
+=======
+>>>>>>> Rebase, minor refactoring
             "version": "dev-feature/raygun",
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-sausages/silverstripe-tagmanager.git",
-                "reference": "9e49bfc9749f9ba645cca11b1ba22be1016ca5dd"
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
+                "reference": "7a5480f684a9a3c9dd6676477220dd40f9321fcf"
             },
             "require": {
-                "silverstripe/cms": "^4",
-                "symbiote/silverstripe-gridfieldextensions": "^3"
+                "silverstripe/cms": "^4.3",
+                "symbiote/silverstripe-gridfieldextensions": "^3",
+                "unclecheese/display-logic": "^2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.3"
@@ -4425,10 +4423,6 @@
                     "client"
                 ]
             },
-<<<<<<< HEAD
-            "notification-url": "https://packagist.org/downloads/",
-=======
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4440,6 +4434,7 @@
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-10T03:13:36+00:00"
 =======
 <<<<<<< HEAD
@@ -4448,6 +4443,9 @@
             "time": "2019-07-09T01:00:51+00:00"
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
 >>>>>>> ADD Raygun integrations, env-var snapshot functionality
+=======
+            "time": "2019-07-10 22:24:08"
+>>>>>>> Rebase, minor refactoring
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5499,6 +5497,66 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-03-25T07:48:46+00:00"
+        },
+        {
+            "name": "unclecheese/display-logic",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
+                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/845ab12189439422b6dcd1becd20c9d5a94eb558",
+                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "replace": {
+                "silverstripe/display-logic": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "se/selenium-server-standalone": "2.41.0",
+                "silverstripe/behat-extension": "^3@dev",
+                "silverstripe/serve": "^2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "display-logic",
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "UncleCheese\\DisplayLogic\\": "src/",
+                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
+                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "display",
+                "logic",
+                "silverstripe"
+            ],
+            "time": "2018-11-14T23:16:44+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -6884,14 +6942,10 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
-<<<<<<< HEAD
-        "sminnee/tagmanager": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
-        "silverstripe/login-forms": 10
-=======
+        "silverstripe/login-forms": 10,
         "sminnee/tagmanager": 20
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
     },
     "prefer-stable": true,
     "prefer-lowest": false,

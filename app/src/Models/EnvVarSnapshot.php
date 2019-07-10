@@ -3,10 +3,8 @@
 namespace SilverStripe\Bambusa\Models;
 
 use SilverStripe\Core\Environment;
-use SilverStripe\Core\Flushable;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\ORM\DB;
-use SilverStripe\Security\Security;
+use SilverStripe\ORM\ValidationException;
 
 /**
  * The component handling environment variable snapshots, solving our particular use case which is
@@ -36,7 +34,7 @@ class EnvVarSnapshot extends DataObject
         ]
     ];
 
-    public function canCreate($member = null, $context = array())
+    public function canCreate($member = null, $context = [])
     {
         return false;
     }
@@ -60,6 +58,7 @@ class EnvVarSnapshot extends DataObject
      * Take a snapshot of the environment variables and persist it to the database
      *
      * {@inheritdoc}
+     * @throws ValidationException
      */
     public function requireDefaultRecords()
     {
@@ -68,19 +67,15 @@ class EnvVarSnapshot extends DataObject
                 continue;
             }
 
-            if (strlen($val) === 0 || $val === null) {
-                static::get()->filter(['key' => $key])->removeAll();
-                continue;
-            }
-
             $var = static::get()->filter(['key' => $key])->first();
-
             if ($var !== null) {
+                if(strlen($val) === 0 || $val === null) {
+                    $var->delete();
+                    continue;
+                }
                 $var->val = $val;
             } else {
-                $var = static::create();
-                $var->key = $key;
-                $var->val = $val;
+                $var = static::create(['key' => $key, 'val' => $val]);
             }
 
             $var->write();

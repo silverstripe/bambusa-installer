@@ -6,10 +6,13 @@
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
 =======
 =======
 >>>>>>> Rebase
+=======
+>>>>>>> Update composer to use new repository with betternavigator changes
 <<<<<<< HEAD
     "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
 =======
@@ -25,7 +28,13 @@
 =======
     "content-hash": "5171bf867f4afce5117264a3bf02dcfe",
 >>>>>>> Rebase
+<<<<<<< HEAD
 >>>>>>> Rebase
+=======
+=======
+    "content-hash": "a7975ec376156c8178e7d7b2243e35f5",
+>>>>>>> Update composer to use new repository with betternavigator changes
+>>>>>>> Update composer to use new repository with betternavigator changes
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -63,6 +72,7 @@
         },
         {
             "name": "aws/aws-sdk-php",
+<<<<<<< HEAD
             "version": "3.106.1",
             "source": {
                 "type": "git",
@@ -73,6 +83,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
                 "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+=======
+            "version": "3.106.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9baaba0eef80774ba18a13666e735c84b9e32b9a",
+                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a",
+>>>>>>> Update composer to use new repository with betternavigator changes
                 "shasum": ""
             },
             "require": {
@@ -142,6 +164,7 @@
                 "s3",
                 "sdk"
             ],
+<<<<<<< HEAD
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
@@ -196,6 +219,9 @@
                 "styleguide"
             ],
             "time": "2018-09-13T04:51:42+00:00"
+=======
+            "time": "2019-07-09T18:24:12+00:00"
+>>>>>>> Update composer to use new repository with betternavigator changes
         },
         {
             "name": "bramus/ansi-php",
@@ -1708,20 +1734,14 @@
         },
         {
             "name": "jonom/silverstripe-betternavigator",
-            "version": "4.1.1",
+            "version": "dev-pulls/auto-injection",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jonom/silverstripe-betternavigator.git",
-                "reference": "db3c7d8e39a929137be559766c6f4e71ad7077bc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/db3c7d8e39a929137be559766c6f4e71ad7077bc",
-                "reference": "db3c7d8e39a929137be559766c6f4e71ad7077bc",
-                "shasum": ""
+                "url": "git@github.com:/unclecheese/silverstripe-betternavigator",
+                "reference": "f892c0450e3493bb7eedf46c7fe64d53fde4545a"
             },
             "require": {
-                "silverstripe/framework": "^4.0"
+                "silverstripe/framework": ">= 4.2"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -1737,7 +1757,6 @@
                     "JonoM\\BetterNavigator\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1754,7 +1773,7 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2018-04-06T22:41:08+00:00"
+            "time": "2019-07-10 01:18:47"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3072,10 +3091,13 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-10 23:34:41"
 =======
 =======
 >>>>>>> Rebase
+=======
+>>>>>>> Update composer to use new repository with betternavigator changes
 <<<<<<< HEAD
             "time": "2019-07-09T04:45:13+00:00"
 =======
@@ -3086,6 +3108,9 @@
 =======
             "time": "2019-07-08 04:20:14"
 >>>>>>> Rebase
+=======
+            "time": "2019-07-09 04:45:13"
+>>>>>>> Update composer to use new repository with betternavigator changes
         },
         {
             "name": "silverstripe/blog",
@@ -7111,9 +7136,17 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        "sminnee/tagmanager": 20,
+>>>>>>> Update composer to use new repository with betternavigator changes
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10
+=======
+        "jonom/silverstripe-betternavigator": 20
+>>>>>>> Update composer to use new repository with betternavigator changes
     },
     "prefer-stable": true,
     "prefer-lowest": false,

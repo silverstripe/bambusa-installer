@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3aebb9de657af4921c6bb77578d6fe1f",
+    "content-hash": "a101da76142f070f88f4d345f5fe8a8e",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.105.0",
+            "version": "3.106.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc"
+                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3a1159eeb14f707780817bebf73dd3eeeeb710cc",
-                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9baaba0eef80774ba18a13666e735c84b9e32b9a",
+                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a",
                 "shasum": ""
             },
             "require": {
@@ -121,60 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-08T18:16:57+00:00"
-        },
-        {
-            "name": "benmanu/silverstripe-simple-styleguide",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benmanu/silverstripe-simple-styleguide.git",
-                "reference": "4d7f6634ec07562ab34391d9d1b7a42caddd9da5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benmanu/silverstripe-simple-styleguide/zipball/4d7f6634ec07562ab34391d9d1b7a42caddd9da5",
-                "reference": "4d7f6634ec07562ab34391d9d1b7a42caddd9da5",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "^4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "installer-name": "simple-styleguide",
-                "expose": [
-                    "css",
-                    "js",
-                    "images"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "BenManu\\SimpleStyleguide\\": "src/",
-                    "BenManu\\SimpleStyleguide\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Manu",
-                    "email": "bmanu10@gmail.com"
-                }
-            ],
-            "description": "Provides a kitchen sink template useful for theme development.",
-            "homepage": "https://github.com/benmanu/silverstripe-simple-styleguide",
-            "keywords": [
-                "silverstripe",
-                "styleguide"
-            ],
-            "time": "2018-09-13T04:51:42+00:00"
+            "time": "2019-07-09T18:24:12+00:00"
         },
         {
             "name": "bramus/ansi-php",
@@ -2800,12 +2747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "b16388a18abc86336bb63a911048a5bdda773304"
+                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b16388a18abc86336bb63a911048a5bdda773304",
-                "reference": "b16388a18abc86336bb63a911048a5bdda773304",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/60f991421b5b2f84545b431c64c8b43bff0ece18",
+                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18",
                 "shasum": ""
             },
             "require": {
@@ -2831,7 +2778,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-09T01:35:05+00:00"
+            "time": "2019-07-09T04:45:13+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3410,6 +3357,56 @@
             ],
             "description": "GraphQL server for SilverStripe models and other data",
             "time": "2019-06-10T05:16:51+00:00"
+        },
+        {
+            "name": "silverstripe/login-forms",
+            "version": "4.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/0ba849e94468fd104c02349f83b6f18bab906adb",
+                "reference": "0ba849e94468fd104c02349f83b6f18bab906adb",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\LoginForms\\": "src/",
+                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A collection of templates for the CMS login screens",
+            "homepage": "https://github.com/silverstripe/login-forms",
+            "keywords": [
+                "login",
+                "silverstripe",
+                "styling",
+                "template"
+            ],
+            "time": "2019-07-07T23:36:26+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -4037,6 +4034,125 @@
                 "versioned"
             ],
             "time": "2019-05-19T21:28:01+00:00"
+        },
+        {
+            "name": "sminnee/silverstripe-amplitude",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-amplitude.git",
+                "reference": "e351e932842172fc50dc3ace8e46adec95b70420"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-amplitude/zipball/e351e932842172fc50dc3ace8e46adec95b70420",
+                "reference": "e351e932842172fc50dc3ace8e46adec95b70420",
+                "shasum": ""
+            },
+            "require": {
+                "sminnee/tagmanager": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "Sminnee\\Amplitude\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
+            "time": "2019-02-21T04:04:18+00:00"
+        },
+        {
+            "name": "sminnee/silverstripe-asknicely",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-asknicely.git",
+                "reference": "cd273d593dff10928180b23185eab16fe8d390c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-asknicely/zipball/cd273d593dff10928180b23185eab16fe8d390c9",
+                "reference": "cd273d593dff10928180b23185eab16fe8d390c9",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4",
+                "sminnee/tagmanager": "^1"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "Adds an AskNicely NPS Web Survey to your site.",
+            "time": "2019-03-26T03:45:26+00:00"
+        },
+        {
+            "name": "sminnee/tagmanager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/silverstripe-tagmanager.git",
+                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/03858c5e446d7925b98f2ee06ac800f08c12a43c",
+                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4",
+                "symbiote/silverstripe-gridfieldextensions": "^3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
+            "time": "2019-07-01T02:16:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6465,7 +6581,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/bambusa-theme": 20
+        "silverstripe/bambusa-theme": 20,
+        "sminnee/tagmanager": 20,
+        "sminnee/silverstripe-amplitude": 20,
+        "sminnee/silverstripe-asknicely": 20,
+        "silverstripe/login-forms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

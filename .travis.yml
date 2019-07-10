@@ -25,6 +25,7 @@ env:
     - XVFBARGS=":99 -ac -screen 0 1024x768x16"
     - SS_BASE_URL="http://localhost:8080/"
     - SS_ENVIRONMENT_TYPE="dev"
+    - SS_BAMBUSA_SUPPRESS_MODAL=1
 
 install:
   - sudo apt-get update

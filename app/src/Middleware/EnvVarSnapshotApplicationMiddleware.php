@@ -17,9 +17,11 @@ use SilverStripe\ORM\DB;
  * snapshots.
  *
  * How it works:
- *  - As an application middleware it restores the environment variables from the database, but does not overwrite defined ones
+ *  - As an application middleware it restores the environment variables from the database,
+ *    but does not overwrite defined ones
  *
- * WARNING: this component has to run before Kernel is booted and as such it is not a Director, but HTTPApplication middleware
+ * WARNING: this component has to run before Kernel is booted and as such it is not a Director,
+ * but HTTPApplication middleware
  */
 class EnvVarSnapshotApplicationMiddleware implements HTTPMiddleware
 {

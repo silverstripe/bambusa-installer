@@ -69,7 +69,7 @@ class EnvVarSnapshot extends DataObject
 
             $var = static::get()->filter(['key' => $key])->first();
             if ($var !== null) {
-                if(strlen($val) === 0 || $val === null) {
+                if (strlen($val) === 0 || $val === null) {
                     $var->delete();
                     continue;
                 }

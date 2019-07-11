@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab5b6cebb1ae7f8fd98b237e85a3613a",
+    "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -4329,14 +4329,20 @@
         },
         {
             "name": "sminnee/tagmanager",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/open-sausages/silverstripe-tagmanager.git",
-                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c"
+                "url": "https://github.com/sminnee/silverstripe-tagmanager.git",
+                "reference": "1a04e86749778a168370a95bd4d50d83f755da9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/1a04e86749778a168370a95bd4d50d83f755da9f",
+                "reference": "1a04e86749778a168370a95bd4d50d83f755da9f",
+                "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "^4",
+                "silverstripe/cms": "^4.3",
                 "symbiote/silverstripe-gridfieldextensions": "^3"
             },
             "require-dev": {
@@ -4351,6 +4357,7 @@
                     "client"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4361,7 +4368,7 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-            "time": "2019-07-01 02:16:49"
+            "time": "2019-07-11T04:24:34+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

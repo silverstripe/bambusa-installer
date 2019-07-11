@@ -4,6 +4,7 @@ namespace SilverStripe\Bambusa\Models;
 
 use SilverStripe\Core\Environment;
 use SilverStripe\ORM\DataObject;
+use SilverStripe\ORM\DB;
 use SilverStripe\ORM\ValidationException;
 
 /**
@@ -71,11 +72,14 @@ class EnvVarSnapshot extends DataObject
             if ($var !== null) {
                 if (strlen($val) === 0 || $val === null) {
                     $var->delete();
+                    DB::alteration_message('Deleted environment variable ' . $key, 'deleted');
                     continue;
                 }
                 $var->val = $val;
+                DB::alteration_message('Set environment variable ' . $key, 'changed');
             } else {
                 $var = static::create(['key' => $key, 'val' => $val]);
+                DB::alteration_message('Created environment variable ' . $key, 'created');
             }
 
             $var->write();

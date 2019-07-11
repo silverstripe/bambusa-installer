@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
+    "content-hash": "2552b75159c5e0cd0b3774325738eb03",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.106.1",
+            "version": "3.107.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c"
+                "reference": "cf0c0968f93748cbe35d6a78e7babc7b7460945f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
-                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cf0c0968f93748cbe35d6a78e7babc7b7460945f",
+                "reference": "cf0c0968f93748cbe35d6a78e7babc7b7460945f",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-10T18:29:49+00:00"
+            "time": "2019-07-11T15:05:32+00:00"
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -1101,6 +1101,61 @@
             "time": "2018-08-21T18:01:43+00:00"
         },
         {
+            "name": "dynamic/silverstripe-elemental-blog",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dynamic/silverstripe-elemental-blog.git",
+                "reference": "d2c7aa5aac1997f610d14847c5f7a26b94c26881"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-blog/zipball/d2c7aa5aac1997f610d14847c5f7a26b94c26881",
+                "reference": "d2c7aa5aac1997f610d14847c5f7a26b94c26881",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": "^4.0",
+                "sheadawson/silverstripe-dependentdropdownfield": "^2.0",
+                "silverstripe/blog": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dynamic\\Elements\\Blog\\": "src/",
+                    "Dynamic\\Elements\\Blog\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dynamic",
+                    "email": "dev@dynamicagency.com",
+                    "homepage": "http://www.dynamicagency.com"
+                }
+            ],
+            "description": "Show recent posts from a featured blog.",
+            "keywords": [
+                "block",
+                "blog",
+                "element",
+                "silverstripe"
+            ],
+            "time": "2019-03-21T02:56:20+00:00"
+        },
+        {
             "name": "embed/embed",
             "version": "v3.4.0",
             "source": {
@@ -1632,20 +1687,20 @@
         },
         {
             "name": "jonom/silverstripe-betternavigator",
-            "version": "4.1.1",
+            "version": "dev-pulls/auto-injection",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jonom/silverstripe-betternavigator.git",
-                "reference": "db3c7d8e39a929137be559766c6f4e71ad7077bc"
+                "url": "https://github.com/unclecheese/silverstripe-betternavigator.git",
+                "reference": "cf55be3f7b7a91a72500d5ab6c636b83637a2d4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/db3c7d8e39a929137be559766c6f4e71ad7077bc",
-                "reference": "db3c7d8e39a929137be559766c6f4e71ad7077bc",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-betternavigator/zipball/cf55be3f7b7a91a72500d5ab6c636b83637a2d4b",
+                "reference": "cf55be3f7b7a91a72500d5ab6c636b83637a2d4b",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "^4.0"
+                "silverstripe/framework": "^4.2"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -1661,7 +1716,6 @@
                     "JonoM\\BetterNavigator\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1678,7 +1732,10 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2018-04-06T22:41:08+00:00"
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-betternavigator/tree/pulls/auto-injection"
+            },
+            "time": "2019-07-11 03:18:40"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2739,6 +2796,56 @@
             "time": "2018-12-19T17:14:59+00:00"
         },
         {
+            "name": "sheadawson/silverstripe-dependentdropdownfield",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sheadawson/silverstripe-dependentdropdownfield.git",
+                "reference": "0d725ba609a55e68580e1b16d2645d20702b4123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-dependentdropdownfield/zipball/0d725ba609a55e68580e1b16d2645d20702b4123",
+                "reference": "0d725ba609a55e68580e1b16d2645d20702b4123",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "silverstripe/framework": "^4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "dependentdropdownfield",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sheadawson\\DependentDropdown\\": "src/",
+                    "Sheadawson\\DependentDropdown\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A silverstripe dropdown field that has it's options populated via ajax, based on the value of the field it depends on",
+            "homepage": "https://github.com/sheadawson/silverstripe-dependentdropdownfield",
+            "keywords": [
+                "dropdown",
+                "silverstripe"
+            ],
+            "time": "2018-02-16T02:32:11+00:00"
+        },
+        {
             "name": "silverstripe/admin",
             "version": "1.4.1",
             "source": {
@@ -2913,12 +3020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665"
+                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
-                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/6b52bafc38a07d5cf8afa50814adeea64da4d296",
+                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296",
                 "shasum": ""
             },
             "require": {
@@ -2944,7 +3051,70 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-10 23:34:41"
+            "time": "2019-07-11 05:45:55"
+        },
+        {
+            "name": "silverstripe/blog",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-blog.git",
+                "reference": "3204d25c06e03df8955c5cff3b751eeee18ed85b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/3204d25c06e03df8955c5cff3b751eeee18ed85b",
+                "reference": "3204d25c06e03df8955c5cff3b751eeee18ed85b",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "^1.0",
+                "silverstripe/assets": "^1.0",
+                "silverstripe/cms": "^4.0",
+                "silverstripe/lumberjack": "^2.0",
+                "silverstripe/tagfield": "^2.0"
+            },
+            "replace": {
+                "micmania1/silverstripe-blog": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "silverstripe/comments": "This module adds comments to your blog.",
+                "silverstripe/widgets": "Some widgets come with the blog which are compatible with the widgets module."
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist",
+                    "client/images"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Blog\\": "src/",
+                    "SilverStripe\\Blog\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Strong",
+                    "email": "github@michaelstrong.co.uk"
+                }
+            ],
+            "description": "A fresh take on blogging in Silverstripe set out to tackle the issue of a cluttered Site Tree.",
+            "keywords": [
+                "blog",
+                "news",
+                "silverstripe"
+            ],
+            "time": "2019-05-09T03:44:57+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3575,6 +3745,54 @@
             "time": "2019-07-07T23:36:26+00:00"
         },
         {
+            "name": "silverstripe/lumberjack",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
+                "reference": "3a220816e88ca6d9ae072a82f0ae0a786d436925"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/3a220816e88ca6d9ae072a82f0ae0a786d436925",
+                "reference": "3a220816e88ca6d9ae072a82f0ae0a786d436925",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.0",
+                "silverstripe/framework": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Lumberjack\\": "src/",
+                    "SilverStripe\\Lumberjack\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Strong",
+                    "email": "mstrong@silverstripe.org"
+                }
+            ],
+            "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
+            "time": "2018-06-28T23:04:53+00:00"
+        },
+        {
             "name": "silverstripe/raygun",
             "version": "3.1.0",
             "source": {
@@ -4013,6 +4231,59 @@
                 "siteconfig"
             ],
             "time": "2019-05-06T02:57:48+00:00"
+        },
+        {
+            "name": "silverstripe/tagfield",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-tagfield.git",
+                "reference": "406ad083b5f8fc742dfc71eb801dba854e86c9fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/406ad083b5f8fc742dfc71eb801dba854e86c9fd",
+                "reference": "406ad083b5f8fc742dfc71eb801dba854e86c9fd",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.3",
+                "silverstripe/versioned": "^1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\TagField\\": "src/",
+                    "SilverStripe\\TagField\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "chris@silverstripe.com",
+                    "homepage": "http://github.com/assertchris"
+                }
+            ],
+            "description": "Tag field for SilverStripe",
+            "keywords": [
+                "field",
+                "silverstripe",
+                "tag"
+            ],
+            "time": "2019-04-15T03:49:57+00:00"
         },
         {
             "name": "silverstripe/userforms",
@@ -6798,6 +7069,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
+        "jonom/silverstripe-betternavigator": 20,
+        "sminnee/tagmanager": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10

@@ -3,10 +3,6 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
-PageController:
-  extensions:
-    - SilverStripe\Bambusa\Extensions\NavigatorInjection
-
 SilverStripe\SiteConfig\SiteConfig:
   enable_theme_color_picker: true
   theme_colors:

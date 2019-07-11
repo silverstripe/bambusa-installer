@@ -15,6 +15,7 @@ Heyday\MenuManager\MenuSet:
 # If https://github.com/benmanu/silverstripe-simple-styleguide/pull/11 gets merged, we can get rid of this
 BenManu\SimpleStyleguide\SimpleStyleguideController:
   placeholder_image_url: "/_resources/vendor/benmanu/silverstripe-simple-styleguide/images/placeholder.png"
+  requires_dev: false
 
 # Use custom Security.ss to get the modal window showing
 ---

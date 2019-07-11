@@ -1,14 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
-=======
-    "content-hash": "baefd02136108561e59386625e814729",
->>>>>>> Install SEO module
+    "content-hash": "b94a145c9e3b4ab5b5a6139b8363754f",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -128,6 +124,48 @@
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
+            "name": "axllent/silverstripe-trailing-slash",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/axllent/silverstripe-trailing-slash.git",
+                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/axllent/silverstripe-trailing-slash/zipball/9be9350c4f634d6f41c68c1ec315dc80260948b0",
+                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "Axllent\\TrailingSlash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Slooten",
+                    "homepage": "http://www.axllent.org/"
+                }
+            ],
+            "description": "Ensure that a single trailing slash is always added to the URL",
+            "homepage": "https://github.com/axllent/silverstripe-trailing-slash",
+            "keywords": [
+                "seo",
+                "silverstripe",
+                "urls"
+            ],
+            "time": "2019-02-07T04:27:11+00:00"
+        },
+        {
             "name": "benmanu/silverstripe-simple-styleguide",
             "version": "2.0.5",
             "source": {
@@ -179,48 +217,6 @@
                 "styleguide"
             ],
             "time": "2018-09-13T04:51:42+00:00"
-        },
-        {
-            "name": "axllent/silverstripe-trailing-slash",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/axllent/silverstripe-trailing-slash.git",
-                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/axllent/silverstripe-trailing-slash/zipball/9be9350c4f634d6f41c68c1ec315dc80260948b0",
-                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "type": "silverstripe-vendormodule",
-            "autoload": {
-                "psr-4": {
-                    "Axllent\\TrailingSlash\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralph Slooten",
-                    "homepage": "http://www.axllent.org/"
-                }
-            ],
-            "description": "Ensure that a single trailing slash is always added to the URL",
-            "homepage": "https://github.com/axllent/silverstripe-trailing-slash",
-            "keywords": [
-                "seo",
-                "silverstripe",
-                "urls"
-            ],
-            "time": "2019-02-07T04:27:11+00:00"
         },
         {
             "name": "bramus/ansi-php",
@@ -1019,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14T01:43:52+00:00"
+            "time": "2019-06-14 01:43:52"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -2939,12 +2935,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18"
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/60f991421b5b2f84545b431c64c8b43bff0ece18",
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
                 "shasum": ""
             },
             "require": {
@@ -2970,7 +2966,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-09T04:45:13+00:00"
+            "time": "2019-07-10 23:34:41"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3295,7 +3291,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09T22:04:12+00:00"
+            "time": "2019-05-09 22:04:12"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3338,7 +3334,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18T02:49:23+00:00"
+            "time": "2018-12-18 02:49:23"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3685,7 +3681,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08T21:44:07+00:00"
+            "time": "2019-05-08 21:44:07"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4264,7 +4260,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21T04:04:18+00:00"
+            "time": "2019-02-21 04:04:18"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4301,7 +4297,7 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26T03:45:26+00:00"
+            "time": "2019-03-26 03:45:26"
         },
         {
             "name": "sminnee/tagmanager",
@@ -4344,7 +4340,7 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-            "time": "2019-07-10T03:13:36+00:00"
+            "time": "2019-07-10 03:13:36"
         },
         {
             "name": "swiftmailer/swiftmailer",

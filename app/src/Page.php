@@ -13,6 +13,10 @@ namespace {
         public function getCMSFields()
         {
             $fields = parent::getCMSFields();
+
+            // Not something we want users playing with.
+            $fields->removeByName('ExtraMeta');
+
             /* @var Tab $mainTab */
             $mainTab = $fields->fieldByName('Root.Main');
             $seoTab = $fields->findOrMakeTab('Root.SEO');

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
+    "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -973,7 +973,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14T01:43:52+00:00"
+            "time": "2019-06-14 01:43:52"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1152,6 +1152,69 @@
                 "twitter cards"
             ],
             "time": "2019-06-23T11:12:03+00:00"
+        },
+        {
+            "name": "graze/monolog-extensions",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graze/monolog-extensions.git",
+                "reference": "22fe31a8f0199dbd222cc5de0d791f90b5a38568"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graze/monolog-extensions/zipball/22fe31a8f0199dbd222cc5de0d791f90b5a38568",
+                "reference": "22fe31a8f0199dbd222cc5de0d791f90b5a38568",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.7"
+            },
+            "require-dev": {
+                "adlawson/timezone": "^1.0",
+                "aws/aws-sdk-php": "^2.4.9|^3.0",
+                "filp/whoops": "^2.0",
+                "graze/standards": "^2",
+                "mindscape/raygun4php": "^1.0",
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": ">1.2.3",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Write records to AWS services like DynamoDb",
+                "filp/whoops": "Handle logs with Whoops handlers",
+                "mindscape/raygun4php": "Write records to Raygun.io"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Graze\\Monolog": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graze tech team",
+                    "homepage": "https://github.com/graze/MonologExtensions/graphs/contributors"
+                }
+            ],
+            "description": "Monolog extensions for use within Graze",
+            "keywords": [
+                "debug",
+                "debugging",
+                "error",
+                "exception",
+                "handler",
+                "handling",
+                "log",
+                "logger",
+                "logging"
+            ],
+            "time": "2019-06-05T16:07:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1928,6 +1991,56 @@
                 "topsort"
             ],
             "time": "2016-11-19T14:58:11+00:00"
+        },
+        {
+            "name": "mindscape/raygun4php",
+            "version": "v1.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MindscapeHQ/raygun4php.git",
+                "reference": "5a917d01c45b250f5ccd8bca451dbee6ae6fb16a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MindscapeHQ/raygun4php/zipball/5a917d01c45b250f5ccd8bca451dbee6ae6fb16a",
+                "reference": "5a917d01c45b250f5ccd8bca451dbee6ae6fb16a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Raygun4php": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mindscape",
+                    "email": "contact@mindscape.co.nz",
+                    "homepage": "http://www.mindscapehq.com"
+                }
+            ],
+            "description": "Raygun.io client for PHP 5.3, to send errors and exceptions automatically.",
+            "homepage": "http://raygun.io",
+            "keywords": [
+                "errors",
+                "exceptions",
+                "logging",
+                "raygun"
+            ],
+            "time": "2019-02-21T23:25:31+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2800,12 +2913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18"
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/60f991421b5b2f84545b431c64c8b43bff0ece18",
-                "reference": "60f991421b5b2f84545b431c64c8b43bff0ece18",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
+                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
                 "shasum": ""
             },
             "require": {
@@ -2831,7 +2944,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-09T04:45:13+00:00"
+            "time": "2019-07-10 23:34:41"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -3156,7 +3269,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09T22:04:12+00:00"
+            "time": "2019-05-09 22:04:12"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3199,7 +3312,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18T02:49:23+00:00"
+            "time": "2018-12-18 02:49:23"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3462,6 +3575,56 @@
             "time": "2019-07-07T23:36:26+00:00"
         },
         {
+            "name": "silverstripe/raygun",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-raygun.git",
+                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
+                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
+                "shasum": ""
+            },
+            "require": {
+                "graze/monolog-extensions": "^2",
+                "mindscape/raygun4php": "^1",
+                "php": ">=5.6.0",
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Raygun\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "homepage": "http://github.com/sminnee"
+                }
+            ],
+            "description": "Raygun integration for SilverStripe",
+            "homepage": "https://github.com/silverstripe/silverstripe-raygun",
+            "keywords": [
+                "logging",
+                "raygun",
+                "silverstripe"
+            ],
+            "time": "2019-07-11T05:15:53+00:00"
+        },
+        {
             "name": "silverstripe/recipe-cms",
             "version": "4.4.1",
             "source": {
@@ -3546,7 +3709,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08T21:44:07+00:00"
+            "time": "2019-05-08 21:44:07"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4125,7 +4288,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21T04:04:18+00:00"
+            "time": "2019-02-21 04:04:18"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4162,24 +4325,24 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26T03:45:26+00:00"
+            "time": "2019-03-26 03:45:26"
         },
         {
             "name": "sminnee/tagmanager",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sminnee/silverstripe-tagmanager.git",
-                "reference": "be3d7404888d5b15bc043806965b2a5013efb75a"
+                "reference": "1a04e86749778a168370a95bd4d50d83f755da9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/be3d7404888d5b15bc043806965b2a5013efb75a",
-                "reference": "be3d7404888d5b15bc043806965b2a5013efb75a",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/1a04e86749778a168370a95bd4d50d83f755da9f",
+                "reference": "1a04e86749778a168370a95bd4d50d83f755da9f",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "^4",
+                "silverstripe/cms": "^4.3",
                 "symbiote/silverstripe-gridfieldextensions": "^3"
             },
             "require-dev": {
@@ -4205,7 +4368,7 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-            "time": "2019-07-10T03:13:36+00:00"
+            "time": "2019-07-11T04:24:34+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6635,7 +6798,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
-        "sminnee/tagmanager": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10

@@ -1,0 +1,26 @@
+---
+Name: raygun-handler
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Raygun\RaygunHandler:
+    constructor:
+      client: '%$Raygun4php\RaygunClient'
+      level: 'debug'
+
+---
+Name: raygun-monolog-handler
+After: logging
+Except:
+  environment: dev
+---
+SilverStripe\Core\Injector\Injector:
+  Psr\Log\LoggerInterface.errorhandler:
+    calls:
+      pushRaygunHandler: [ pushHandler, [ '%$SilverStripe\Raygun\RaygunHandler'] ]
+
+---
+Name: raygunning-left-and-main
+---
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - SilverStripe\Raygun\LeftAndMainExtension

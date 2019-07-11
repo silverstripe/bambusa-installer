@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "051093742a30d3eb8763b2d126160a7d",
+    "content-hash": "d6ffd82fe616e4f7dfb42e946095887b",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1015,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-07-22 09:22:49"
+            "time": "2019-07-22T09:22:49+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1652,9 +1652,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -1768,7 +1768,7 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2019-07-14 22:34:16"
+            "time": "2019-07-14T22:34:16+00:00"
         },
         {
             "name": "jonom/silverstripe-text-target-length",
@@ -2109,9 +2109,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
+                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com",
-                    "role": "Developer"
+                    "homepage": "http://milescroxford.com"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-22 05:59:57"
+            "time": "2019-07-22T05:59:57+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -3366,6 +3366,48 @@
                 "silverstripe"
             ],
             "time": "2019-06-10T05:14:04+00:00"
+        },
+        {
+            "name": "silverstripe/colorpicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-colorpicker.git",
+                "reference": "7eef0a46d94b778893d6eb4774c7cfc6d5b003ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-colorpicker/zipball/7eef0a46d94b778893d6eb4774c7cfc6d5b003ab",
+                "reference": "7eef0a46d94b778893d6eb4774c7cfc6d5b003ab",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Colorpicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Color picker fields built in react",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2019-07-10T22:15:14+00:00"
         },
         {
             "name": "silverstripe/config",
@@ -3565,7 +3607,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09 22:04:12"
+            "time": "2019-05-09T22:04:12+00:00"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3608,7 +3650,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18 02:49:23"
+            "time": "2018-12-18T02:49:23+00:00"
         },
         {
             "name": "silverstripe/errorpage",
@@ -3661,6 +3703,49 @@
                 "silverstripe"
             ],
             "time": "2019-05-06T02:57:48+00:00"
+        },
+        {
+            "name": "silverstripe/fontpicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-fontpicker.git",
+                "reference": "2e41b506701394fd40f13835b37d0dcf7570a5c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-fontpicker/zipball/2e41b506701394fd40f13835b37d0dcf7570a5c9",
+                "reference": "2e41b506701394fd40f13835b37d0dcf7570a5c9",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Fontpicker\\": "src/",
+                    "SilverStripe\\Fontpicker\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Adds a fontpicker field for selecting fonts",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2019-07-10T05:30:39+00:00"
         },
         {
             "name": "silverstripe/framework",
@@ -4053,7 +4138,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08 21:44:07"
+            "time": "2019-05-08T21:44:07+00:00"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4412,6 +4497,82 @@
             "time": "2019-04-15T03:49:57+00:00"
         },
         {
+            "name": "silverstripe/theme-colorpicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-theme-colorpicker.git",
+                "reference": "5ee8900afdfe6f244a5e9974f11e0f2f1af1b4e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-theme-colorpicker/zipball/5ee8900afdfe6f244a5e9974f11e0f2f1af1b4e8",
+                "reference": "5ee8900afdfe6f244a5e9974f11e0f2f1af1b4e8",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/colorpicker": "*",
+                "silverstripe/framework": "^4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Colorpicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Color picker module for the site available under admin settings",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2019-07-11T22:17:42+00:00"
+        },
+        {
+            "name": "silverstripe/theme-fontpicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-theme-fontpicker.git",
+                "reference": "5a63eb831a7825c8e845d03787b1a1b38597cfeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-theme-fontpicker/zipball/5a63eb831a7825c8e845d03787b1a1b38597cfeb",
+                "reference": "5a63eb831a7825c8e845d03787b1a1b38597cfeb",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/fontpicker": "*",
+                "silverstripe/framework": "^4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Fontpicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Customise site fonts from the admin settings",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2019-07-11T22:18:19+00:00"
+        },
+        {
             "name": "silverstripe/userforms",
             "version": "5.4.1",
             "source": {
@@ -4685,7 +4846,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21 04:04:18"
+            "time": "2019-02-21T04:04:18+00:00"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4722,7 +4883,7 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26 03:45:26"
+            "time": "2019-03-26T03:45:26+00:00"
         },
         {
             "name": "sminnee/tagmanager",

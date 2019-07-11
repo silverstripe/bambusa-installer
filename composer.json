@@ -31,10 +31,14 @@
         "benmanu/silverstripe-simple-styleguide": "^2.0",
         "silverstripe/login-forms": "^4.0@beta",
         "vulcandigital/silverstripe-seo": "^1.0",
-        "silverstripe/raygun": "^3.1",
         "silverstripe/blog": "^3.3",
         "dynamic/silverstripe-elemental-blog": "^2.1",
-        "symbiote/silverstripe-advancedworkflow": "^5.2"
+        "symbiote/silverstripe-advancedworkflow": "^5.2",
+        "silverstripe/raygun": "^3.1",
+        "silverstripe/colorpicker": "*",
+        "silverstripe/theme-colorpicker": "*",
+        "silverstripe/fontpicker": "*",
+        "silverstripe/theme-fontpicker": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

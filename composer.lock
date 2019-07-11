@@ -3580,12 +3580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-raygun.git",
-                "reference": "16197339eb63960767998492b5676cd281ff32c8"
+                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/16197339eb63960767998492b5676cd281ff32c8",
-                "reference": "16197339eb63960767998492b5676cd281ff32c8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
+                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
                 "shasum": ""
             },
             "require": {
@@ -3622,7 +3622,7 @@
                 "raygun",
                 "silverstripe"
             ],
-            "time": "2019-07-10T03:50:23+00:00"
+            "time": "2019-07-11T05:15:53+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",

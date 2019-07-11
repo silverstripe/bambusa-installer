@@ -4,10 +4,10 @@
     "description": "Bambusa Project Template",
     "license": "BSD-3-Clause",
     "repositories": {
-    	"jonom/silverstripe-betternavigator": {
-    		"url": "git@github.com:/unclecheese/silverstripe-betternavigator",
-    		"type": "vcs"
-    	}
+        "jonom/silverstripe-betternavigator": {
+            "url": "https://github.com/unclecheese/silverstripe-betternavigator.git",
+            "type": "git"
+        }
     },
     "require": {
         "php": ">=7.1.0",
@@ -25,33 +25,14 @@
         "bringyourownideas/silverstripe-composer-security-checker": "^2.0",
         "bringyourownideas/silverstripe-composer-update-checker": "^2.0",
         "heyday/silverstripe-menumanager": "^3.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Rebase
         "sminnee/tagmanager": "^1.0@dev",
->>>>>>> Add blog module
         "sminnee/silverstripe-amplitude": "dev-master",
         "sminnee/silverstripe-asknicely": "^1.0@dev",
         "benmanu/silverstripe-simple-styleguide": "^2.0",
         "silverstripe/login-forms": "^4.0@beta",
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "silverstripe/raygun": "^3.1"
-=======
-        "benmanu/silverstripe-simple-styleguide": "^2.0"
-=======
+        "silverstripe/raygun": "^3.1",
         "silverstripe/blog": "^3.3",
         "dynamic/silverstripe-elemental-blog": "^2.1"
->>>>>>> Add blog module
->>>>>>> Add blog module
-=======
-        "benmanu/silverstripe-simple-styleguide": "^2.0",
-        "silverstripe/blog": "^3.3",
-        "dynamic/silverstripe-elemental-blog": "^2.1"
->>>>>>> Rebase
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -74,7 +55,7 @@
             "install.php",
             "web.config"
         ],
-	    "resources-dir": "_resources",
+        "resources-dir": "_resources",
         "expose": [
             "app/js",
             "app/images",

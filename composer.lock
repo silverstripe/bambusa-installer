@@ -4,41 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
-=======
-=======
->>>>>>> Rebase
-=======
->>>>>>> Update composer to use new repository with betternavigator changes
-<<<<<<< HEAD
-    "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
-=======
-<<<<<<< HEAD
-    "content-hash": "5b682375ee8d95f3008f042ce080ffc5",
-=======
-    "content-hash": "29f4a3a8c9192fbf1e4b9a453a065102",
->>>>>>> Add blog module
->>>>>>> Add blog module
-<<<<<<< HEAD
->>>>>>> Add blog module
-=======
-=======
-    "content-hash": "5171bf867f4afce5117264a3bf02dcfe",
->>>>>>> Rebase
-<<<<<<< HEAD
->>>>>>> Rebase
-=======
-=======
-    "content-hash": "a7975ec376156c8178e7d7b2243e35f5",
->>>>>>> Update composer to use new repository with betternavigator changes
->>>>>>> Update composer to use new repository with betternavigator changes
-=======
-    "content-hash": "86d603ef70612f89dd9189d965e0731b",
->>>>>>> Rebase
+    "content-hash": "2552b75159c5e0cd0b3774325738eb03",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -76,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.106.1",
+            "version": "3.107.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c"
+                "reference": "cf0c0968f93748cbe35d6a78e7babc7b7460945f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
-                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cf0c0968f93748cbe35d6a78e7babc7b7460945f",
+                "reference": "cf0c0968f93748cbe35d6a78e7babc7b7460945f",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-10T18:29:49+00:00"
+            "time": "2019-07-11T15:05:32+00:00"
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -1724,11 +1690,17 @@
             "version": "dev-pulls/auto-injection",
             "source": {
                 "type": "git",
-                "url": "git@github.com:/unclecheese/silverstripe-betternavigator",
-                "reference": "f892c0450e3493bb7eedf46c7fe64d53fde4545a"
+                "url": "https://github.com/unclecheese/silverstripe-betternavigator.git",
+                "reference": "cf55be3f7b7a91a72500d5ab6c636b83637a2d4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-betternavigator/zipball/cf55be3f7b7a91a72500d5ab6c636b83637a2d4b",
+                "reference": "cf55be3f7b7a91a72500d5ab6c636b83637a2d4b",
+                "shasum": ""
             },
             "require": {
-                "silverstripe/framework": ">= 4.2"
+                "silverstripe/framework": "^4.2"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -1760,7 +1732,10 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2019-07-10 01:18:47"
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-betternavigator/tree/pulls/auto-injection"
+            },
+            "time": "2019-07-11 03:18:40"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3045,12 +3020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665"
+                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
-                "reference": "2f24c0eda512b92bcbff5443b2ae6cd4f33ca665",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/6b52bafc38a07d5cf8afa50814adeea64da4d296",
+                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296",
                 "shasum": ""
             },
             "require": {
@@ -3076,32 +3051,7 @@
                 "silverstripe",
                 "theme"
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "time": "2019-07-10 23:34:41"
-=======
-=======
->>>>>>> Rebase
-=======
->>>>>>> Update composer to use new repository with betternavigator changes
-<<<<<<< HEAD
-            "time": "2019-07-09T04:45:13+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2019-07-08T04:20:14+00:00"
-=======
-            "time": "2019-07-04 00:29:07"
-=======
-            "time": "2019-07-08 04:20:14"
->>>>>>> Rebase
-=======
-            "time": "2019-07-09 04:45:13"
->>>>>>> Update composer to use new repository with betternavigator changes
-=======
-            "time": "2019-07-10 23:34:41"
->>>>>>> Rebase
+            "time": "2019-07-11 05:45:55"
         },
         {
             "name": "silverstripe/blog",
@@ -3165,18 +3115,6 @@
                 "silverstripe"
             ],
             "time": "2019-05-09T03:44:57+00:00"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> Add blog module
->>>>>>> Add blog module
-<<<<<<< HEAD
->>>>>>> Add blog module
-=======
-=======
->>>>>>> Rebase
->>>>>>> Rebase
-=======
->>>>>>> Rebase
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -4701,11 +4639,7 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-<<<<<<< HEAD
             "time": "2019-07-11T04:24:34+00:00"
-=======
-            "time": "2019-07-10 03:13:36"
->>>>>>> Rebase
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7135,15 +7069,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         "jonom/silverstripe-betternavigator": 20,
->>>>>>> Rebase
         "sminnee/tagmanager": 20,
->>>>>>> Update composer to use new repository with betternavigator changes
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10

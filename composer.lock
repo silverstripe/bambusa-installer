@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "2b1120c2c97d1c00a15e7dd0aa76fdd5",
 =======
 =======
@@ -35,6 +36,9 @@
     "content-hash": "a7975ec376156c8178e7d7b2243e35f5",
 >>>>>>> Update composer to use new repository with betternavigator changes
 >>>>>>> Update composer to use new repository with betternavigator changes
+=======
+    "content-hash": "86d603ef70612f89dd9189d965e0731b",
+>>>>>>> Rebase
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -72,7 +76,6 @@
         },
         {
             "name": "aws/aws-sdk-php",
-<<<<<<< HEAD
             "version": "3.106.1",
             "source": {
                 "type": "git",
@@ -83,18 +86,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
                 "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
-=======
-            "version": "3.106.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9baaba0eef80774ba18a13666e735c84b9e32b9a",
-                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a",
->>>>>>> Update composer to use new repository with betternavigator changes
                 "shasum": ""
             },
             "require": {
@@ -164,7 +155,6 @@
                 "s3",
                 "sdk"
             ],
-<<<<<<< HEAD
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
@@ -219,9 +209,6 @@
                 "styleguide"
             ],
             "time": "2018-09-13T04:51:42+00:00"
-=======
-            "time": "2019-07-09T18:24:12+00:00"
->>>>>>> Update composer to use new repository with betternavigator changes
         },
         {
             "name": "bramus/ansi-php",
@@ -3092,6 +3079,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-10 23:34:41"
 =======
 =======
@@ -3111,6 +3099,9 @@
 =======
             "time": "2019-07-09 04:45:13"
 >>>>>>> Update composer to use new repository with betternavigator changes
+=======
+            "time": "2019-07-10 23:34:41"
+>>>>>>> Rebase
         },
         {
             "name": "silverstripe/blog",
@@ -3175,6 +3166,7 @@
             ],
             "time": "2019-05-09T03:44:57+00:00"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Add blog module
 >>>>>>> Add blog module
 <<<<<<< HEAD
@@ -3182,6 +3174,8 @@
 =======
 =======
 >>>>>>> Rebase
+>>>>>>> Rebase
+=======
 >>>>>>> Rebase
         },
         {
@@ -3763,7 +3757,6 @@
             "time": "2019-06-10T05:16:51+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "silverstripe/login-forms",
             "version": "4.0.0-beta2",
             "source": {
@@ -3791,7 +3784,29 @@
                 },
                 "expose": [
                     "client/dist"
-=======
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\LoginForms\\": "src/",
+                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A collection of templates for the CMS login screens",
+            "homepage": "https://github.com/silverstripe/login-forms",
+            "keywords": [
+                "login",
+                "silverstripe",
+                "styling",
+                "template"
+            ],
+            "time": "2019-07-07T23:36:26+00:00"
+        },
+        {
             "name": "silverstripe/lumberjack",
             "version": "2.0.1",
             "source": {
@@ -3818,35 +3833,16 @@
                 "expose": [
                     "css",
                     "javascript"
->>>>>>> Add blog module
                 ]
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "SilverStripe\\LoginForms\\": "src/",
-                    "SilverStripe\\LoginForms\\Tests\\": "tests/"
-=======
                     "SilverStripe\\Lumberjack\\": "src/",
                     "SilverStripe\\Lumberjack\\Tests\\": "tests/"
->>>>>>> Add blog module
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
-                "BSD-3-Clause"
-            ],
-            "description": "A collection of templates for the CMS login screens",
-            "homepage": "https://github.com/silverstripe/login-forms",
-            "keywords": [
-                "login",
-                "silverstripe",
-                "styling",
-                "template"
-            ],
-            "time": "2019-07-07T23:36:26+00:00"
-=======
                 "BSD-2-Clause"
             ],
             "authors": [
@@ -3857,7 +3853,6 @@
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
             "time": "2018-06-28T23:04:53+00:00"
->>>>>>> Add blog module
         },
         {
             "name": "silverstripe/raygun",
@@ -4706,7 +4701,11 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
+<<<<<<< HEAD
             "time": "2019-07-11T04:24:34+00:00"
+=======
+            "time": "2019-07-10 03:13:36"
+>>>>>>> Rebase
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7137,16 +7136,17 @@
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+        "jonom/silverstripe-betternavigator": 20,
+>>>>>>> Rebase
         "sminnee/tagmanager": 20,
 >>>>>>> Update composer to use new repository with betternavigator changes
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10
-=======
-        "jonom/silverstripe-betternavigator": 20
->>>>>>> Update composer to use new repository with betternavigator changes
     },
     "prefer-stable": true,
     "prefer-lowest": false,

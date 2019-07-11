@@ -4,19 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "content-hash": "fbe6e17c330b2bc1f0091bf06467b13f",
-=======
-<<<<<<< HEAD
-    "content-hash": "a101da76142f070f88f4d345f5fe8a8e",
-=======
-    "content-hash": "bc0d1c062284be6fa97abf39e23f3ffc",
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-=======
-    "content-hash": "7171373abffb29f60b2c7cd657cb9827",
->>>>>>> Rebase, minor refactoring
+    "content-hash": "ab5b6cebb1ae7f8fd98b237e85a3613a",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -54,16 +42,7 @@
         },
         {
             "name": "aws/aws-sdk-php",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "version": "3.106.1",
-=======
-<<<<<<< HEAD
-            "version": "3.106.0",
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-=======
-            "version": "3.106.1",
->>>>>>> Rebase, minor refactoring
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
@@ -71,30 +50,8 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
                 "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
-=======
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9baaba0eef80774ba18a13666e735c84b9e32b9a",
-                "reference": "9baaba0eef80774ba18a13666e735c84b9e32b9a",
-=======
-            "version": "3.105.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3a1159eeb14f707780817bebf73dd3eeeeb710cc",
-                "reference": "3a1159eeb14f707780817bebf73dd3eeeeb710cc",
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-=======
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
-                "reference": "ed3bd17b8a6caa5c99ed5fe559d061a1f9fc2c8c",
->>>>>>> Rebase, minor refactoring
                 "shasum": ""
             },
             "require": {
@@ -164,8 +121,6 @@
                 "s3",
                 "sdk"
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             "time": "2019-07-10T18:29:49+00:00"
         },
         {
@@ -220,16 +175,6 @@
                 "styleguide"
             ],
             "time": "2018-09-13T04:51:42+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2019-07-09T18:24:12+00:00"
-=======
-            "time": "2019-07-08T18:16:57+00:00"
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-=======
-            "time": "2019-07-10T18:29:49+00:00"
->>>>>>> Rebase, minor refactoring
         },
         {
             "name": "bramus/ansi-php",
@@ -3631,16 +3576,16 @@
         },
         {
             "name": "silverstripe/raygun",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-raygun.git",
-                "reference": "ca9d26a4fd675f9ccd63b042948c78cbc9716f5c"
+                "reference": "16197339eb63960767998492b5676cd281ff32c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/ca9d26a4fd675f9ccd63b042948c78cbc9716f5c",
-                "reference": "ca9d26a4fd675f9ccd63b042948c78cbc9716f5c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/16197339eb63960767998492b5676cd281ff32c8",
+                "reference": "16197339eb63960767998492b5676cd281ff32c8",
                 "shasum": ""
             },
             "require": {
@@ -3670,14 +3615,14 @@
                     "homepage": "http://github.com/sminnee"
                 }
             ],
-            "description": "RayGun.io integration for SilverStripe",
-            "homepage": "http://github.com/silverstripe/silverstripe-raygun",
+            "description": "Raygun integration for SilverStripe",
+            "homepage": "https://github.com/silverstripe/silverstripe-raygun",
             "keywords": [
                 "logging",
                 "raygun",
                 "silverstripe"
             ],
-            "time": "2019-02-11T00:42:32+00:00"
+            "time": "2019-07-10T03:50:23+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -4384,32 +4329,15 @@
         },
         {
             "name": "sminnee/tagmanager",
-<<<<<<< HEAD
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sminnee/silverstripe-tagmanager.git",
-                "reference": "be3d7404888d5b15bc043806965b2a5013efb75a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sminnee/silverstripe-tagmanager/zipball/be3d7404888d5b15bc043806965b2a5013efb75a",
-                "reference": "be3d7404888d5b15bc043806965b2a5013efb75a",
-                "shasum": ""
-=======
-            "name": "sminnee/tagmanager",
-=======
->>>>>>> Rebase, minor refactoring
-            "version": "dev-feature/raygun",
-            "source": {
-                "type": "git",
                 "url": "https://github.com/open-sausages/silverstripe-tagmanager.git",
-                "reference": "7a5480f684a9a3c9dd6676477220dd40f9321fcf"
+                "reference": "03858c5e446d7925b98f2ee06ac800f08c12a43c"
             },
             "require": {
-                "silverstripe/cms": "^4.3",
-                "symbiote/silverstripe-gridfieldextensions": "^3",
-                "unclecheese/display-logic": "^2"
+                "silverstripe/cms": "^4",
+                "symbiote/silverstripe-gridfieldextensions": "^3"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.3"
@@ -4433,19 +4361,7 @@
                 }
             ],
             "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "time": "2019-07-10T03:13:36+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2019-07-01T02:16:49+00:00"
-=======
-            "time": "2019-07-09T01:00:51+00:00"
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
->>>>>>> ADD Raygun integrations, env-var snapshot functionality
-=======
-            "time": "2019-07-10 22:24:08"
->>>>>>> Rebase, minor refactoring
+            "time": "2019-07-01 02:16:49"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5497,66 +5413,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-03-25T07:48:46+00:00"
-        },
-        {
-            "name": "unclecheese/display-logic",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
-                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/845ab12189439422b6dcd1becd20c9d5a94eb558",
-                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "replace": {
-                "silverstripe/display-logic": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "se/selenium-server-standalone": "2.41.0",
-                "silverstripe/behat-extension": "^3@dev",
-                "silverstripe/serve": "^2"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "installer-name": "display-logic",
-                "expose": [
-                    "client"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "UncleCheese\\DisplayLogic\\": "src/",
-                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
-                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com"
-                }
-            ],
-            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
-            "keywords": [
-                "Forms",
-                "cms",
-                "display",
-                "logic",
-                "silverstripe"
-            ],
-            "time": "2018-11-14T23:16:44+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -6931,21 +6787,13 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "1.0",
-            "alias_normalized": "1.0.0.0",
-            "version": "dev-feature/raygun",
-            "package": "sminnee/tagmanager"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
-        "silverstripe/login-forms": 10,
-        "sminnee/tagmanager": 20
+        "silverstripe/login-forms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

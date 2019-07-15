@@ -1,14 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "5578d4f5962133854844a0083a735464",
-=======
-    "content-hash": "24bf3085faedfa009fc2f1c5f24b9eef",
->>>>>>> Make hasSidebar composable for page header
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -126,7 +122,6 @@
                 "sdk"
             ],
             "time": "2019-07-12T18:07:41+00:00"
-<<<<<<< HEAD
         },
         {
             "name": "axllent/silverstripe-trailing-slash",
@@ -169,8 +164,6 @@
                 "urls"
             ],
             "time": "2019-02-07T04:27:11+00:00"
-=======
->>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -1022,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14T01:43:52+00:00"
+            "time": "2019-06-14 01:43:52"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1775,8 +1768,7 @@
                 "navigator",
                 "silverstripe"
             ],
-<<<<<<< HEAD
-            "time": "2019-07-14T22:34:16+00:00"
+            "time": "2019-07-14 22:34:16"
         },
         {
             "name": "jonom/silverstripe-text-target-length",
@@ -1824,9 +1816,6 @@
                 "textfield"
             ],
             "time": "2018-05-28T17:57:48+00:00"
-=======
-            "time": "2019-07-14 22:34:16"
->>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3188,11 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-<<<<<<< HEAD
-            "time": "2019-07-11T05:45:55+00:00"
-=======
             "time": "2019-07-15 03:59:04"
->>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "silverstripe/blog",
@@ -3580,7 +3565,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09T22:04:12+00:00"
+            "time": "2019-05-09 22:04:12"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3623,7 +3608,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18T02:49:23+00:00"
+            "time": "2018-12-18 02:49:23"
         },
         {
             "name": "silverstripe/errorpage",
@@ -4068,7 +4053,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08T21:44:07+00:00"
+            "time": "2019-05-08 21:44:07"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4700,7 +4685,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21T04:04:18+00:00"
+            "time": "2019-02-21 04:04:18"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4737,7 +4722,7 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26T03:45:26+00:00"
+            "time": "2019-03-26 03:45:26"
         },
         {
             "name": "sminnee/tagmanager",

@@ -37,7 +37,8 @@
         "symbiote/silverstripe-advancedworkflow": "^5.2",
         "wilr/silverstripe-googlesitemaps": "~2.1.5",
         "silverstripe/theme-colorpicker": "^1",
-        "silverstripe/theme-fontpicker": "^1"
+        "silverstripe/theme-fontpicker": "^1",
+        "tractorcow/silverstripe-fluent": "^4.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

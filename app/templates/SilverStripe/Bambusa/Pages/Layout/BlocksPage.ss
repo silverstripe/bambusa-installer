@@ -4,7 +4,7 @@
 </div>
 <% end_if %>
 <div class="container">
-    <% include SilverStripe\\Bambusa\\Pages\\PageHeader %>
+    <% include SilverStripe\\Bambusa\\Pages\\PageHeader HasSidebar=$Children %>
     <div class="row">
         <section class="col-lg-8<% if not $Children %> offset-lg-2<% end_if %>">
           <% if $ElementalArea %>

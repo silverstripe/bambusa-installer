@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "5578d4f5962133854844a0083a735464",
+=======
+    "content-hash": "24bf3085faedfa009fc2f1c5f24b9eef",
+>>>>>>> Make hasSidebar composable for page header
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -122,6 +126,7 @@
                 "sdk"
             ],
             "time": "2019-07-12T18:07:41+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "axllent/silverstripe-trailing-slash",
@@ -164,6 +169,8 @@
                 "urls"
             ],
             "time": "2019-02-07T04:27:11+00:00"
+=======
+>>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -1768,6 +1775,7 @@
                 "navigator",
                 "silverstripe"
             ],
+<<<<<<< HEAD
             "time": "2019-07-14T22:34:16+00:00"
         },
         {
@@ -1816,6 +1824,9 @@
                 "textfield"
             ],
             "time": "2018-05-28T17:57:48+00:00"
+=======
+            "time": "2019-07-14 22:34:16"
+>>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3146,12 +3157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296"
+                "reference": "9781f0828a959a4800f0bd67e8e158c1380684a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/6b52bafc38a07d5cf8afa50814adeea64da4d296",
-                "reference": "6b52bafc38a07d5cf8afa50814adeea64da4d296",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/9781f0828a959a4800f0bd67e8e158c1380684a1",
+                "reference": "9781f0828a959a4800f0bd67e8e158c1380684a1",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3188,11 @@
                 "silverstripe",
                 "theme"
             ],
+<<<<<<< HEAD
             "time": "2019-07-11T05:45:55+00:00"
+=======
+            "time": "2019-07-15 03:59:04"
+>>>>>>> Make hasSidebar composable for page header
         },
         {
             "name": "silverstripe/blog",

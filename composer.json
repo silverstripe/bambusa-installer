@@ -30,6 +30,7 @@
         "sminnee/silverstripe-asknicely": "^1.0@dev",
         "benmanu/silverstripe-simple-styleguide": "^2.0",
         "silverstripe/login-forms": "^4.0@beta",
+        "vulcandigital/silverstripe-seo": "^1.0",
         "silverstripe/raygun": "^3.1",
         "silverstripe/blog": "^3.3",
         "dynamic/silverstripe-elemental-blog": "^2.1"

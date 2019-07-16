@@ -63,7 +63,7 @@ class EnvVarSnapshot extends DataObject
      */
     public function requireDefaultRecords()
     {
-        foreach (Environment::getVariables()['env'] as $key => $val) {
+        foreach (array_merge($_ENV, $_SERVER, Environment::getVariables()['env']) as $key => $val) {
             if (substr($key, 0, 3) !== 'SS_') {
                 continue;
             }
@@ -77,12 +77,12 @@ class EnvVarSnapshot extends DataObject
                 }
                 $var->val = $val;
                 DB::alteration_message('Set environment variable ' . $key, 'changed');
-            } else {
+                $var->write();
+            } elseif (strlen($val) !== 0 && $val !== null) {
                 $var = static::create(['key' => $key, 'val' => $val]);
                 DB::alteration_message('Created environment variable ' . $key, 'created');
+                $var->write();
             }
-
-            $var->write();
         }
 
         return parent::requireDefaultRecords();

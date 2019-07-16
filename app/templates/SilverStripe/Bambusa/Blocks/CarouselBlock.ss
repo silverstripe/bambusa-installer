@@ -65,7 +65,7 @@
 
               <% if $Content || $Title || $PrimaryCallToActionLabel || $SecondaryCallToActionLabel %>
                   <div class="container">
-                      <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+                      <div class="col-8 offset-2">
                         <% if $Title %>
                             <h1 id="carousel-title-{$Pos}">$Title</h1>
                         <% end_if %>
@@ -77,12 +77,12 @@
                         <% if $PrimaryCallToActionLabel || $SecondaryCallToActionLabel %>
                             <p>
                               <% if $PrimaryCallToActionLabel %>
-                                  <a class="btn btn-light" href="{$PrimaryCallToAction.Link}">
+                                  <a class="btn btn-light mb-3" href="{$PrimaryCallToAction.Link}">
                                     $PrimaryCallToActionLabel
                                   </a>
                               <% end_if %>
                               <% if $SecondaryCallToActionLabel %>
-                                  <a class="btn btn-outline-light" href="{$SecondaryCallToAction.Link}">
+                                  <a class="btn btn-outline-light mb-3" href="{$SecondaryCallToAction.Link}">
                                     $SecondaryCallToActionLabel
                                   </a>
                               <% end_if %>

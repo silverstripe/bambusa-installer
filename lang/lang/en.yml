@@ -1,7 +1,9 @@
 en:
   SilverStripe\Bambusa\Blocks\CarouselItem:
     CONTENT_HELPTIP: 'Recommended: Use less than 50 words. For carousel slides, use a similar amount of content as other items to ensure carousel height does not vary.'
-    IMAGE_HELPTIP: 'Recommended: Use high resolution images greater than 1600x900px.'
+    IMAGE_HELPTIP: 'Recommended: Use high resolution images greater than {size}.'
+    ERROR_IMAGE_WIDTH: 'Min width: {size}px'
+    ERROR_IMAGE_HEIGHT: 'Min height: {size}px'
     PLURALNAME: 'Carousel Items'
     PLURALS:
       one: 'A Carousel Item'

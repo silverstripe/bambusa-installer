@@ -2,6 +2,7 @@
 
 namespace SilverStripe\Bambusa\Blocks;
 
+use SilverStripe\Assets\Upload_Validator;
 use SilverStripe\Bambusa\Blocks\CarouselBlock;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Versioned\Versioned;
@@ -56,6 +57,20 @@ class CarouselItem extends DataObject
         'Content'
     ];
 
+    private static $default_sort = 'SortOrder ASC';
+
+    /**
+     * @config
+     * @var int
+     */
+    private static $min_slide_width = 1600;
+
+    /**
+     * @config
+     * @var int
+     */
+    private static $min_slide_height = 900;
+
     public function getCMSFields()
     {
         $fields = new FieldList(
@@ -77,9 +92,47 @@ class CarouselItem extends DataObject
                 ->setDescription(
                     _t(
                         __CLASS__ . '.IMAGE_HELPTIP',
-                        'Recommended: Use high resolution images greater than 1600x900px.'
+                        'Recommended: Use high resolution images greater than {size}.',
+                        [
+                            'size' => sprintf(
+                                '%sx%s',
+                                static::config()->min_slide_width,
+                                static::config()->min_slide_height
+                            )
+                        ]
                     )
-                ),
+                )
+                ->setValidator(new class extends Upload_Validator {
+                    public function validate()
+                    {
+                        $result = parent::validate();
+                        $path = $this->tmpFile['tmp_name'];
+                        list ($width, $height) = getimagesize($path);
+                        $minWidth = CarouselItem::config()->min_slide_width;
+                        $minHeight = CarouselItem::config()->min_slide_height;
+
+                        if ($width < $minWidth) {
+                            $this->errors[] = _t(
+                                CarouselItem::class . 'ERROR_IMAGE_WIDTH',
+                                // Note: this is abbreviated because the UI truncates the error message
+                                'Min width: {size}px',
+                                ['size' => $minWidth]
+                            );
+                            return false;
+                        }
+                        if ($height < $minHeight) {
+                            $this->errors[] = _t(
+                                CarouselItem::class . 'ERROR_IMAGE_HEIGHT',
+                                // Note: this is abbreviated because the UI truncates the error message
+                                'Min height {size}px',
+                                ['size' => $minHeight]
+                            );
+                            return false;
+                        }
+
+                        return $result;
+                    }
+                }),
             // Call to actions
             TextField::create('PrimaryCallToActionLabel'),
             TreeDropdownField::create(

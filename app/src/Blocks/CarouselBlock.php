@@ -42,12 +42,12 @@ class CarouselBlock extends BaseElement
         $gridField = GridField::create(
             'CarouselItems',
             _t(__CLASS__ . '.TITLE', 'Hero/Carousel'),
-            $this->getCarouselItems(),
+            $this->CarouselItems(),
             GridFieldConfig_RelationEditor::create()
         );
         $gridField->setDescription(_t(
             __CLASS__ . '.NOTE',
-            'NOTE: Carousel functionality will automatically be loaded when 2 or more items are added below'
+            'NOTE: Carousel functionality will automatically be loaded when 2 or more items are added above'
         ));
         $gridConfig = $gridField->getConfig();
         $gridConfig->getComponentByType(GridFieldAddNewButton::class)->setButtonName(
@@ -71,20 +71,12 @@ class CarouselBlock extends BaseElement
      */
     public function getSummary(): string
     {
-        if ($this->getCarouselItems()->count() == 1) {
+        if ($this->CarouselItems()->count() == 1) {
             $slide = ' slide';
         } else {
             $slide = ' slides';
         }
-        return DBField::create_field('HTMLText', $this->getCarouselItems()->count() . $slide)->Summary(20);
-    }
-
-    /**
-     * @return DataList
-     */
-    public function getCarouselItems()
-    {
-        return $this->owner->getComponents('CarouselItems')->sort('SortOrder');
+        return DBField::create_field('HTMLText', $this->CarouselItems()->count() . $slide)->Summary(20);
     }
 
     /**

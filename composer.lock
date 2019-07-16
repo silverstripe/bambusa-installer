@@ -960,12 +960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnadesign/silverstripe-elemental.git",
-                "reference": "bc9043a5f2b5b4f0dbe4968dde8b770f55cf86cd"
+                "reference": "0b3beeff1b35ceac47ee1dbc21b6651683f3481a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/bc9043a5f2b5b4f0dbe4968dde8b770f55cf86cd",
-                "reference": "bc9043a5f2b5b4f0dbe4968dde8b770f55cf86cd",
+                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/0b3beeff1b35ceac47ee1dbc21b6651683f3481a",
+                "reference": "0b3beeff1b35ceac47ee1dbc21b6651683f3481a",
                 "shasum": ""
             },
             "require": {
@@ -1015,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-06-14 01:43:52"
+            "time": "2019-07-16 03:07:32"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "d52902c460132738fd36834af0af74258925cb5a"
+                "reference": "ee4a4f59face86c1cec23717872fd29c64c1fc34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/d52902c460132738fd36834af0af74258925cb5a",
-                "reference": "d52902c460132738fd36834af0af74258925cb5a",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/ee4a4f59face86c1cec23717872fd29c64c1fc34",
+                "reference": "ee4a4f59face86c1cec23717872fd29c64c1fc34",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-16 01:24:45"
+            "time": "2019-07-16 03:13:07"
         },
         {
             "name": "silverstripe/blog",

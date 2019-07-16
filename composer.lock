@@ -1015,7 +1015,11 @@
                 "elemental",
                 "silverstripe"
             ],
+<<<<<<< HEAD
             "time": "2019-07-19T12:01:20+00:00"
+=======
+            "time": "2019-07-16T03:07:32+00:00"
+>>>>>>> Add logic to track the last login date.
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -3177,7 +3181,11 @@
                 "silverstripe",
                 "theme"
             ],
+<<<<<<< HEAD
             "time": "2019-07-22T04:24:52+00:00"
+=======
+            "time": "2019-07-16T03:13:07+00:00"
+>>>>>>> Add logic to track the last login date.
         },
         {
             "name": "silverstripe/blog",

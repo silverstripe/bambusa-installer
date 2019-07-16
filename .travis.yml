@@ -54,10 +54,16 @@ script:
   - vendor/bin/behat admin
 
 deploy:
-  provider: script
-  script: bash docker/deploy.sh "$DOCKERHUB_USER" "$DOCKERHUB_PASSWORD" "$DOCKERHUB_IMAGE"
-  on:
-    branch: master
+  # deploy the new image to DockerHub
+  - provider: script
+    script: bash docker/deploy.sh "$DOCKERHUB_USER" "$DOCKERHUB_PASSWORD" "$DOCKERHUB_IMAGE"
+    on:
+      branch: master
+  - # report the outdated versions
+    provider: script
+    script: bash bin/composer-check-outdated.sh "$SLACK_WEBHOOK_URL"
+    on:
+      branch: master
 
 after_failure:
   - php ./vendor/silverstripe/framework/tests/behat/travis-upload-artifacts.php --if-env ARTIFACTS_BUCKET,ARTIFACTS_KEY,ARTIFACTS_SECRET --target-path $TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID --artifacts-base-url https://s3.amazonaws.com/$ARTIFACTS_BUCKET/ --artifacts-path ./artifacts/

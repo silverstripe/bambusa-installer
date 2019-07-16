@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0047fb8dd2a3f546456b3ca4ae4c71f7",
+    "content-hash": "fd762d35e70f6d33c40441bfcb8751f2",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -7386,7 +7386,6 @@
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
         "jonom/silverstripe-betternavigator": 20,
-        "sminnee/tagmanager": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,
         "silverstripe/login-forms": 10

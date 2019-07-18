@@ -3,6 +3,8 @@
 use SilverStripe\Security\PasswordValidator;
 use SilverStripe\Security\Member;
 use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
+use SilverStripe\CMS\Model\SiteTree;
+use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
 
 // remove PasswordValidator for SilverStripe 5.0
 $validator = PasswordValidator::create();

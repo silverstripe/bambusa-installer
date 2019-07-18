@@ -41,11 +41,5 @@ namespace {
 
             return $fields;
         }
-
-        // TODO Allows generic Page.ss template. The lack of this method shouldn't break an <% if %> block, but it does...
-        public function ElementalArea()
-        {
-            return null;
-        }
     }
 }

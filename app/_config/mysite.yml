@@ -17,6 +17,11 @@ SilverStripe\SiteConfig\SiteConfig:
     merriweather: Merriweather
 SilverStripe\Fontpicker\Forms\FontPickerField:
   default_font: metropolis
+Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction:
+  whitelist_template_variables: true
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension
 SilverStripe\Core\Injector\Injector:
   Vulcan\Seo\Analysis\FocusKeywordContentAnalysis:
     class: SilverStripe\Bambusa\SEO\FocusKeywordContentAnalysis

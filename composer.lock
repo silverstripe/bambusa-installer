@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "051093742a30d3eb8763b2d126160a7d",
@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.107.1",
+            "version": "3.107.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ccd3d13ae49a45bdf6a394d701f207c276dbf05a"
+                "reference": "37bacdae146326ed8008e3354e9e2c3547646996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ccd3d13ae49a45bdf6a394d701f207c276dbf05a",
-                "reference": "ccd3d13ae49a45bdf6a394d701f207c276dbf05a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/37bacdae146326ed8008e3354e9e2c3547646996",
+                "reference": "37bacdae146326ed8008e3354e9e2c3547646996",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-12T18:07:41+00:00"
+            "time": "2019-07-19T18:14:22+00:00"
         },
         {
             "name": "axllent/silverstripe-trailing-slash",
@@ -960,12 +960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnadesign/silverstripe-elemental.git",
-                "reference": "0b3beeff1b35ceac47ee1dbc21b6651683f3481a"
+                "reference": "f267155ce45eba0d2cccb862f84fa32b26b74f84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/0b3beeff1b35ceac47ee1dbc21b6651683f3481a",
-                "reference": "0b3beeff1b35ceac47ee1dbc21b6651683f3481a",
+                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/f267155ce45eba0d2cccb862f84fa32b26b74f84",
+                "reference": "f267155ce45eba0d2cccb862f84fa32b26b74f84",
                 "shasum": ""
             },
             "require": {
@@ -1015,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-07-16 03:07:32"
+            "time": "2019-07-19T12:01:20+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1199,16 +1199,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v3.4.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "5594b253dee90888c14cdca43696183c98f078e9"
+                "reference": "960bbd5a62c5697302bd5394d58efba2e998b787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/5594b253dee90888c14cdca43696183c98f078e9",
-                "reference": "5594b253dee90888c14cdca43696183c98f078e9",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/960bbd5a62c5697302bd5394d58efba2e998b787",
+                "reference": "960bbd5a62c5697302bd5394d58efba2e998b787",
                 "shasum": ""
             },
             "require": {
@@ -1234,9 +1234,9 @@
             "authors": [
                 {
                     "name": "Oscar Otero",
+                    "role": "Developer",
                     "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com",
-                    "role": "Developer"
+                    "homepage": "http://oscarotero.com"
                 }
             ],
             "description": "PHP library to retrieve page info using oembed, opengraph, etc",
@@ -1248,7 +1248,7 @@
                 "opengraph",
                 "twitter cards"
             ],
-            "time": "2019-06-23T11:12:03+00:00"
+            "time": "2019-07-20T17:05:41+00:00"
         },
         {
             "name": "graze/monolog-extensions",
@@ -1652,9 +1652,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -1768,7 +1768,7 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2019-07-14 22:34:16"
+            "time": "2019-07-14T22:34:16+00:00"
         },
         {
             "name": "jonom/silverstripe-text-target-length",
@@ -2109,9 +2109,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
+                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com",
-                    "role": "Developer"
+                    "homepage": "http://milescroxford.com"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "ee4a4f59face86c1cec23717872fd29c64c1fc34"
+                "reference": "4c2d79b11f56474fff112e869606c24220310744"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/ee4a4f59face86c1cec23717872fd29c64c1fc34",
-                "reference": "ee4a4f59face86c1cec23717872fd29c64c1fc34",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/4c2d79b11f56474fff112e869606c24220310744",
+                "reference": "4c2d79b11f56474fff112e869606c24220310744",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-16 03:13:07"
+            "time": "2019-07-22T04:24:52+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -3565,7 +3565,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09 22:04:12"
+            "time": "2019-05-09T22:04:12+00:00"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3608,7 +3608,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18 02:49:23"
+            "time": "2018-12-18T02:49:23+00:00"
         },
         {
             "name": "silverstripe/errorpage",
@@ -4053,7 +4053,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08 21:44:07"
+            "time": "2019-05-08T21:44:07+00:00"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4685,7 +4685,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21 04:04:18"
+            "time": "2019-02-21T04:04:18+00:00"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4722,7 +4722,7 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26 03:45:26"
+            "time": "2019-03-26T03:45:26+00:00"
         },
         {
             "name": "sminnee/tagmanager",

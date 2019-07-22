@@ -17,7 +17,9 @@ SilverStripe\SiteConfig\SiteConfig:
     merriweather: Merriweather
 SilverStripe\Fontpicker\Forms\FontPickerField:
   default_font: metropolis
-
+SilverStripe\Core\Injector\Injector:
+  Vulcan\Seo\Analysis\FocusKeywordContentAnalysis:
+    class: SilverStripe\Bambusa\SEO\FocusKeywordContentAnalysis
 ---
 Name: bambusa-seo
 After:

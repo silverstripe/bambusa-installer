@@ -30,6 +30,4 @@ class LastLogin extends Controller
             ->setBody(json_encode(['lastLogin' => $lastLogin]))
             ->addHeader('content-type', 'application/json');
     }
-
-
 }

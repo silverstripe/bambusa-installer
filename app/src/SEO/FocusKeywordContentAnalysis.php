@@ -16,5 +16,4 @@ class FocusKeywordContentAnalysis extends BaseAnalysis
         $content = Seo::collateContentFields($this->getPage());
         return strtolower(strip_tags($content ?: ''));
     }
-
 }

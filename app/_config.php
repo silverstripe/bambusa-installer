@@ -10,20 +10,20 @@ $validator = PasswordValidator::create();
 Member::set_password_validator($validator);
 $formats =  [
     [
-       'title' => 'Lead text (bigger)',
-       'selector' => 'p',
-       'classes' => 'lead',
-   ],
-   [
-       'title' => '“Quote”',
-       'selector' => 'p',
-       'classes' => 'quote',
-   ],
-   [
-       'title' => 'Button',
-       'selector' => 'a',
-       'classes' => 'btn btn-primary',
-   ],
+        'title' => 'Lead text (bigger)',
+        'selector' => 'p',
+        'classes' => 'lead',
+    ],
+    [
+        'title' => '“Quote”',
+        'selector' => 'p',
+        'classes' => 'quote',
+    ],
+    [
+        'title' => 'Button',
+        'selector' => 'a',
+        'classes' => 'btn btn-primary',
+    ],
 ];
 TinyMCEConfig::get('cms')
     ->setOptions([

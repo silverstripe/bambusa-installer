@@ -915,16 +915,16 @@
         },
         {
             "name": "cwp/starter-theme",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/cwp-starter-theme.git",
-                "reference": "344b8f274374d1a2af8bf503b1b232fa7dc92a67"
+                "reference": "6dab306f7e02cbc0fb576ea3965384c1252557ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/cwp-starter-theme/zipball/344b8f274374d1a2af8bf503b1b232fa7dc92a67",
-                "reference": "344b8f274374d1a2af8bf503b1b232fa7dc92a67",
+                "url": "https://api.github.com/repos/silverstripe/cwp-starter-theme/zipball/6dab306f7e02cbc0fb576ea3965384c1252557ee",
+                "reference": "6dab306f7e02cbc0fb576ea3965384c1252557ee",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-05-09T02:36:23+00:00"
+            "time": "2019-07-23T03:03:18+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental",
@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "c36b8daffc7a3bb2a7af48740a8eaba8bbc1becb"
+                "reference": "6c25e3172ee4d28fad2396ab2cec6ed7abb5a236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/c36b8daffc7a3bb2a7af48740a8eaba8bbc1becb",
-                "reference": "c36b8daffc7a3bb2a7af48740a8eaba8bbc1becb",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/6c25e3172ee4d28fad2396ab2cec6ed7abb5a236",
+                "reference": "6c25e3172ee4d28fad2396ab2cec6ed7abb5a236",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-22 05:59:57"
+            "time": "2019-07-23 03:15:33"
         },
         {
             "name": "silverstripe/blog",
@@ -5946,6 +5946,7 @@
                 "silverstripe",
                 "twitter"
             ],
+            "abandoned": true,
             "time": "2019-03-18T07:02:20+00:00"
         },
         {

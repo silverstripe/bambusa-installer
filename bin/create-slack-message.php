@@ -10,7 +10,13 @@ $dependencies = json_decode(file_get_contents('php://stdin'), true);
 if (isset($dependencies['installed'])) {
     $deps = array_reduce($dependencies['installed'], 'filter_bambusa_deps', []);
 
-    echo json_encode(['text' => 'Bambusa upgrades available: ```' . json_encode($deps, JSON_PRETTY_PRINT) . '```', 'mrkdwn' => true]);
+    if (!count($deps)) {
+        echo json_encode([]);
+    } else {
+        echo json_encode(['text' => 'Bambusa upgrades available: ```' . json_encode($deps, JSON_PRETTY_PRINT) . '```', 'mrkdwn' => true]);
+    }
+
+
 } else {
     echo json_encode([]);
 }

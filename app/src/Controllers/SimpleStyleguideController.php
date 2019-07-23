@@ -34,7 +34,7 @@ class SimpleStyleguideController extends BenSimpleStyleguideController
             Config::inst()->update('SSViewer', 'theme', Subsite::currentSubsite()->Theme);
         }
 
-        $page = SiteTree::get()->first();
+        $page = SiteTree::singleton();
         $controller = ModelAsController::controller_for($page);
         $controller->init();
 

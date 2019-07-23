@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "051093742a30d3eb8763b2d126160a7d",
+    "content-hash": "0047fb8dd2a3f546456b3ca4ae4c71f7",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -399,13 +399,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "email": "matt@dwen.co.nz",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "matt@dwen.co.nz"
                 },
                 {
                     "name": "Xplore Developers",
-                    "email": "developers@xplore.net",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "developers@xplore.net"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -413,8 +413,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -1015,7 +1015,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-07-22 09:22:49"
+            "time": "2019-07-22T09:22:49+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1652,9 +1652,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -1768,7 +1768,7 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2019-07-14 22:34:16"
+            "time": "2019-07-14T22:34:16+00:00"
         },
         {
             "name": "jonom/silverstripe-text-target-length",
@@ -2109,9 +2109,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
+                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com",
-                    "role": "Developer"
+                    "homepage": "http://milescroxford.com"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-23 03:15:33"
+            "time": "2019-07-23T03:15:33+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -3565,7 +3565,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-05-09 22:04:12"
+            "time": "2019-05-09T22:04:12+00:00"
         },
         {
             "name": "silverstripe/elemental-fileblock",
@@ -3608,7 +3608,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2018-12-18 02:49:23"
+            "time": "2018-12-18T02:49:23+00:00"
         },
         {
             "name": "silverstripe/errorpage",
@@ -4053,7 +4053,7 @@
             ],
             "description": "Add content blocks to your SilverStripe project",
             "homepage": "https://www.silverstripe.org",
-            "time": "2019-05-08 21:44:07"
+            "time": "2019-05-08T21:44:07+00:00"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -4685,7 +4685,7 @@
                 }
             ],
             "description": "Integration with https://amplitude.com via silverstripe-tagmanager",
-            "time": "2019-02-21 04:04:18"
+            "time": "2019-02-21T04:04:18+00:00"
         },
         {
             "name": "sminnee/silverstripe-asknicely",
@@ -4722,7 +4722,7 @@
                 }
             ],
             "description": "Adds an AskNicely NPS Web Survey to your site.",
-            "time": "2019-03-26 03:45:26"
+            "time": "2019-03-26T03:45:26+00:00"
         },
         {
             "name": "sminnee/tagmanager",
@@ -6692,8 +6692,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",

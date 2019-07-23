@@ -34,5 +34,5 @@ After: '#simplestyleguide'
 # Move the style guide on a different URL segment
 SilverStripe\Control\Director:
   rules:
-    '_styleguide': false
+    '_styleguide': '->styleguide'
     'styleguide': SilverStripe\Controllers\SimpleStyleguideController

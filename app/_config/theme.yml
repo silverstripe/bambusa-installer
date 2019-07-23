@@ -26,3 +26,13 @@ SilverStripe\LoginForms\EnablerExtension:
     - '$default'
     - 'bambusa'
     - 'starter'
+
+---
+Name: bambusa-simplestyleguide
+After: '#simplestyleguide'
+---
+# Move the style guide on a different URL segment
+SilverStripe\Control\Director:
+  rules:
+    '_styleguide': false
+    'styleguide': SilverStripe\Controllers\SimpleStyleguideController

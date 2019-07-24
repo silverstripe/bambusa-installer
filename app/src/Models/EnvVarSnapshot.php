@@ -25,7 +25,7 @@ class EnvVarSnapshot extends DataObject
     private static $table_name = 'EnvVarSnapshot';
 
     private static $db = [
-        'key' => 'Varchar(255)',
+        'key' => 'Varchar(127)',
         'val' => 'Varchar(255)'
     ];
 

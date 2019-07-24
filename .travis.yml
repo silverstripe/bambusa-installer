@@ -1,14 +1,16 @@
 language: php
-dist: trusty
+dist: xenial
 services:
   - mysql
   - docker
+  - xvfb
 
 cache:
   directories:
     - $HOME/.composer/cache/files
 
 addons:
+  # chrome: stable
   apt:
     packages:
       - tidy
@@ -29,8 +31,8 @@ env:
 
 install:
   - sudo apt-get update
-  - sudo apt-get install chromium-chromedriver
-  - export PATH=/usr/lib/chromium-browser/:~/.composer/vendor/bin:$PATH
+  - sudo apt-get install chromium-chromedriver chromium-browser
+  - export PATH=~/.composer/vendor/bin:$PATH
   - pecl channel-update pecl.php.net
   - phpenv rehash
   - phpenv config-rm xdebug.ini || true
@@ -48,7 +50,7 @@ script:
   - vendor/bin/phpunit --testsuite bambusa
   - composer run-script lint
   - phpdbg -qrr vendor/bin/phpunit --testsuite bambusa --coverage-clover=coverage.xml
-  - sh -e /etc/init.d/xvfb start
+  # - sh -e /etc/init.d/xvfb start
   - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
   - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
   - vendor/bin/behat admin

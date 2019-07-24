@@ -34,7 +34,7 @@ install:
   - pecl channel-update pecl.php.net
   - phpenv rehash
   - phpenv config-rm xdebug.ini || true
-  - echo 'memory_limit = 3G' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - echo 'memory_limit = 2048M' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
   # Install composer dependencies
   - composer require --no-update -- silverstripe/recipe-testing:^1

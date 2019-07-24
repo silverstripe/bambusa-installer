@@ -5,8 +5,6 @@ namespace {
     use SilverStripe\CMS\Model\SiteTree;
     use SilverStripe\Forms\Tab;
     use SilverStripe\Forms\ToggleCompositeField;
-    use Vulcan\Seo\Extensions\PageHealthExtension;
-    use Vulcan\Seo\Extensions\PageSeoExtension;
 
     class Page extends SiteTree
     {

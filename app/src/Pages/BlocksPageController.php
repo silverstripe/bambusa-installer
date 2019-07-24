@@ -1,8 +1,6 @@
 <?php
 
-
 namespace SilverStripe\Bambusa\Pages;
-
 
 use PageController;
 

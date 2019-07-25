@@ -5,6 +5,8 @@ namespace SilverStripe\Controllers;
 use BenManu\SimpleStyleguide\SimpleStyleguideController as BenSimpleStyleguideController;
 use SilverStripe\CMS\Controllers\ModelAsController;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Core\Injector\Injector;
 use SilverStripe\View\Requirements;
 use SilverStripe\Subsites\Model\Subsite;
 
@@ -34,7 +36,8 @@ class SimpleStyleguideController extends BenSimpleStyleguideController
             Config::inst()->update('SSViewer', 'theme', Subsite::currentSubsite()->Theme);
         }
 
-        $page = SiteTree::singleton();
+        // TODO Remove after merging https://github.com/benmanu/silverstripe-simple-styleguide/pull/13
+        $page = Injector::inst()->create(SiteTree::class);
         $controller = ModelAsController::controller_for($page);
         $controller->init();
 

@@ -30,6 +30,8 @@ SilverStripe\CMS\Model\SiteTree:
 SilverStripe\Core\Injector\Injector:
   Vulcan\Seo\Analysis\FocusKeywordContentAnalysis:
     class: SilverStripe\Bambusa\SEO\FocusKeywordContentAnalysis
+SilverStripe\View\Parsers\URLSegmentFilter:
+  default_allow_multibyte: true
 
 ---
 Name: bambusa-seo

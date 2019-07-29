@@ -22,7 +22,7 @@
                         <div class="carousel-controls-inner-wrapper">
                             <div class="carousel-indicators" aria-label="Slide controls">
                                 <% loop $CarouselItems %>
-                                    <button data-target="#carousel-slide-carousel-$Up.ID" data-slide-to="$Pos(0)"
+                                    <button data-target="#carousel-slide-carousel-$Up.ID" data-slide-to="$Pos(0)" class="carousel-indicator-button"
                                             <% if $Pos == 1 %>class="active"<% end_if %> name="carousel-item-{$Pos}"
                                             aria-label="Slide $Pos of $TotalItems">
                                     </button>

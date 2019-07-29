@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.108.0",
+            "version": "3.108.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "df65815065b0195bc374bd17d8cc6884b4870da1"
+                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/df65815065b0195bc374bd17d8cc6884b4870da1",
-                "reference": "df65815065b0195bc374bd17d8cc6884b4870da1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8e6a853acb7e455f8de2b04443bcd372b50a40fa",
+                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-26T18:22:40+00:00"
+            "time": "2019-07-29T18:12:15+00:00"
         },
         {
             "name": "axllent/silverstripe-trailing-slash",
@@ -399,13 +399,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "email": "matt@dwen.co.nz",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "matt@dwen.co.nz"
                 },
                 {
                     "name": "Xplore Developers",
-                    "email": "developers@xplore.net",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "developers@xplore.net"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -413,8 +413,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -811,16 +811,16 @@
         },
         {
             "name": "composer/spdx-licenses",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "a1aa51cf3ab838b83b0867b14e56fc20fbd55b3d"
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/a1aa51cf3ab838b83b0867b14e56fc20fbd55b3d",
-                "reference": "a1aa51cf3ab838b83b0867b14e56fc20fbd55b3d",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/7ac1e6aec371357df067f8a688c3d6974df68fa5",
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5",
                 "shasum": ""
             },
             "require": {
@@ -867,7 +867,7 @@
                 "spdx",
                 "validator"
             ],
-            "time": "2019-03-26T10:23:26+00:00"
+            "time": "2019-07-29T10:31:59+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -1144,16 +1144,16 @@
         },
         {
             "name": "dynamic/silverstripe-elemental-blog",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dynamic/silverstripe-elemental-blog.git",
-                "reference": "d2c7aa5aac1997f610d14847c5f7a26b94c26881"
+                "reference": "a3b081e29de4dc05a21645ae793853290d78faa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-blog/zipball/d2c7aa5aac1997f610d14847c5f7a26b94c26881",
-                "reference": "d2c7aa5aac1997f610d14847c5f7a26b94c26881",
+                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-blog/zipball/a3b081e29de4dc05a21645ae793853290d78faa8",
+                "reference": "a3b081e29de4dc05a21645ae793853290d78faa8",
                 "shasum": ""
             },
             "require": {
@@ -1168,7 +1168,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -1195,7 +1195,7 @@
                 "element",
                 "silverstripe"
             ],
-            "time": "2019-03-21T02:56:20+00:00"
+            "time": "2019-07-29T17:38:57+00:00"
         },
         {
             "name": "embed/embed",
@@ -1652,9 +1652,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -2109,9 +2109,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
+                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com",
-                    "role": "Developer"
+                    "homepage": "http://milescroxford.com"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "dbfe053456e3f42b7cd5aa94472af8cb95681747"
+                "reference": "92683873246c897416082208e05aca005327d65d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/dbfe053456e3f42b7cd5aa94472af8cb95681747",
-                "reference": "dbfe053456e3f42b7cd5aa94472af8cb95681747",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/92683873246c897416082208e05aca005327d65d",
+                "reference": "92683873246c897416082208e05aca005327d65d",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-28T23:07:47+00:00"
+            "time": "2019-07-29T00:54:07+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -4012,23 +4012,23 @@
         },
         {
             "name": "silverstripe/raygun",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-raygun.git",
-                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0"
+                "reference": "34afb20a343ce66680035b19956a6a68a09b2243"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
-                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/34afb20a343ce66680035b19956a6a68a09b2243",
+                "reference": "34afb20a343ce66680035b19956a6a68a09b2243",
                 "shasum": ""
             },
             "require": {
                 "graze/monolog-extensions": "^2",
                 "mindscape/raygun4php": "^1",
-                "php": ">=5.6.0",
-                "silverstripe/framework": "^4.0"
+                "php": ">=7.1",
+                "silverstripe/framework": "^4.3"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -4058,7 +4058,7 @@
                 "raygun",
                 "silverstripe"
             ],
-            "time": "2019-07-11T05:15:53+00:00"
+            "time": "2019-07-26T07:36:00+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -6940,8 +6940,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",

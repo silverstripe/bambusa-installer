@@ -3,6 +3,7 @@ Name: raygun-handler
 ---
 SilverStripe\Core\Injector\Injector:
   SilverStripe\Raygun\RaygunHandler:
+    class: SilverStripe\Bambusa\Logging\RaygunHandler
     constructor:
       client: '%$Raygun4php\RaygunClient'
       level: 'debug'

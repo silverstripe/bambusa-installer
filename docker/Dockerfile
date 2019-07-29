@@ -38,6 +38,20 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 EXPOSE 80
 
+ARG travis_commit_id
+ARG travis_build_num
+ARG travis_build_url
+ARG travis_job_num
+ARG travis_job_url
+ARG travis_docker_image_tag
+
+ENV SS_TRAVIS_COMMIT_ID ${travis_commit_id:-undefined}
+ENV SS_TRAVIS_BUILD_NUM ${travis_build_num:-undefined}
+ENV SS_TRAVIS_BUILD_URL ${travis_build_url:-undefined}
+ENV SS_TRAVIS_JOB_NUM ${travis_job_num:-undefined}
+ENV SS_TRAVIS_JOB_URL ${travis_job_url:-undefined}
+ENV SS_TRAVIS_DOCKER_IMAGE_TAG ${travis_docker_image_tag:-undefined}
+
 WORKDIR /var/www/html
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

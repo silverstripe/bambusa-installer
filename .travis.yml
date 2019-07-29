@@ -1,8 +1,9 @@
 language: php
-dist: trusty
+dist: xenial
 services:
   - mysql
   - docker
+  - xvfb
 
 cache:
   directories:
@@ -12,6 +13,8 @@ addons:
   apt:
     packages:
       - tidy
+      - chromium-chromedriver
+      - chromium-browser
 
 matrix:
   fast_finish: true
@@ -21,16 +24,16 @@ matrix:
 env:
   global:
     - DB=MYSQL
-    - DISPLAY=":99"
-    - XVFBARGS=":99 -ac -screen 0 1024x768x16"
     - SS_BASE_URL="http://localhost:8080/"
     - SS_ENVIRONMENT_TYPE="dev"
     - SS_BAMBUSA_SUPPRESS_MODAL=1
 
 install:
-  - sudo apt-get update
-  - sudo apt-get install chromium-chromedriver
-  - export PATH=/usr/lib/chromium-browser/:~/.composer/vendor/bin:$PATH
+  # this would conflict with our chromium-browser installation
+  # and its version is incompatible with chromium-chromedriver
+  - sudo apt-get remove --purge google-chrome-stable
+
+  - export PATH=~/.composer/vendor/bin:$PATH
   - pecl channel-update pecl.php.net
   - phpenv rehash
   - phpenv config-rm xdebug.ini || true
@@ -41,6 +44,8 @@ install:
   - composer require --no-update -- silverstripe/serve:^2;
   - composer update --prefer-source
 
+  - composer show
+
   - mkdir artifacts; cp composer.lock artifacts/
 
 
@@ -48,9 +53,8 @@ script:
   - vendor/bin/phpunit --testsuite bambusa
   - composer run-script lint
   - phpdbg -qrr vendor/bin/phpunit --testsuite bambusa --coverage-clover=coverage.xml
-  - sh -e /etc/init.d/xvfb start
   - vendor/bin/serve --bootstrap-file vendor/silverstripe/cms/tests/behat/serve-bootstrap.php &> artifacts/serve.log &
-  - sleep 3; chromedriver > artifacts/chromedriver.log 2>&1 &
+  - chromedriver --port=9515 --whitelisted-ips='127.0.0.1' > artifacts/chromedriver.log 2>&1 &
   - vendor/bin/behat admin
 
 deploy:

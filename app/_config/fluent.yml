@@ -1,0 +1,16 @@
+---
+Name: bambusa-fluent
+after: '#versionedfiles'
+---
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - TractorCow\Fluent\Extension\FluentVersionedExtension
+
+SilverStripe\Bambusa\Blocks\CarouselItem:
+  extensions:
+    - TractorCow\Fluent\Extension\FluentVersionedExtension
+  translate:
+    - Title
+    - Content
+    - PrimaryCallToActionLabel
+    - SecondaryCallToActionLabel

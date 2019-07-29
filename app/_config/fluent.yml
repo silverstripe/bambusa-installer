@@ -14,3 +14,11 @@ SilverStripe\Bambusa\Blocks\CarouselItem:
     - Content
     - PrimaryCallToActionLabel
     - SecondaryCallToActionLabel
+
+SilverStripe\ElementalBannerBlock\Block\BannerBlock:
+  translate:
+    - CallToActionLink
+
+SilverStripe\ElementalBannerBlock\Block\FileBlock:
+  field_include:
+    - FileID

@@ -18,6 +18,7 @@ class BlocksPage extends Page
 
     private static $extensions = [
         ElementalPageExtension::class,
+        BlocksPageFluentExtension::class,
     ];
 
     private static $has_one = [
@@ -30,6 +31,14 @@ class BlocksPage extends Page
 
     private static $casting = [
         'BlockContent' => 'HTMLText'
+    ];
+
+    /**
+     * @var array
+     */
+    private static $field_include = [
+        'ElementalAreaID',
+        'HeaderElementsID'
     ];
 
     public function getCMSFields()
@@ -62,5 +71,24 @@ class BlocksPage extends Page
             'ElementalArea',
             'HeaderElements',
         ];
+    }
+
+    public function onBeforeWrite()
+    {
+        parent::onBeforeWrite();
+
+        if (!$this->isDraftedInLocale() && $this->isInDB()) {
+            // Duplicate main area
+            $area = $this->ElementalArea();
+            $areaNew = $area->duplicate();
+            $this->ElementalAreaID = $areaNew->ID;
+
+            // Duplicate header area
+            $area = $this->ElementalArea();
+            $areaNew = $area->duplicate();
+            $this->ElementalAreaID = $areaNew->ID;
+        }
+
+        return;
     }
 }

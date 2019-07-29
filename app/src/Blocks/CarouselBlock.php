@@ -29,6 +29,10 @@ class CarouselBlock extends BaseElement
         'CarouselItems'
     ];
 
+    private static $cascade_duplicates = [
+        'CarouselItems'
+    ];
+
     private static $table_name = 'CarouselBlock';
 
     private static $singular_name = 'Carousel Block';

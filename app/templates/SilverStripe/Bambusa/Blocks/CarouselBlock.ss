@@ -93,7 +93,7 @@
                                             </a>
                                         <% end_if %>
                                         <% if $SecondaryCallToActionLabel %>
-                                            <a class="btn btn-outline-light mb-3" href="{$SecondaryCallToAction.Link}">
+                                            <a class="btn btn-outline-light carousel-secondary-action mb-3" href="{$SecondaryCallToAction.Link}">
                                                 $SecondaryCallToActionLabel
                                             </a>
                                         <% end_if %>

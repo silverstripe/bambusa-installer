@@ -18,6 +18,8 @@ namespace {
                 Requirements::javascript('app/js/dialog.js', ['defer' => true]);
                 Requirements::css('app/css/dialog.css');
             }
+
+            Requirements::block('silverstripe/elemental-bannerblock:client/dist/styles/frontend-default.css');
         }
 
         /**

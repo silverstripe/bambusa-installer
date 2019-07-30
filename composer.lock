@@ -3631,12 +3631,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
+<<<<<<< HEAD
                 "reference": "88876d823c49aa6678101c195ae7aaf674bd651d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/88876d823c49aa6678101c195ae7aaf674bd651d",
                 "reference": "88876d823c49aa6678101c195ae7aaf674bd651d",
+=======
+<<<<<<< HEAD
+                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
+                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
+=======
+                "reference": "da94123199f111e20aacb94cb4ca650960554827"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/da94123199f111e20aacb94cb4ca650960554827",
+                "reference": "da94123199f111e20aacb94cb4ca650960554827",
+>>>>>>> Composer update to new theme
+>>>>>>> Composer update to new theme
                 "shasum": ""
             },
             "require": {
@@ -3664,10 +3682,13 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-31T22:59:28+00:00"
 =======
 =======
 >>>>>>> Add search form
+=======
+>>>>>>> Composer update to new theme
 <<<<<<< HEAD
             "time": "2019-07-31T01:58:31+00:00"
 =======
@@ -3683,7 +3704,13 @@
 =======
             "time": "2019-07-29 00:54:07"
 >>>>>>> Add search form
+<<<<<<< HEAD
 >>>>>>> Add search form
+=======
+=======
+            "time": "2019-07-30 02:50:46"
+>>>>>>> Composer update to new theme
+>>>>>>> Composer update to new theme
         },
         {
             "name": "silverstripe/blog",

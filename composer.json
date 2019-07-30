@@ -35,14 +35,11 @@
         "dynamic/silverstripe-elemental-blog": "~2.1.1",
         "symbiote/silverstripe-advancedworkflow": "^5.2",
         "wilr/silverstripe-googlesitemaps": "~2.1.5",
-<<<<<<< HEAD
         "silverstripe/theme-colorpicker": "^1",
         "silverstripe/theme-fontpicker": "^1",
-        "tractorcow/silverstripe-fluent": "^4.2"
-=======
+        "tractorcow/silverstripe-fluent": "^4.2",
         "symfony/process": "^3.2",
         "silverstripe/fulltextsearch": "^3.5"
->>>>>>> Initial integration of fulltextsearch module
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

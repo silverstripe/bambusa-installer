@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "6492b70bd6d4a91bd6f69e3b22f19301",
 =======
 <<<<<<< HEAD
@@ -13,6 +14,9 @@
     "content-hash": "4efde45f5658f0c7941f4f759c161092",
 >>>>>>> Initial integration of fulltextsearch module
 >>>>>>> Initial integration of fulltextsearch module
+=======
+    "content-hash": "4d414703e0fecfc3d00c01aa282b44af",
+>>>>>>> Add search form
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -52,11 +56,14 @@
             "name": "aws/aws-sdk-php",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "3.108.2",
 =======
 =======
 >>>>>>> Composer update
 <<<<<<< HEAD
+=======
+>>>>>>> Add search form
             "version": "3.108.1",
 >>>>>>> Initial integration of fulltextsearch module
             "source": {
@@ -72,6 +79,7 @@
 =======
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8e6a853acb7e455f8de2b04443bcd372b50a40fa",
                 "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
+<<<<<<< HEAD
 =======
             "version": "3.108.0",
 =======
@@ -96,6 +104,8 @@
                 "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
 >>>>>>> Composer update
 >>>>>>> Composer update
+=======
+>>>>>>> Add search form
                 "shasum": ""
             },
             "require": {
@@ -167,6 +177,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-30T19:02:39+00:00"
 =======
 =======
@@ -183,6 +194,9 @@
             "time": "2019-07-29T18:12:15+00:00"
 >>>>>>> Composer update
 >>>>>>> Composer update
+=======
+            "time": "2019-07-29T18:12:15+00:00"
+>>>>>>> Add search form
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -3649,8 +3663,11 @@
                 "theme"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2019-07-31T22:59:28+00:00"
 =======
+=======
+>>>>>>> Add search form
 <<<<<<< HEAD
             "time": "2019-07-31T01:58:31+00:00"
 =======
@@ -3660,7 +3677,13 @@
             "time": "2019-07-29 00:54:07"
 >>>>>>> Initial integration of fulltextsearch module
 >>>>>>> Initial integration of fulltextsearch module
+<<<<<<< HEAD
 >>>>>>> Initial integration of fulltextsearch module
+=======
+=======
+            "time": "2019-07-29 00:54:07"
+>>>>>>> Add search form
+>>>>>>> Add search form
         },
         {
             "name": "silverstripe/blog",
@@ -3894,7 +3917,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2019-07-25T01:32:15+00:00"
+            "time": "2019-07-25 01:32:15"
         },
         {
             "name": "silverstripe/config",
@@ -4235,7 +4258,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2019-07-24T21:30:41+00:00"
+            "time": "2019-07-24 21:30:41"
         },
         {
             "name": "silverstripe/framework",
@@ -5091,7 +5114,11 @@
             "keywords": [
                 "silverstripe"
             ],
+<<<<<<< HEAD
             "time": "2019-07-31T01:50:52+00:00"
+=======
+            "time": "2019-07-25 02:31:51"
+>>>>>>> Add search form
         },
         {
             "name": "silverstripe/theme-fontpicker",
@@ -5135,7 +5162,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2019-07-25T02:32:07+00:00"
+            "time": "2019-07-25 02:32:07"
         },
         {
             "name": "silverstripe/userforms",
@@ -6383,11 +6410,7 @@
         },
         {
             "name": "symfony/process",
-<<<<<<< HEAD
-            "version": "v4.3.3",
-=======
             "version": "v3.4.30",
->>>>>>> Initial integration of fulltextsearch module
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -6614,7 +6637,45 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-07-24T13:01:31+00:00"
-<<<<<<< HEAD
+        },
+        {
+            "name": "tractorcow/classproxy",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/classproxy.git",
+                "reference": "95e988a37917a3d44805ab907f79778f24e6bf8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/classproxy/zipball/95e988a37917a3d44805ab907f79778f24e6bf8e",
+                "reference": "95e988a37917a3d44805ab907f79778f24e6bf8e",
+                "shasum": ""
+            },
+            "require": {
+                "phpspec/prophecy": "^1.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\ClassProxy\\": "src/",
+                    "TractorCow\\ClassProxy\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                }
+            ],
+            "time": "2018-03-20T01:57:54+00:00"
         },
         {
             "name": "tractorcow/silverstripe-fluent",
@@ -6683,6 +6744,7 @@
                 "translatable",
                 "translation"
             ],
+<<<<<<< HEAD
             "time": "2019-07-31T21:46:35+00:00"
         },
         {
@@ -6770,6 +6832,9 @@
                 }
             ],
             "time": "2018-03-20T01:57:54+00:00"
+=======
+            "time": "2019-07-26T02:31:22+00:00"
+>>>>>>> Add search form
         },
         {
             "name": "tractorcow/silverstripe-proxy-db",

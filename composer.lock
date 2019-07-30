@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "dbfe053456e3f42b7cd5aa94472af8cb95681747"
+                "reference": "92683873246c897416082208e05aca005327d65d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/dbfe053456e3f42b7cd5aa94472af8cb95681747",
-                "reference": "dbfe053456e3f42b7cd5aa94472af8cb95681747",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/92683873246c897416082208e05aca005327d65d",
+                "reference": "92683873246c897416082208e05aca005327d65d",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-28T23:07:47+00:00"
+            "time": "2019-07-29T00:54:07+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -4012,23 +4012,23 @@
         },
         {
             "name": "silverstripe/raygun",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-raygun.git",
-                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0"
+                "reference": "34afb20a343ce66680035b19956a6a68a09b2243"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
-                "reference": "94ed4b357cb23622d4a91ed622ca476b1cc4b6e0",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-raygun/zipball/34afb20a343ce66680035b19956a6a68a09b2243",
+                "reference": "34afb20a343ce66680035b19956a6a68a09b2243",
                 "shasum": ""
             },
             "require": {
                 "graze/monolog-extensions": "^2",
                 "mindscape/raygun4php": "^1",
-                "php": ">=5.6.0",
-                "silverstripe/framework": "^4.0"
+                "php": ">=7.1",
+                "silverstripe/framework": "^4.3"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -4058,7 +4058,7 @@
                 "raygun",
                 "silverstripe"
             ],
-            "time": "2019-07-11T05:15:53+00:00"
+            "time": "2019-07-26T07:36:00+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",

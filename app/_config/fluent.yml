@@ -14,3 +14,9 @@ SilverStripe\Bambusa\Blocks\CarouselItem:
     - Content
     - PrimaryCallToActionLabel
     - SecondaryCallToActionLabel
+
+SilverStripe\Bambusa\Blocks\Column\Item:
+  extensions:
+    - TractorCow\Fluent\Extension\FluentVersionedExtension
+  translate:
+    - Content

@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.108.1",
+            "version": "3.108.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa"
+                "reference": "1bb860e0ef548355bd97e22549b378c62c7af6ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8e6a853acb7e455f8de2b04443bcd372b50a40fa",
-                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1bb860e0ef548355bd97e22549b378c62c7af6ad",
+                "reference": "1bb860e0ef548355bd97e22549b378c62c7af6ad",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-29T18:12:15+00:00"
+            "time": "2019-07-30T19:02:39+00:00"
         },
         {
             "name": "axllent/silverstripe-trailing-slash",
@@ -493,25 +493,25 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d"
+                "reference": "13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
-                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e",
+                "reference": "13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
                 "ext-pcre": "*",
-                "php": "^5.3.2 || ^7.0"
+                "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
                 "symfony/process": "^2.5 || ^3.0 || ^4.0"
             },
@@ -545,7 +545,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-01-28T09:30:10+00:00"
+            "time": "2019-07-30T05:22:27+00:00"
         },
         {
             "name": "composer/composer",
@@ -3146,12 +3146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "da94123199f111e20aacb94cb4ca650960554827"
+                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/da94123199f111e20aacb94cb4ca650960554827",
-                "reference": "da94123199f111e20aacb94cb4ca650960554827",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
+                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3177,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-30T02:50:46+00:00"
+            "time": "2019-07-31T01:58:31+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -4509,12 +4509,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-theme-colorpicker.git",
-                "reference": "e866882c8e63a80a7afb09f43445333dca72b676"
+                "reference": "26cd2cf81d6751c4ec6dad022e9b501f7d52bd85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-theme-colorpicker/zipball/e866882c8e63a80a7afb09f43445333dca72b676",
-                "reference": "e866882c8e63a80a7afb09f43445333dca72b676",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-theme-colorpicker/zipball/26cd2cf81d6751c4ec6dad022e9b501f7d52bd85",
+                "reference": "26cd2cf81d6751c4ec6dad022e9b501f7d52bd85",
                 "shasum": ""
             },
             "require": {
@@ -4544,7 +4544,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2019-07-25T02:31:51+00:00"
+            "time": "2019-07-31T01:50:52+00:00"
         },
         {
             "name": "silverstripe/theme-fontpicker",

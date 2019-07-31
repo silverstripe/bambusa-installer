@@ -84,9 +84,9 @@ class BlocksPage extends Page
             $this->ElementalAreaID = $areaNew->ID;
 
             // Duplicate header area
-            $area = $this->ElementalArea();
+            $area = $this->HeaderElements();
             $areaNew = $area->duplicate();
-            $this->ElementalAreaID = $areaNew->ID;
+            $this->HeaderElementsID = $areaNew->ID;
         }
 
         return;

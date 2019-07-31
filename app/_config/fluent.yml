@@ -22,3 +22,9 @@ SilverStripe\ElementalBannerBlock\Block\BannerBlock:
 SilverStripe\ElementalBannerBlock\Block\FileBlock:
   field_include:
     - FileID
+
+SilverStripe\Bambusa\Blocks\Column\Item:
+  extensions:
+    - TractorCow\Fluent\Extension\FluentVersionedExtension
+  translate:
+    - Content

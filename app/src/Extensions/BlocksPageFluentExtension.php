@@ -18,7 +18,8 @@ class BlocksPageFluentExtension extends Extension
     public function updateLocaliseSelect(&$query, $table, $field, Locale $locale)
     {
         // disallow elemental data inheritance in the case that published localised page instance already exists
-        if ($field == 'ElementalAreaID' && $this->owner->isPublishedInLocale()) {
+        $disallowedFields = ['ElementalAreaID', 'HeaderElementsID'];
+        if (in_array($field, $disallowedFields) && $this->owner->isPublishedInLocale()) {
             $query = '"' . $table . '_Localised_' . $locale->getLocale() . '"."' . $field . '"';
         }
     }

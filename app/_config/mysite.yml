@@ -27,17 +27,5 @@ Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction:
 SilverStripe\CMS\Model\SiteTree:
   extensions:
     - Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension
-SilverStripe\Core\Injector\Injector:
-  Vulcan\Seo\Analysis\FocusKeywordContentAnalysis:
-    class: SilverStripe\Bambusa\SEO\FocusKeywordContentAnalysis
 SilverStripe\View\Parsers\URLSegmentFilter:
   default_allow_multibyte: true
-
----
-Name: bambusa-seo
-After:
-  - silverstripe-seo
----
-SilverStripe\SiteConfig\SiteConfig:
-  extensions:
-    - SilverStripe\Bambusa\Extensions\SiteConfigExtension

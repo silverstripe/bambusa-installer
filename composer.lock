@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acbd0f73ae2f67404e38b92d27043024",
+    "content-hash": "6492b70bd6d4a91bd6f69e3b22f19301",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -122,48 +122,6 @@
                 "sdk"
             ],
             "time": "2019-07-30T19:02:39+00:00"
-        },
-        {
-            "name": "axllent/silverstripe-trailing-slash",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/axllent/silverstripe-trailing-slash.git",
-                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/axllent/silverstripe-trailing-slash/zipball/9be9350c4f634d6f41c68c1ec315dc80260948b0",
-                "reference": "9be9350c4f634d6f41c68c1ec315dc80260948b0",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "type": "silverstripe-vendormodule",
-            "autoload": {
-                "psr-4": {
-                    "Axllent\\TrailingSlash\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralph Slooten",
-                    "homepage": "http://www.axllent.org/"
-                }
-            ],
-            "description": "Ensure that a single trailing slash is always added to the URL",
-            "homepage": "https://github.com/axllent/silverstripe-trailing-slash",
-            "keywords": [
-                "seo",
-                "silverstripe",
-                "urls"
-            ],
-            "time": "2019-02-07T04:27:11+00:00"
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -399,13 +357,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "role": "Contributors",
-                    "email": "matt@dwen.co.nz"
+                    "email": "matt@dwen.co.nz",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Xplore Developers",
-                    "role": "Contributors",
-                    "email": "developers@xplore.net"
+                    "email": "developers@xplore.net",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -413,8 +371,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "role": "Contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -493,16 +451,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e"
+                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e",
-                "reference": "13a8d67799a4f1c0e6bb0abd788abbe9e95dee8e",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/33810d865dd06a674130fceb729b2f279dc79e8c",
+                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c",
                 "shasum": ""
             },
             "require": {
@@ -545,7 +503,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-07-30T05:22:27+00:00"
+            "time": "2019-07-31T08:13:16+00:00"
         },
         {
             "name": "composer/composer",
@@ -1771,53 +1729,6 @@
             "time": "2019-07-14T22:34:16+00:00"
         },
         {
-            "name": "jonom/silverstripe-text-target-length",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jonom/silverstripe-text-target-length.git",
-                "reference": "8710bb4954dfaa420837ebea1eb7c42aef31e214"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-text-target-length/zipball/8710bb4954dfaa420837ebea1eb7c42aef31e214",
-                "reference": "8710bb4954dfaa420837ebea1eb7c42aef31e214",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "JonoM\\SilverStripeTextTargetLength\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathon Menz",
-                    "homepage": "http://jonathonmenz.com"
-                }
-            ],
-            "description": "Set character length recommendations on SilverStripe text form fields",
-            "keywords": [
-                "silverstripe",
-                "target",
-                "textareafield",
-                "textfield"
-            ],
-            "time": "2018-05-28T17:57:48+00:00"
-        },
-        {
             "name": "justinrainbow/json-schema",
             "version": "5.2.8",
             "source": {
@@ -1882,52 +1793,6 @@
                 "schema"
             ],
             "time": "2019-01-14T23:55:14+00:00"
-        },
-        {
-            "name": "kub-at/php-simple-html-dom-parser",
-            "version": "1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Kub-AT/php-simple-html-dom-parser.git",
-                "reference": "1fe277a7616b5d7cfd192a8908cbc7653dc9baee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Kub-AT/php-simple-html-dom-parser/zipball/1fe277a7616b5d7cfd192a8908cbc7653dc9baee",
-                "reference": "1fe277a7616b5d7cfd192a8908cbc7653dc9baee",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "KubAT\\PhpSimple\\HtmlDomParser": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.C. Chen",
-                    "email": "me578022@gmail.com"
-                },
-                {
-                    "name": "Jakub Stawowy",
-                    "email": "Kub-AT@users.noreply.github.com"
-                }
-            ],
-            "description": "PHP Simple HTML DOM Parser with namespace and PHP 7.3 compatible",
-            "homepage": "http://simplehtmldom.sourceforge.net/",
-            "keywords": [
-                "Simple",
-                "dom",
-                "html"
-            ],
-            "time": "2019-06-03T05:50:36+00:00"
         },
         {
             "name": "league/csv",
@@ -3146,12 +3011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf"
+                "reference": "88876d823c49aa6678101c195ae7aaf674bd651d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
-                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/88876d823c49aa6678101c195ae7aaf674bd651d",
+                "reference": "88876d823c49aa6678101c195ae7aaf674bd651d",
                 "shasum": ""
             },
             "require": {
@@ -3177,7 +3042,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-07-31T01:58:31+00:00"
+            "time": "2019-07-31T22:59:28+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -6066,16 +5931,16 @@
         },
         {
             "name": "tractorcow/silverstripe-fluent",
-            "version": "4.4.0",
+            "version": "4.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tractorcow-farm/silverstripe-fluent.git",
-                "reference": "0391a79c072ff309e79789fa4c6472fbcfab8b86"
+                "reference": "3c9155204907cdba7468f8b4ade45be0081a6256"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tractorcow-farm/silverstripe-fluent/zipball/0391a79c072ff309e79789fa4c6472fbcfab8b86",
-                "reference": "0391a79c072ff309e79789fa4c6472fbcfab8b86",
+                "url": "https://api.github.com/repos/tractorcow-farm/silverstripe-fluent/zipball/3c9155204907cdba7468f8b4ade45be0081a6256",
+                "reference": "3c9155204907cdba7468f8b4ade45be0081a6256",
                 "shasum": ""
             },
             "require": {
@@ -6091,7 +5956,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3.x-dev"
+                    "dev-master": "4.5.x-dev"
                 },
                 "expose": [
                     "client/dist"
@@ -6131,71 +5996,7 @@
                 "translatable",
                 "translation"
             ],
-            "time": "2019-07-26T02:31:22+00:00"
-        },
-        {
-            "name": "vulcandigital/silverstripe-seo",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vulcandigital/silverstripe-seo.git",
-                "reference": "2c9286bf4ad321d8a19a191762238c2fa16055ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vulcandigital/silverstripe-seo/zipball/2c9286bf4ad321d8a19a191762238c2fa16055ef",
-                "reference": "2c9286bf4ad321d8a19a191762238c2fa16055ef",
-                "shasum": ""
-            },
-            "require": {
-                "axllent/silverstripe-trailing-slash": "^2.1",
-                "jonom/silverstripe-text-target-length": "^2",
-                "kub-at/php-simple-html-dom-parser": "^1.7",
-                "silverstripe/cms": "^4.1",
-                "wilr/silverstripe-googlesitemaps": "^2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                },
-                "expose": [
-                    "dist"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "Vulcan\\Seo\\": "src/",
-                    "Vulcan\\Seo\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Reece Alexander",
-                    "homepage": "https://vulcandigital.co.nz"
-                }
-            ],
-            "description": "An all-in-one SEO module for SilverStripe",
-            "keywords": [
-                "facebook",
-                "opengraph",
-                "optimisation",
-                "optimization",
-                "search",
-                "seo",
-                "silverstripe",
-                "twitter"
-            ],
-            "abandoned": true,
-            "time": "2019-03-18T07:02:20+00:00"
+            "time": "2019-07-31T21:46:35+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -6940,8 +6741,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",

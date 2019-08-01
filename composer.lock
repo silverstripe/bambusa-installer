@@ -4,19 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "content-hash": "6492b70bd6d4a91bd6f69e3b22f19301",
-=======
-<<<<<<< HEAD
-    "content-hash": "acbd0f73ae2f67404e38b92d27043024",
-=======
-    "content-hash": "4efde45f5658f0c7941f4f759c161092",
->>>>>>> Initial integration of fulltextsearch module
->>>>>>> Initial integration of fulltextsearch module
-=======
-    "content-hash": "4d414703e0fecfc3d00c01aa282b44af",
->>>>>>> Add search form
+    "content-hash": "3d65a0a79c6be82a3eff481ab8dd3916",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -54,18 +42,7 @@
         },
         {
             "name": "aws/aws-sdk-php",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             "version": "3.108.2",
-=======
-=======
->>>>>>> Composer update
-<<<<<<< HEAD
-=======
->>>>>>> Add search form
-            "version": "3.108.1",
->>>>>>> Initial integration of fulltextsearch module
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
@@ -73,39 +50,8 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1bb860e0ef548355bd97e22549b378c62c7af6ad",
                 "reference": "1bb860e0ef548355bd97e22549b378c62c7af6ad",
-=======
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8e6a853acb7e455f8de2b04443bcd372b50a40fa",
-                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
-<<<<<<< HEAD
-=======
-            "version": "3.108.0",
-=======
-            "version": "3.108.1",
->>>>>>> Composer update
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa"
-            },
-            "dist": {
-                "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/df65815065b0195bc374bd17d8cc6884b4870da1",
-                "reference": "df65815065b0195bc374bd17d8cc6884b4870da1",
->>>>>>> Initial integration of fulltextsearch module
-<<<<<<< HEAD
->>>>>>> Initial integration of fulltextsearch module
-=======
-=======
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8e6a853acb7e455f8de2b04443bcd372b50a40fa",
-                "reference": "8e6a853acb7e455f8de2b04443bcd372b50a40fa",
->>>>>>> Composer update
->>>>>>> Composer update
-=======
->>>>>>> Add search form
                 "shasum": ""
             },
             "require": {
@@ -175,28 +121,7 @@
                 "s3",
                 "sdk"
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             "time": "2019-07-30T19:02:39+00:00"
-=======
-=======
->>>>>>> Composer update
-<<<<<<< HEAD
-            "time": "2019-07-29T18:12:15+00:00"
-=======
-            "time": "2019-07-26T18:22:40+00:00"
->>>>>>> Initial integration of fulltextsearch module
-<<<<<<< HEAD
->>>>>>> Initial integration of fulltextsearch module
-=======
-=======
-            "time": "2019-07-29T18:12:15+00:00"
->>>>>>> Composer update
->>>>>>> Composer update
-=======
-            "time": "2019-07-29T18:12:15+00:00"
->>>>>>> Add search form
         },
         {
             "name": "benmanu/silverstripe-simple-styleguide",
@@ -526,16 +451,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c"
+                "reference": "ec2e24d4fa6a0d50d423794a56605ecec3401b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/33810d865dd06a674130fceb729b2f279dc79e8c",
-                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/ec2e24d4fa6a0d50d423794a56605ecec3401b85",
+                "reference": "ec2e24d4fa6a0d50d423794a56605ecec3401b85",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +503,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-07-31T08:13:16+00:00"
+            "time": "2019-08-01T07:52:17+00:00"
         },
         {
             "name": "composer/composer",
@@ -3631,30 +3556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-<<<<<<< HEAD
                 "reference": "88876d823c49aa6678101c195ae7aaf674bd651d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/88876d823c49aa6678101c195ae7aaf674bd651d",
                 "reference": "88876d823c49aa6678101c195ae7aaf674bd651d",
-=======
-<<<<<<< HEAD
-                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
-                "reference": "b4d3a75859944eb8bf08d4c30b686cc76fe6b5bf",
-=======
-                "reference": "da94123199f111e20aacb94cb4ca650960554827"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/da94123199f111e20aacb94cb4ca650960554827",
-                "reference": "da94123199f111e20aacb94cb4ca650960554827",
->>>>>>> Composer update to new theme
->>>>>>> Composer update to new theme
                 "shasum": ""
             },
             "require": {
@@ -3680,37 +3587,7 @@
                 "silverstripe",
                 "theme"
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "time": "2019-07-31T22:59:28+00:00"
-=======
-=======
->>>>>>> Add search form
-=======
->>>>>>> Composer update to new theme
-<<<<<<< HEAD
-            "time": "2019-07-31T01:58:31+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2019-07-29T00:54:07+00:00"
-=======
-            "time": "2019-07-29 00:54:07"
->>>>>>> Initial integration of fulltextsearch module
->>>>>>> Initial integration of fulltextsearch module
-<<<<<<< HEAD
->>>>>>> Initial integration of fulltextsearch module
-=======
-=======
-            "time": "2019-07-29 00:54:07"
->>>>>>> Add search form
-<<<<<<< HEAD
->>>>>>> Add search form
-=======
-=======
-            "time": "2019-07-30 02:50:46"
->>>>>>> Composer update to new theme
->>>>>>> Composer update to new theme
+            "time": "2019-07-31 22:59:28"
         },
         {
             "name": "silverstripe/blog",
@@ -5141,11 +5018,7 @@
             "keywords": [
                 "silverstripe"
             ],
-<<<<<<< HEAD
-            "time": "2019-07-31T01:50:52+00:00"
-=======
-            "time": "2019-07-25 02:31:51"
->>>>>>> Add search form
+            "time": "2019-07-31 01:50:52"
         },
         {
             "name": "silverstripe/theme-fontpicker",
@@ -6771,97 +6644,7 @@
                 "translatable",
                 "translation"
             ],
-<<<<<<< HEAD
             "time": "2019-07-31T21:46:35+00:00"
-        },
-        {
-            "name": "webonyx/graphql-php",
-            "version": "v0.12.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
-                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8",
-                "psr/http-message": "^1.0",
-                "react/promise": "2.*"
-            },
-            "suggest": {
-                "psr/http-message": "To use standard GraphQL server",
-                "react/promise": "To leverage async resolving on React PHP platform"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GraphQL\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A PHP port of GraphQL reference implementation",
-            "homepage": "https://github.com/webonyx/graphql-php",
-            "keywords": [
-                "api",
-                "graphql"
-            ],
-            "time": "2018-09-02T14:59:54+00:00"
-=======
->>>>>>> Initial integration of fulltextsearch module
-        },
-        {
-            "name": "tractorcow/classproxy",
-            "version": "0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tractorcow/classproxy.git",
-                "reference": "95e988a37917a3d44805ab907f79778f24e6bf8e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tractorcow/classproxy/zipball/95e988a37917a3d44805ab907f79778f24e6bf8e",
-                "reference": "95e988a37917a3d44805ab907f79778f24e6bf8e",
-                "shasum": ""
-            },
-            "require": {
-                "phpspec/prophecy": "^1.7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TractorCow\\ClassProxy\\": "src/",
-                    "TractorCow\\ClassProxy\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Damian Mooyman",
-                    "email": "damian@silverstripe.com"
-                }
-            ],
-            "time": "2018-03-20T01:57:54+00:00"
-=======
-            "time": "2019-07-26T02:31:22+00:00"
->>>>>>> Add search form
         },
         {
             "name": "tractorcow/silverstripe-proxy-db",
@@ -6904,70 +6687,6 @@
                 "silverstripe"
             ],
             "time": "2018-02-16T01:16:44+00:00"
-        },
-        {
-            "name": "vulcandigital/silverstripe-seo",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vulcandigital/silverstripe-seo.git",
-                "reference": "2c9286bf4ad321d8a19a191762238c2fa16055ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vulcandigital/silverstripe-seo/zipball/2c9286bf4ad321d8a19a191762238c2fa16055ef",
-                "reference": "2c9286bf4ad321d8a19a191762238c2fa16055ef",
-                "shasum": ""
-            },
-            "require": {
-                "axllent/silverstripe-trailing-slash": "^2.1",
-                "jonom/silverstripe-text-target-length": "^2",
-                "kub-at/php-simple-html-dom-parser": "^1.7",
-                "silverstripe/cms": "^4.1",
-                "wilr/silverstripe-googlesitemaps": "^2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                },
-                "expose": [
-                    "dist"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "Vulcan\\Seo\\": "src/",
-                    "Vulcan\\Seo\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Reece Alexander",
-                    "homepage": "https://vulcandigital.co.nz"
-                }
-            ],
-            "description": "An all-in-one SEO module for SilverStripe",
-            "keywords": [
-                "facebook",
-                "opengraph",
-                "optimisation",
-                "optimization",
-                "search",
-                "seo",
-                "silverstripe",
-                "twitter"
-            ],
-            "abandoned": true,
-            "time": "2019-03-18T07:02:20+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7470,170 +7189,6 @@
             "suggest": {
                 "ext-xdebug": "*",
                 "phpunit/php-invoker": "~1.1"
-<<<<<<< HEAD
-            },
-            "bin": [
-                "phpunit"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.7.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "The PHP Unit Testing framework.",
-            "homepage": "https://phpunit.de/",
-            "keywords": [
-                "phpunit",
-                "testing",
-                "xunit"
-            ],
-            "time": "2018-02-01T05:50:59+00:00"
-        },
-        {
-            "name": "phpunit/phpunit-mock-objects",
-            "version": "3.4.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/a23b761686d50a560cc56233b9ecf49597cc9118",
-                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/instantiator": "^1.0.2",
-                "php": "^5.6 || ^7.0",
-                "phpunit/php-text-template": "^1.2",
-                "sebastian/exporter": "^1.2 || ^2.0"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.4"
-            },
-            "suggest": {
-                "ext-soap": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "Mock Object library for PHPUnit",
-            "homepage": "https://github.com/sebastianbergmann/phpunit-mock-objects/",
-            "keywords": [
-                "mock",
-                "xunit"
-            ],
-            "abandoned": true,
-            "time": "2017-06-30T09:13:00+00:00"
-        },
-        {
-            "name": "sebastian/code-unit-reverse-lookup",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Looks up which function or method a line of code belongs to",
-            "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2017-03-04T06:30:41+00:00"
-        },
-        {
-            "name": "sebastian/comparator",
-            "version": "1.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
-                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "sebastian/diff": "~1.2",
-                "sebastian/exporter": "~1.2 || ~2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.4"
-=======
->>>>>>> Initial integration of fulltextsearch module
             },
             "bin": [
                 "phpunit"

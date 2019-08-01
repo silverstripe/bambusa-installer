@@ -17,5 +17,16 @@ namespace {
 
             return $fields;
         }
+
+        /**
+         * Fulltextsearch only consumes computed fields that begin with "get".
+         *
+         * @param string|null $action
+         * @return string
+         */
+        public function getLink(?string $action = null): string
+        {
+            return $this->Link($action);
+        }
     }
 }

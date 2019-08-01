@@ -1,6 +1,6 @@
 <?php
 
-namespace SilverStripe\Controllers;
+namespace SilverStripe\Bambusa\Controllers;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;

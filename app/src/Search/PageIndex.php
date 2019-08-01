@@ -3,7 +3,6 @@
 
 namespace SilverStripe\Bambusa\Search;
 
-
 use SilverStripe\Bambusa\Pages\BlocksPage;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\FullTextSearch\Solr\SolrIndex;
@@ -20,5 +19,4 @@ class PageIndex extends SolrIndex
         $this->addFulltextField('ElementsForSearch');
         $this->addStoredField('Link');
     }
-
 }

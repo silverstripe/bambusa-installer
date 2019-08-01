@@ -88,7 +88,6 @@ class SearchController extends PageController
             'Page_results',
             'Page',
         ]);
-
     }
 
     public function Link($action = null)

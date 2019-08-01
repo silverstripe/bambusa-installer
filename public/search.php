@@ -1,5 +1,11 @@
 <?php
 
+// If we have to boot the whole stack, autosuggest is
+// functionally useless. This naked PHP script is designed
+// to generate very fast response times. The trade off is
+// that there's a lot of hard-coded configuration and duplicated
+// code, because we don't have the shared app state.
+
 header('Content-type', 'application/json');
 
 $server = getenv('SOLR_SERVER');

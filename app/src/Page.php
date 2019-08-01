@@ -15,28 +15,6 @@ namespace {
             // Not something we want users playing with.
             $fields->removeByName('ExtraMeta');
 
-            /* @var Tab $mainTab */
-            $mainTab = $fields->fieldByName('Root.Main');
-            $seoTab = $fields->findOrMakeTab('Root.SEO');
-            $replace = [
-                'Metadata' => 'Meta tags',
-                'SEOHealthAnalysis' => 'Analysis',
-                'FacebookSeoComposite' => 'Facebook',
-                'TwitterSeoComposite' => 'Twitter',
-            ];
-            foreach ($replace as $composite => $newTitle) {
-                /* @var ToggleCompositeField $field */
-                $field = $mainTab->fieldByName($composite);
-                if (!$field) {
-                    continue;
-                }
-                $seoTab->push($field);
-                if ($newTitle) {
-                    $field->setTitle($newTitle);
-                }
-                $mainTab->removeByName($field->getName());
-            }
-
             return $fields;
         }
     }

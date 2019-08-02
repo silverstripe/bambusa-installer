@@ -5,7 +5,9 @@ namespace SilverStripe\Bambusa\Search;
 
 use SilverStripe\Bambusa\Pages\BlocksPage;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\FullTextSearch\Search\Variants\SearchVariantVersioned;
 use SilverStripe\FullTextSearch\Solr\SolrIndex;
+use SilverStripe\Versioned\Versioned;
 
 class PageIndex extends SolrIndex
 {
@@ -18,5 +20,7 @@ class PageIndex extends SolrIndex
         $this->addFulltextField('Title', null, ['boost' => 2]);
         $this->addFulltextField('ElementsForSearch');
         $this->addStoredField('Link');
+
+        $this->excludeVariantState([SearchVariantVersioned::class => Versioned::DRAFT]);
     }
 }

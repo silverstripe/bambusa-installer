@@ -19,9 +19,9 @@ SilverStripe\Fontpicker\Forms\FontPickerField:
   default_font: metropolis
 SilverStripe\ORM\Connect\MySQLDatabase:
   connection_charset: utf8mb4
-  connection_collation: utf8mb4_unicode_ci
+  connection_collation: utf8mb4_general_ci
   charset: utf8mb4
-  collation: utf8mb4_unicode_ci
+  collation: utf8mb4_general_ci
 Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction:
   whitelist_template_variables: true
 SilverStripe\CMS\Model\SiteTree:

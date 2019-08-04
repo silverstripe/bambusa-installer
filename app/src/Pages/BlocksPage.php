@@ -60,17 +60,11 @@ class BlocksPage extends Page
         return $fields;
     }
 
-    /**
-     * Override this method in the SEO extension to allow block content
-     * @return array
-     */
-    public function seoContentFields()
+    public function getElementsForSearch()
     {
-        return [
-            'Content',
-            'ElementalArea',
-            'HeaderElements',
-        ];
+        $result = $this->invokeWithExtensions('getElementsForSearch');
+die($result);
+        return str_replace("\n", '', $result);
     }
 
     public function onBeforeWrite()

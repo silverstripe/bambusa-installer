@@ -1,6 +1,6 @@
 <?php
 
-namespace SilverStripe\Controllers;
+namespace SilverStripe\Bambusa\Controllers;
 
 use BenManu\SimpleStyleguide\SimpleStyleguideController as BenSimpleStyleguideController;
 use SilverStripe\CMS\Controllers\ModelAsController;

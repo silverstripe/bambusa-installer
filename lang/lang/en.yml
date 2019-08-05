@@ -10,7 +10,7 @@ en:
       other: '{count} Carousel Items'
     PRIMARYCALLTOACTION: 'Primary Call To Action Link'
     SECONDARYCALLTOACTION: 'Secondary Call To Action Link'
-    SINGULARNAME: 'Carousel Item'  
+    SINGULARNAME: 'Carousel Item'
   SilverStripe\Bambusa\Blocks\CarouselBlock:
     ADDNEW: 'Add new'
     NOTE: 'NOTE: Carousel functionality will automatically be loaded when 2 or more items are added below'
@@ -19,3 +19,6 @@ en:
     PREVIOUS: 'Go to previous slide.'
     PAUSESLIDE: 'Click to pause carousel slides.'
     PLAYSLIDE: 'Click to play carousel slides.'
+  Bambusa_Search:
+    Button: Search
+    Placeholder: 'Search...'

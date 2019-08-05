@@ -35,4 +35,5 @@ After: '#simplestyleguide'
 SilverStripe\Control\Director:
   rules:
     '_styleguide': '->styleguide'
-    'styleguide': SilverStripe\Controllers\SimpleStyleguideController
+    'styleguide': SilverStripe\Bambusa\Controllers\SimpleStyleguideController
+    'search': SilverStripe\Bambusa\Controllers\SearchController

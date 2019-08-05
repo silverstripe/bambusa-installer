@@ -9,4 +9,4 @@ SilverStripe\Security\Member:
 
 SilverStripe\Control\Director:
   rules:
-    '_lastlogin': SilverStripe\Controllers\LastLogin
+    '_lastlogin': SilverStripe\Bambusa\Controllers\LastLogin

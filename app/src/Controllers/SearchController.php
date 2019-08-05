@@ -105,8 +105,13 @@ class SearchController extends PageController
      */
     private static function sanitiseQuery(string $q): string
     {
-        $match = ['\\', '+', '-', '&', '|', '!', '(', ')', '{', '}', '[', ']', '^', '~', '*', '?', ':', '"', ';'];
-        $replace = ['\\\\', '\\+', '\\-', '\\&', '\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\~', '\\*', '\\?', '\\:', '\\"', '\\;'];
+        $match = [
+            '\\', '+', '-', '&', '|', '!', '(', ')', '{', '}', '[', ']', '^', '~', '*', '?', ':', '"', ';'
+        ];
+        $replace = [
+            '\\\\', '\\+', '\\-', '\\&', '\\|', '\\!', '\\(', '\\)', '\\{',
+            '\\}', '\\[', '\\]', '\\^', '\\~', '\\*', '\\?', '\\:', '\\"', '\\;'
+        ];
         $match = array_merge($match, array_keys(self::$macrons));
         $replace = array_merge($replace, array_values(self::$macrons));
 

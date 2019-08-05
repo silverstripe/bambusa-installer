@@ -4,6 +4,7 @@ namespace SilverStripe\Bambusa\Pages;
 
 use DNADesign\Elemental\Extensions\ElementalPageExtension;
 use DNADesign\Elemental\Models\ElementalArea;
+use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Forms\HeaderField;
 use Page;
 
@@ -30,7 +31,8 @@ class BlocksPage extends Page
     ];
 
     private static $casting = [
-        'BlockContent' => 'HTMLText'
+        'BlockContent' => 'HTMLText',
+        'ElementsForSearch' => 'HTMLText',
     ];
 
     /**
@@ -62,8 +64,11 @@ class BlocksPage extends Page
 
     public function getElementsForSearch()
     {
-        $result = $this->invokeWithExtensions('getElementsForSearch');
-die($result);
+        $extension = Injector::inst()->get(ElementalPageExtension::class);
+        $extension->setOwner($this);
+        $result = $extension->getElementsForSearch();
+
+        // New lines become <br> in ContextSummary
         return str_replace("\n", '', $result);
     }
 

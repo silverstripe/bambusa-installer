@@ -3,6 +3,7 @@
 
 namespace SilverStripe\Bambusa\Controllers;
 
+use SilverStripe\Bambusa\Pages\BlocksPage;
 use SilverStripe\Bambusa\Search\PageIndex;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;

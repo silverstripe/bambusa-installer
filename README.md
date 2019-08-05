@@ -1,5 +1,7 @@
 ## Overview
 
+[![Build Status](https://travis-ci.com/silverstripe/bambusa-installer.svg?branch=master)](https://travis-ci.com/silverstripe/bambusa-installer)
+
 Demonstration project for SilverStripe CMS.
 
 ## About this project

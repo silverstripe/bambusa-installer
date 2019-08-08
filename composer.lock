@@ -3556,12 +3556,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
+<<<<<<< HEAD
                 "reference": "247e03f4275acdd63e28f73b5f2b392a557b3cb2"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/247e03f4275acdd63e28f73b5f2b392a557b3cb2",
                 "reference": "247e03f4275acdd63e28f73b5f2b392a557b3cb2",
+=======
+                "reference": "f39098eae4bed84c48fa046eea3dc460bb3b319d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/f39098eae4bed84c48fa046eea3dc460bb3b319d",
+                "reference": "f39098eae4bed84c48fa046eea3dc460bb3b319d",
+>>>>>>> Composer update
                 "shasum": ""
             },
             "require": {
@@ -3587,7 +3596,11 @@
                 "silverstripe",
                 "theme"
             ],
+<<<<<<< HEAD
             "time": "2019-08-09T02:24:55+00:00"
+=======
+            "time": "2019-08-05 05:34:30"
+>>>>>>> Composer update
         },
         {
             "name": "silverstripe/blog",

@@ -16,6 +16,8 @@ cd $APPLICATION_BASE_DIR;
 
 composer update --ignore-platform-reqs --prefer-dist --no-dev --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
 
+curl https://raw.githubusercontent.com/silverstripe/supported-modules/gh-pages/modules.json --output $BIN_SCRIPTS_BASE_DIR/supported-modules.json
+
 echo "Sending the Slack message: $(composer outdated -D --format=json | $BIN_SCRIPTS_BASE_DIR/create-slack-message.php)";
 
 composer outdated -D --format=json | $BIN_SCRIPTS_BASE_DIR/create-slack-message.php |  curl -X POST -H 'Content-type: application/json' --data @- $SLACK_WEBHOOK_URL

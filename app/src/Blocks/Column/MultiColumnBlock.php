@@ -76,12 +76,17 @@ class MultiColumnBlock extends BaseElement
 
         $config->addComponent(GridFieldOrderableRows::create());
 
-        // Limit columns to 4 per block
-        if ($this->Items()->count() >= 4) {
-            $config->removeComponentsByType(GridFieldAddNewButton::class);
-        }
-
         return $fields;
+    }
+
+    public function gridSize(): int
+    {
+        $count = $this->Items()->count();
+        if ($count >= 4) {
+            return 4;
+        } else {
+            return $count;
+        }
     }
 
     /**

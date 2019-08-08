@@ -8,7 +8,7 @@
             <% include DNADesign/Elemental/Models/ElementContent HTML=$Items.First.Content %>
         <% end_if %>
     <% else %>
-        <div class="block multicolumn-block multicolumn-block--{$Items.count}">
+        <div class="block multicolumn-block multicolumn-block--{$gridSize}">
             <% if $ShowTitle %>
                 <h2 class="block__title">$Title</h2>
             <% end_if %>

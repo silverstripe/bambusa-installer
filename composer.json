@@ -13,6 +13,7 @@
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.4.1",
+        "silverstripe/admin": "1.4.2 as 1.4.1",
         "silverstripe/bambusa-theme": "dev-master",
         "silverstripe/recipe-content-blocks": "^2.3",
         "silverstripe/crontask": "^2.1.2",

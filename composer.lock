@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d65a0a79c6be82a3eff481ab8dd3916",
+    "content-hash": "3a36b1058062863b0a8b89afb3c0eed3",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -357,13 +357,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "email": "matt@dwen.co.nz",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "matt@dwen.co.nz"
                 },
                 {
                     "name": "Xplore Developers",
-                    "email": "developers@xplore.net",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "email": "developers@xplore.net"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -371,8 +371,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -1666,9 +1666,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -2030,9 +2030,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
+                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com",
-                    "role": "Developer"
+                    "homepage": "http://milescroxford.com"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3383,16 +3383,16 @@
         },
         {
             "name": "silverstripe/admin",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-admin.git",
-                "reference": "d31c8cbabfda8174698f86c145c10087facf031f"
+                "reference": "76cc4e7775633d91955be483bb79eac9f8c70dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/d31c8cbabfda8174698f86c145c10087facf031f",
-                "reference": "d31c8cbabfda8174698f86c145c10087facf031f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/76cc4e7775633d91955be483bb79eac9f8c70dea",
+                "reference": "76cc4e7775633d91955be483bb79eac9f8c70dea",
                 "shasum": ""
             },
             "require": {
@@ -3437,7 +3437,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2019-06-10T04:21:57+00:00"
+            "time": "2019-08-07T22:59:26+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -7211,8 +7211,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -7613,7 +7613,14 @@
             "time": "2019-04-10T23:49:02+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.4.1",
+            "alias_normalized": "1.4.1.0",
+            "version": "1.4.2.0",
+            "package": "silverstripe/admin"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,

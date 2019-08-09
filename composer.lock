@@ -357,13 +357,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "role": "Contributors",
-                    "email": "matt@dwen.co.nz"
+                    "email": "matt@dwen.co.nz",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Xplore Developers",
-                    "role": "Contributors",
-                    "email": "developers@xplore.net"
+                    "email": "developers@xplore.net",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -371,8 +371,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "role": "Contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -1549,8 +1549,8 @@
             "authors": [
                 {
                     "name": "Heyday Developers",
-                    "role": "Developer",
-                    "email": "dev@heyday.co.nz"
+                    "email": "dev@heyday.co.nz",
+                    "role": "Developer"
                 }
             ],
             "description": "Allows complex menu management to be handled through the CMS when a simple tree structure is not enough.",
@@ -1666,9 +1666,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
-                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia"
+                    "homepage": "https://github.com/jeremeamia",
+                    "role": "Developer"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -1890,9 +1890,9 @@
             "authors": [
                 {
                     "name": "Ignace Nyamagana Butera",
-                    "role": "Developer",
                     "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/"
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
                 }
             ],
             "description": "Csv data manipulation made easy in PHP",
@@ -2030,9 +2030,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
-                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com"
+                    "homepage": "http://milescroxford.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -3556,12 +3556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "f39098eae4bed84c48fa046eea3dc460bb3b319d"
+                "reference": "247e03f4275acdd63e28f73b5f2b392a557b3cb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/f39098eae4bed84c48fa046eea3dc460bb3b319d",
-                "reference": "f39098eae4bed84c48fa046eea3dc460bb3b319d",
+                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/247e03f4275acdd63e28f73b5f2b392a557b3cb2",
+                "reference": "247e03f4275acdd63e28f73b5f2b392a557b3cb2",
                 "shasum": ""
             },
             "require": {
@@ -3587,7 +3587,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2019-08-05T05:34:30+00:00"
+            "time": "2019-08-09T02:24:55+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -6943,8 +6943,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sb@sebastian-bergmann.de"
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -6991,8 +6991,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sb@sebastian-bergmann.de"
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -7033,8 +7033,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Simple template engine.",
@@ -7082,8 +7082,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sb@sebastian-bergmann.de"
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -7211,8 +7211,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -7553,8 +7553,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",

@@ -60,6 +60,9 @@ class MultiColumnBlock extends BaseElement
         'Items'
     ];
 
+    /** @var int The max number of columns for each row. */
+    private static $max_columns = 3;
+
     public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
@@ -82,8 +85,9 @@ class MultiColumnBlock extends BaseElement
     public function gridSize(): int
     {
         $count = $this->Items()->count();
-        if ($count >= 4) {
-            return 4;
+        $maxColumns = static::config()->get('max_columns');
+        if ($count >= $maxColumns) {
+            return $maxColumns;
         } else {
             return $count;
         }

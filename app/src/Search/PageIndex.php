@@ -20,6 +20,7 @@ class PageIndex extends SolrIndex
         $this->addFulltextField('Title', null, ['boost' => 2]);
         $this->addFulltextField('ElementsForSearch');
         $this->addStoredField('Link');
+        $this->addStoredField('Title');
 
         $this->excludeVariantState([SearchVariantVersioned::class => Versioned::DRAFT]);
     }

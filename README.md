@@ -8,7 +8,7 @@ Demonstration project for SilverStripe CMS.
 
 This project is meant to demonstrate key features of SilverStripe CMS. It combines both commercially supported modules and non-supported community modules. The frontend of the Bambusa demo is built on top of the [Bambusa Theme](https://github.com/silverstripe/bambusa-theme).
 
-This project is used to build the demonstration environment when a user request a SilverStripe demo from [SilverStripe.com](https://silverstripe.com). 
+This project is used to build the demonstration environment when a user request a SilverStripe demo from [silverstripe.com/demo](https://silverstripe.com/demo). 
 
 It's not meant to be used directly by the community. However, there's nothing stopping third party from re-using it for their own demo. SilverStripe doesn't provide official support for this project.
 

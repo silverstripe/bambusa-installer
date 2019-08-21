@@ -29,3 +29,6 @@ SilverStripe\CMS\Model\SiteTree:
     - Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension
 SilverStripe\View\Parsers\URLSegmentFilter:
   default_allow_multibyte: true
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\LeftAndMainExtension

@@ -20,16 +20,12 @@ class LeftAndMainExtension extends Extension
             return;
         }
 
+        Requirements::javascript("https://www.googletagmanager.com/gtag/js?id={$id}", ['async' => true]);
         $js = <<<JS
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={$id}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{$id}');
-</script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{$id}');
 JS;
 
         Requirements::customScript($js, 'bambusa-google-analytics');

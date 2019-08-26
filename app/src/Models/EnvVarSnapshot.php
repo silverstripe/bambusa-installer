@@ -22,6 +22,23 @@ use SilverStripe\ORM\ValidationException;
  */
 class EnvVarSnapshot extends DataObject
 {
+    /**
+     * The list of keys we don't want to put into the database snapshot
+     */
+    const IGNORED_KEYS = [
+        'SS_TRUSTED_PROXY_IPS',
+        'SS_DATABASE_CLASS',
+        'SS_DATABASE_NAME',
+        'SS_DATABASE_PASSWORD',
+        'SS_DATABASE_SERVER',
+        'SS_DATABASE_TIMEZONE',
+        'SS_DATABASE_USERNAME',
+        'SS_ENVIRONMENT_TYPE',
+        'SS_BASE_URL',
+        'SS_DEFAULT_ADMIN_PASSWORD',
+        'SS_DEFAULT_ADMIN_USERNAME'
+    ];
+
     private static $table_name = 'EnvVarSnapshot';
 
     private static $db = [
@@ -65,6 +82,10 @@ class EnvVarSnapshot extends DataObject
     {
         foreach (array_merge($_ENV, $_SERVER, Environment::getVariables()['env']) as $key => $val) {
             if (substr($key, 0, 3) !== 'SS_') {
+                continue;
+            }
+
+            if (in_array($key, static::IGNORED_KEYS)) {
                 continue;
             }
 

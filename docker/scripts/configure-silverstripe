@@ -9,15 +9,17 @@ fi
 
 set +e
 until nc -z -v -w30 "$SS_DATABASE_SERVER" 3306; do sleep 1; done
+mkdir -p /var/www/html/public/assets || true
+
 set -e
-mkdir -p /var/www/html/public/assets
 chown -R www-data:www-data /var/www/html/public/assets
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/build
 
 set +e
 until nc -z -v -w30 "$SOLR_SERVER" "$SOLR_PORT"; do sleep 1; done
+mkdir -p "$SOLR_INDEXSTORE_PATH" || true
+
 set -e
-mkdir -p "$SOLR_INDEXSTORE_PATH"
 chown -R www-data:www-data "$SOLR_INDEXSTORE_PATH"
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Configure
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Reindex

@@ -35,7 +35,8 @@ class EnvVarSnapshotApplicationMiddleware implements HTTPMiddleware
      */
     public function process(HTTPRequest $request, callable $delegate)
     {
-        if (class_exists('mysqli') && Environment::getEnv('SS_DATABASE_CLASS') === 'MySQLDatabase') {
+        $ssDatabaseClass = Environment::getEnv('SS_DATABASE_CLASS');
+        if (class_exists('mysqli') && ($ssDatabaseClass === false || $ssDatabaseClass === 'MySQLDatabase')) {
             try {
                 $connection = new \mysqli(
                     (string)Environment::getEnv('SS_DATABASE_SERVER'),

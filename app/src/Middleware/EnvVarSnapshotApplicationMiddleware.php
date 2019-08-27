@@ -2,6 +2,7 @@
 
 namespace SilverStripe\Bambusa\Middleware;
 
+use SilverStripe\Bambusa\Models\EnvVarSnapshot;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\Middleware\HTTPMiddleware;
 use SilverStripe\Core\Environment;
@@ -56,11 +57,16 @@ class EnvVarSnapshotApplicationMiddleware implements HTTPMiddleware
 
                 $result = $connection->query('select `key`, `val` from `EnvVarSnapshot`');
                 if ($result !== false) {
-                    $definedVars = Environment::getVariables()['env'];
+                    $definedVars = array_merge($_ENV, $_SERVER, Environment::getVariables()['env']);
                     foreach ($result as $variable) {
-                        if (!array_key_exists($variable['key'], $definedVars)) {
-                            Environment::setEnv($variable['key'], $variable['val']);
+                        $key = $variable['key'];
+                        if (in_array($key, EnvVarSnapshot::IGNORED_KEYS)) {
+                            continue;
                         }
+                        if (array_key_exists($key, $definedVars)) {
+                            continue;
+                        }
+                        Environment::setEnv($key, $variable['val']);
                     }
                 }
             } catch (\Exception $_) {

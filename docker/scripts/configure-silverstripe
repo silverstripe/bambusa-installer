@@ -20,6 +20,16 @@ until nc -z -v -w30 "$SOLR_SERVER" "$SOLR_PORT"; do sleep 1; done
 mkdir -p "$SOLR_INDEXSTORE_PATH" || true
 
 set -e
+
+if [ -d "$SOLR_INDEXSTORE_PATH" ] ; then
+    # Freshly started Solr4 containers don't see
+    # cores even though they exist in the folder.
+    # That makes it sad.
+    # As an easiest workaround we always delete the
+    # core so Solr always creates it from scratch.
+    rm -rf "$SOLR_INDEXSTORE_PATH/*";
+fi;
+
 chown -R www-data:www-data "$SOLR_INDEXSTORE_PATH"
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Configure
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Reindex

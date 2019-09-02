@@ -9,10 +9,13 @@ use SilverStripe\ORM\Queries\SQLSelect;
 use SilverStripe\Security\Member;
 
 /**
- * Controller that displays the last login time of any user ... or null if no login has ever occurred.
+ * Controller that displays the last login time of any user .
+ *
+ * .. or null if no login has ever occurred.
  *
  * This is used by SilverStripe.com to determine if a user has logged in recently and if the expiry date should be
  * extended.
+ *
  */
 class LastLogin extends Controller
 {

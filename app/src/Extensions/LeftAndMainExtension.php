@@ -9,6 +9,8 @@ use SilverStripe\View\Requirements;
 /**
  * This isn't using sminnee/silverstripe-tagmanager because there's no way to embed
  * those tags in the CMS at the moment - see https://github.com/sminnee/silverstripe-tagmanager/issues/15.
+ *
+ * @property CMSMain|CMSPageEditController|LeftAndMainExtension $owner
  */
 class LeftAndMainExtension extends Extension
 {

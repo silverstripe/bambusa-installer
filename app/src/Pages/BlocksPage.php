@@ -4,12 +4,19 @@ namespace SilverStripe\Bambusa\Pages;
 
 use DNADesign\Elemental\Extensions\ElementalPageExtension;
 use DNADesign\Elemental\Models\ElementalArea;
+use Page;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Forms\HeaderField;
-use Page;
 
 /**
+ * Class \SilverStripe\Bambusa\Pages\BlocksPage
+ *
+ * @property int $ElementalAreaID
+ * @property int $HeaderElementsID
+ * @method ElementalArea ElementalArea()
+ * @method ElementalArea HeaderElements()
  * @mixin ElementalPageExtension
+ * @mixin BlocksPageFluentExtension
  */
 class BlocksPage extends Page
 {

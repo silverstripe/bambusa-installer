@@ -1,0 +1,9 @@
+---
+Only:
+  environment: 'dev'
+---
+SilverLeague\IDEAnnotator\DataObjectAnnotator:
+  enabled: true
+  use_short_name: true
+  enabled_modules:
+    - app

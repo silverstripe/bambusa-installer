@@ -2,19 +2,38 @@
 
 namespace SilverStripe\Bambusa\Blocks;
 
-use SilverStripe\Assets\Upload_Validator;
-use SilverStripe\Bambusa\Blocks\CarouselBlock;
-use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
-use SilverStripe\Versioned\Versioned;
-use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Assets\Image;
+use SilverStripe\Assets\Upload_Validator;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Core\Injector\Injector;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\FileHandleField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\TreeDropdownField;
-use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\Forms\FileHandleField;
+use SilverStripe\Versioned\Versioned;
 
+/**
+ * Class \SilverStripe\Bambusa\Blocks\CarouselItem
+ *
+ * @property int $Version
+ * @property string $Title
+ * @property string $Content
+ * @property int $SortOrder
+ * @property string $PrimaryCallToActionLabel
+ * @property string $SecondaryCallToActionLabel
+ * @property int $ParentID
+ * @property int $ImageID
+ * @property int $PrimaryCallToActionID
+ * @property int $SecondaryCallToActionID
+ * @method CarouselBlock Parent()
+ * @method Image Image()
+ * @method SiteTree PrimaryCallToAction()
+ * @method SiteTree SecondaryCallToAction()
+ * @mixin Versioned
+ * @mixin FluentVersionedExtension
+ */
 class CarouselItem extends DataObject
 {
     private static $table_name = 'CarouselItem';
@@ -102,7 +121,8 @@ class CarouselItem extends DataObject
                         ]
                     )
                 )
-                ->setValidator(new class extends Upload_Validator {
+                ->setValidator(new class extends Upload_Validator
+                {
                     public function validate()
                     {
                         $result = parent::validate();

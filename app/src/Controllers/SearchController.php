@@ -3,39 +3,22 @@
 
 namespace SilverStripe\Bambusa\Controllers;
 
-use SilverStripe\Bambusa\Pages\BlocksPage;
+use Firesphere\SolrSearch\Queries\BaseQuery;
+use PageController;
 use SilverStripe\Bambusa\Search\PageIndex;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Core\Injector\Injector;
-use SilverStripe\FullTextSearch\Search\Queries\SearchQuery;
-use PageController;
 use SilverStripe\View\ArrayData;
 use TractorCow\Fluent\Extension\FluentExtension;
 
+/**
+ * Class \SilverStripe\Bambusa\Controllers\SearchController
+ *
+ */
 class SearchController extends PageController
 {
-
-    /**
-     * Map Macrons to non-macrons, otherwise they're stripped
-     * out of the query and replaced by a space
-     * @var array
-     */
-    private static $macrons = [
-        'ā' => 'a',
-        'ē' => 'e',
-        'ī' => 'i',
-        'ō' => 'o',
-        'ū' => 'u',
-        'Ā' => 'A',
-        'Ē' => 'E',
-        'Ī' => 'I',
-        'Ō' => 'O',
-        'Ū' => 'U'
-    ];
-
-
     /**
      * Because this is a standalone controller and not affected by the
      * fluent routing, we have to ensure that the language selector
@@ -67,20 +50,14 @@ class SearchController extends PageController
     public function index(HTTPRequest $request)
     {
         $q = $request->getVar('q');
-        $sanitised = self::sanitiseQuery($q);
         $offset = $request->getVar('start') ?: 0;
-        $query = SearchQuery::create()->addSearchTerm($sanitised);
-        $limit = SearchQuery::$default_page_size;
+        /** @var BaseQuery $query */
+        $query = new BaseQuery();
+        $query->addTerm($q);
+        $query->setStart($offset);
 
-        $results = PageIndex::singleton()->search(
-            $query,
-            $offset,
-            $limit,
-            [
-                'spellcheck' => 'true',
-                'spellcheck.collate' => 'true'
-            ]
-        );
+        $index = new PageIndex();
+        $results = $index->doSearch($query);
 
         return $this->customise([
             'Results' => $results,
@@ -97,25 +74,5 @@ class SearchController extends PageController
             Director::baseURL(),
             'search'
         );
-    }
-
-    /**
-     * http://e-mats.org/2010/01/escaping-characters-in-a-solr-query-solr-url/
-     * @param string $q
-     * @return string
-     */
-    private static function sanitiseQuery(string $q): string
-    {
-        $match = [
-            '\\', '+', '-', '&', '|', '!', '(', ')', '{', '}', '[', ']', '^', '~', '*', '?', ':', '"', ';'
-        ];
-        $replace = [
-            '\\\\', '\\+', '\\-', '\\&', '\\|', '\\!', '\\(', '\\)', '\\{',
-            '\\}', '\\[', '\\]', '\\^', '\\~', '\\*', '\\?', '\\:', '\\"', '\\;'
-        ];
-        $match = array_merge($match, array_keys(self::$macrons));
-        $replace = array_merge($replace, array_values(self::$macrons));
-
-        return str_replace($match, $replace, $q);
     }
 }

@@ -8,6 +8,17 @@ use SilverStripe\Forms\RequiredFields;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Versioned\Versioned;
 
+/**
+ * Class \SilverStripe\Bambusa\Blocks\Column\Item
+ *
+ * @property int $Version
+ * @property int $Sort
+ * @property string $Content
+ * @property int $ParentID
+ * @method MultiColumnBlock Parent()
+ * @mixin Versioned
+ * @mixin FluentVersionedExtension
+ */
 class Item extends DataObject
 {
     /**

@@ -3,9 +3,11 @@
 namespace {
 
     use SilverStripe\CMS\Model\SiteTree;
-    use SilverStripe\Forms\Tab;
-    use SilverStripe\Forms\ToggleCompositeField;
 
+    /**
+ * Class \Page
+ *
+ */
     class Page extends SiteTree
     {
         public function getCMSFields()

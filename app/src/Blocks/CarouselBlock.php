@@ -12,9 +12,13 @@ use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldSortableHeader;
 use SilverStripe\ORM\DataList;
 use SilverStripe\ORM\FieldType\DBField;
-use SilverStripe\ORM\FieldType\DBHTMLText;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
+/**
+ * Class \SilverStripe\Bambusa\Blocks\CarouselBlock
+ *
+ * @method DataList|CarouselItem[] CarouselItems()
+ */
 class CarouselBlock extends BaseElement
 {
     private static $icon = 'font-icon-block-carousel';
@@ -71,6 +75,17 @@ class CarouselBlock extends BaseElement
     }
 
     /**
+     * @return array
+     */
+    public function provideBlockSchema(): array
+    {
+        $schema = parent::provideBlockSchema();
+        $schema['content'] = $this->getSummary();
+
+        return $schema;
+    }
+
+    /**
      * @return string
      */
     public function getSummary(): string
@@ -81,17 +96,6 @@ class CarouselBlock extends BaseElement
             $slide = ' slides';
         }
         return DBField::create_field('HTMLText', $this->CarouselItems()->count() . $slide)->Summary(20);
-    }
-
-    /**
-     * @return array
-     */
-    public function provideBlockSchema(): array
-    {
-        $schema = parent::provideBlockSchema();
-        $schema['content'] = $this->getSummary();
-
-        return $schema;
     }
 
     public function getType(): string

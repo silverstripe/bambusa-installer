@@ -3,22 +3,70 @@
 
 namespace SilverStripe\Bambusa\Controllers;
 
-use Firesphere\SolrSearch\Queries\BaseQuery;
 use PageController;
 use SilverStripe\Bambusa\Search\PageIndex;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Core\Injector\Injector;
+use SilverStripe\FullTextSearch\Search\Queries\SearchQuery;
 use SilverStripe\View\ArrayData;
 use TractorCow\Fluent\Extension\FluentExtension;
 
-/**
- * Class \SilverStripe\Bambusa\Controllers\SearchController
- *
- */
 class SearchController extends PageController
 {
+
+    /**
+     * @var array escaped characters
+     */
+    private static $match = [
+        '\\',
+        '+',
+        '-',
+        '&',
+        '|',
+        '!',
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '^',
+        '~',
+        '*',
+        '?',
+        ':',
+        '"',
+        ';'
+    ];
+    /**
+     * @var array Replacement characters
+     */
+    private static $replace = [
+        '\\\\', '\\+', '\\-', '\\&', '\\|', '\\!', '\\(', '\\)', '\\{',
+        '\\}', '\\[', '\\]', '\\^', '\\~', '\\*', '\\?', '\\:', '\\"', '\\;'
+    ];
+
+    /**
+     * Map Macrons to non-macrons, otherwise they're stripped
+     * out of the query and replaced by a space
+     * @var array
+     */
+    private static $macrons = [
+        'ā' => 'a',
+        'ē' => 'e',
+        'ī' => 'i',
+        'ō' => 'o',
+        'ū' => 'u',
+        'Ā' => 'A',
+        'Ē' => 'E',
+        'Ī' => 'I',
+        'Ō' => 'O',
+        'Ū' => 'U'
+    ];
+
+
     /**
      * Because this is a standalone controller and not affected by the
      * fluent routing, we have to ensure that the language selector
@@ -50,14 +98,20 @@ class SearchController extends PageController
     public function index(HTTPRequest $request)
     {
         $q = $request->getVar('q');
+        $sanitised = self::sanitiseQuery($q);
         $offset = $request->getVar('start') ?: 0;
-        /** @var BaseQuery $query */
-        $query = new BaseQuery();
-        $query->addTerm($q);
-        $query->setStart($offset);
+        $query = SearchQuery::create()->addSearchTerm($sanitised);
+        $limit = SearchQuery::$default_page_size;
 
-        $index = new PageIndex();
-        $results = $index->doSearch($query);
+        $results = PageIndex::singleton()->search(
+            $query,
+            $offset,
+            $limit,
+            [
+                'spellcheck' => 'true',
+                'spellcheck.collate' => 'true'
+            ]
+        );
 
         return $this->customise([
             'Results' => $results,
@@ -74,5 +128,19 @@ class SearchController extends PageController
             Director::baseURL(),
             'search'
         );
+    }
+
+    /**
+     * http://e-mats.org/2010/01/escaping-characters-in-a-solr-query-solr-url/
+     * @todo simplify, there's no need for the "replace" array to even exist, as the characters can be escaped easily
+     * @param string $q
+     * @return string
+     */
+    private static function sanitiseQuery(string $q): string
+    {
+        $match = array_merge(static::$match, array_keys(self::$macrons));
+        $replace = array_merge(static::$replace, array_values(self::$macrons));
+
+        return str_replace($match, $replace, $q);
     }
 }

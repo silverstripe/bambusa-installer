@@ -29,10 +29,13 @@ namespace {
         }
 
         /**
-         * @return SearchForm
+         * @return SearchForm|null
          */
-        public function SearchForm(): SearchForm
+        public function SearchForm(): ?SearchForm
         {
+            // Disabling search until we have the Infrastructure ready to serve it
+            return null;
+
             $searchText = $this->owner->getRequest()->getVar('q');
 
             $fields = FieldList::create(
@@ -52,10 +55,15 @@ namespace {
         /**
          * @return SearchForm
          */
-        public function HeaderSearchForm(): SearchForm
+        public function HeaderSearchForm(): ?SearchForm
         {
-            return $this->SearchForm()
-                ->addExtraClass('d-none d-md-block header-search float-right');
+            $form = $this->SearchForm();
+
+            if ($form) {
+                $form = $form->addExtraClass('d-none d-md-block header-search float-right');
+            }
+
+            return $form;
         }
 
 

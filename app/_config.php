@@ -3,7 +3,7 @@
 use SilverStripe\Security\PasswordValidator;
 use SilverStripe\Security\Member;
 use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
-use SilverStripe\FullTextSearch\Solr\Solr;
+// use SilverStripe\FullTextSearch\Solr\Solr;
 use SilverStripe\Core\Environment;
 
 // remove PasswordValidator for SilverStripe 5.0
@@ -36,15 +36,14 @@ TinyMCEConfig::get('cms')
     ])
     ->insertButtonsAfter('formatselect', 'styleselect');
 
-Solr::configure_server([
-    'host' => Environment::getEnv('SOLR_SERVER'),
-    'port' => Environment::getEnv('SOLR_PORT'),
-    'path' => Environment::getEnv('SOLR_PATH'),
-    'indexstore' => [
-        'mode' => Environment::getEnv('SOLR_MODE'),
-        'path' => Environment::getEnv('SOLR_INDEXSTORE_PATH'),
-        'remotepath' => Environment::getEnv('SOLR_REMOTE_PATH'),
-        'port' => Environment::getEnv('SOLR_PORT'),
-    ]
-]);
-
+// Solr::configure_server([
+//     'host' => Environment::getEnv('SOLR_SERVER'),
+//     'port' => Environment::getEnv('SOLR_PORT'),
+//     'path' => Environment::getEnv('SOLR_PATH'),
+//     'indexstore' => [
+//         'mode' => Environment::getEnv('SOLR_MODE'),
+//         'path' => Environment::getEnv('SOLR_INDEXSTORE_PATH'),
+//         'remotepath' => Environment::getEnv('SOLR_REMOTE_PATH'),
+//         'port' => Environment::getEnv('SOLR_PORT'),
+//     ]
+// ]);

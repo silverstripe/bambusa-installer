@@ -31,10 +31,13 @@ namespace {
         }
 
         /**
-         * @return SearchForm
+         * @return SearchForm|null
          */
-        public function SearchForm(): SearchForm
+        public function SearchForm(): ?SearchForm
         {
+            // Disabling search until we have the Infrastructure ready to serve it
+            return null;
+
             $searchText = $this->owner->getRequest()->getVar('q');
 
             $fields = FieldList::create(
@@ -50,6 +53,21 @@ namespace {
             $form->addExtraClass('form-inline');
             return $form;
         }
+
+        /**
+         * @return SearchForm
+         */
+        public function HeaderSearchForm(): ?SearchForm
+        {
+            $form = $this->SearchForm();
+
+            if ($form) {
+                $form = $form->addExtraClass('d-none d-md-block header-search float-right');
+            }
+
+            return $form;
+        }
+
 
         /**
          * Content of the Modal window if our show modal is enabled.

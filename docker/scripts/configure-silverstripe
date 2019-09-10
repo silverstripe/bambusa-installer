@@ -8,29 +8,24 @@ if [[ "$VERBOSE" = "yes" ]]; then
 fi
 
 set +e
-until nc -z -v -w30 "$SS_DATABASE_SERVER" 3306; do sleep 1; done
-mkdir -p /var/www/html/public/assets || true
+until nc -z -v -w30 "$SS_DATABASE_SERVER" 3306; do sleep 10; done
+# mkdir -p /var/www/html/public/assets || true
+
+echo "display_errors = 1" >> /usr/local/etc/php/conf.d/custom.ini
+echo "display_startup_errors = 1" >> /usr/local/etc/php/conf.d/custom.ini
+echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/custom.ini
 
 set -e
 chown -R www-data:www-data /var/www/html/public/assets
 gosu www-data php vendor/silverstripe/framework/cli-script.php dev/build
 
-set +e
-until nc -z -v -w30 "$SOLR_SERVER" "$SOLR_PORT"; do sleep 1; done
-mkdir -p "$SOLR_INDEXSTORE_PATH" || true
+# set +e
+# until nc -z -v -w30 "$SOLR_SERVER" "$SOLR_PORT"; do sleep 1; done
+# mkdir -p "$SOLR_INDEXSTORE_PATH" || true
 
-set -e
+# set -e
 
-if [ -d "$SOLR_INDEXSTORE_PATH" ] ; then
-    # Freshly started Solr4 containers don't see
-    # cores even though they exist in the folder.
-    # That makes it sad.
-    # As an easiest workaround we always delete the
-    # core so Solr always creates it from scratch.
-    rm -rf "$SOLR_INDEXSTORE_PATH/*";
-fi;
-
-chown -R www-data:www-data "$SOLR_INDEXSTORE_PATH"
-gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Configure
-gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Reindex
-gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/ProcessJobQueueTask
+# chown -R www-data:www-data "$SOLR_INDEXSTORE_PATH"
+# gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Configure
+# gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/Solr_Reindex
+# gosu www-data php vendor/silverstripe/framework/cli-script.php dev/tasks/ProcessJobQueueTask

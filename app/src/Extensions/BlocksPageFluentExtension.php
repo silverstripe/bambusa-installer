@@ -5,6 +5,11 @@ namespace SilverStripe\Bambusa\Pages;
 use SilverStripe\Core\Extension;
 use TractorCow\Fluent\Model\Locale;
 
+/**
+ * Class \SilverStripe\Bambusa\Pages\BlocksPageFluentExtension
+ *
+ * @property BlocksPage|BlocksPageFluentExtension $owner
+ */
 class BlocksPageFluentExtension extends Extension
 {
     /**

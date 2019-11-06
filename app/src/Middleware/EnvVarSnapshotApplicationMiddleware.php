@@ -2,11 +2,12 @@
 
 namespace SilverStripe\Bambusa\Middleware;
 
+use Exception;
+use mysqli;
 use SilverStripe\Bambusa\Models\EnvVarSnapshot;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\Middleware\HTTPMiddleware;
 use SilverStripe\Core\Environment;
-use SilverStripe\ORM\DB;
 
 /**
  * The application middleware handling environment variable snapshots, solving our particular use case which is
@@ -39,7 +40,7 @@ class EnvVarSnapshotApplicationMiddleware implements HTTPMiddleware
         $ssDatabaseClass = Environment::getEnv('SS_DATABASE_CLASS');
         if (class_exists('mysqli') && ($ssDatabaseClass === false || $ssDatabaseClass === 'MySQLDatabase')) {
             try {
-                $connection = new \mysqli(
+                $connection = new mysqli(
                     (string)Environment::getEnv('SS_DATABASE_SERVER'),
                     (string)Environment::getEnv('SS_DATABASE_USERNAME'),
                     (string)Environment::getEnv('SS_DATABASE_PASSWORD')
@@ -69,7 +70,7 @@ class EnvVarSnapshotApplicationMiddleware implements HTTPMiddleware
                         Environment::setEnv($key, $variable['val']);
                     }
                 }
-            } catch (\Exception $_) {
+            } catch (Exception $_) {
                 // nothing to do
             }
         }

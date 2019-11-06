@@ -1,4 +1,5 @@
 <?php
+
 namespace SilverStripe\Bambusa\Extensions;
 
 use SilverStripe\Forms\FieldList;
@@ -7,6 +8,9 @@ use SilverStripe\ORM\FieldType\DBDatetime;
 
 /**
  * Track the last authentication of each user.
+ *
+ * @property Member|LastLoginExtension $owner
+ * @property string $LastLogin
  */
 class LastLoginExtension extends DataExtension
 {

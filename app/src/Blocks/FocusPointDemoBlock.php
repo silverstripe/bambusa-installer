@@ -7,6 +7,12 @@ use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
 
+/**
+ * Class \SilverStripe\Bambusa\Blocks\FocusPointDemoBlock
+ *
+ * @property int $ImageID
+ * @method Image Image()
+ */
 class FocusPointDemoBlock extends BaseElement
 {
     private static $icon = 'font-icon-image';
@@ -43,13 +49,6 @@ class FocusPointDemoBlock extends BaseElement
         $upload->setAllowedFileCategories('image');
         return $fields;
     }
-    /**
-     * @return string
-     */
-    public function getSummary(): string
-    {
-        return $this->Image()->exists() ? $this->Image()->Filename : 'No image attached';
-    }
 
     /**
      * @return array
@@ -60,6 +59,14 @@ class FocusPointDemoBlock extends BaseElement
         $schema['content'] = $this->getSummary();
 
         return $schema;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSummary(): string
+    {
+        return $this->Image()->exists() ? $this->Image()->Filename : 'No image attached';
     }
 
     public function getType(): string

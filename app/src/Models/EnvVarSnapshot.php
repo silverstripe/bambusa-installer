@@ -19,6 +19,9 @@ use SilverStripe\ORM\ValidationException;
  * How it works:
  *  - On /dev/build it persists into the database all environment variables starting with SS_*
  *  - If you override variable with an empty string, then it deletes it from the database
+ *
+ * @property string $key
+ * @property string $val
  */
 class EnvVarSnapshot extends DataObject
 {

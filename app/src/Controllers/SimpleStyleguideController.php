@@ -7,12 +7,14 @@ use SilverStripe\CMS\Controllers\ModelAsController;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Injector\Injector;
-use SilverStripe\View\Requirements;
+use SilverStripe\ORM\FieldType\DBHTMLText;
 use SilverStripe\Subsites\Model\Subsite;
+use SilverStripe\View\Requirements;
 
 /**
  * Overrides `BenManu\SimpleStyleguide\SimpleStyleguideController` so we can allow non-dev users to access the style
  * guide.
+ *
  */
 class SimpleStyleguideController extends BenSimpleStyleguideController
 {
@@ -22,7 +24,7 @@ class SimpleStyleguideController extends BenSimpleStyleguideController
     /**
      * @note This function was copied from BenSimpleStyleguideController. We commented-out the access control logic so
      * all users can see the Style guide all the time.
-     * @return \SilverStripe\ORM\FieldType\DBHTMLText
+     * @return DBHTMLText
      */
     public function index()
     {

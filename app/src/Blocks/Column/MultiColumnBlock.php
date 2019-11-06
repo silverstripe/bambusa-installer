@@ -6,11 +6,15 @@ namespace SilverStripe\Bambusa\Blocks\Column;
 use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
-use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Shared\Models\ContentItem;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
+/**
+ * Class \SilverStripe\Bambusa\Blocks\Column\MultiColumnBlock
+ *
+ * @method DataList|Item[] Items()
+ */
 class MultiColumnBlock extends BaseElement
 {
     /**

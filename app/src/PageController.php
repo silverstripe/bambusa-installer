@@ -7,25 +7,27 @@ namespace {
     use SilverStripe\CMS\Search\SearchForm;
     use SilverStripe\Core\Environment;
     use SilverStripe\Forms\FieldList;
-    use SilverStripe\Forms\Form;
     use SilverStripe\Forms\FormAction;
     use SilverStripe\Forms\TextField;
+    use SilverStripe\ORM\FieldType\DBHTMLText;
     use SilverStripe\View\ArrayData;
     use SilverStripe\View\Requirements;
 
+    /**
+ * Class \PageController
+ *
+ * @property Page dataRecord
+ * @method Page data()
+ */
     class PageController extends ContentController
     {
-        protected function init()
+        /**
+         * @return SearchForm
+         */
+        public function HeaderSearchForm(): SearchForm
         {
-            parent::init();
-
-            if (!$this->suppressModal()) {
-                // Inject our privacy modal assets into the page
-                Requirements::javascript('app/js/dialog.js', ['defer' => true]);
-                Requirements::css('app/css/dialog.css');
-            }
-
-            Requirements::block('silverstripe/elemental-bannerblock:client/dist/styles/frontend-default.css');
+            return $this->SearchForm()
+                ->addExtraClass('d-none d-md-block header-search float-right');
         }
 
         /**
@@ -69,13 +71,26 @@ namespace {
 
         /**
          * Content of the Modal window if our show modal is enabled.
-         * @return \SilverStripe\ORM\FieldType\DBHTMLText|void
+         * @return DBHTMLText|void
          */
         public function ModalWindow()
         {
             if (!$this->suppressModal()) {
                 return ArrayData::create([])->renderWith('PrivacyModal');
             }
+        }
+
+        protected function init()
+        {
+            parent::init();
+
+            if (!$this->suppressModal()) {
+                // Inject our privacy modal assets into the page
+                Requirements::javascript('app/js/dialog.js', ['defer' => true]);
+                Requirements::css('app/css/dialog.css');
+            }
+
+            Requirements::block('silverstripe/elemental-bannerblock:client/dist/styles/frontend-default.css');
         }
 
         /**

@@ -357,13 +357,13 @@
             "authors": [
                 {
                     "name": "Matt Dwen",
-                    "role": "Contributors",
-                    "email": "matt@dwen.co.nz"
+                    "email": "matt@dwen.co.nz",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Xplore Developers",
-                    "role": "Contributors",
-                    "email": "developers@xplore.net"
+                    "email": "developers@xplore.net",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Peter Thaleikis",
@@ -371,8 +371,8 @@
                 },
                 {
                     "name": "Other contributors",
-                    "role": "Contributors",
-                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors"
+                    "homepage": "https://github.com/bringyourownideas/silverstripe-composer-update-checker/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Checks if any composer packages needs to be updated.",
@@ -920,12 +920,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnadesign/silverstripe-elemental.git",
-                "reference": "cc68796ae694a873afa89ff3e7022cfd1864e9f8"
+                "reference": "746407fd1d718ad7251d1ad7e324936cce1dcfe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/cc68796ae694a873afa89ff3e7022cfd1864e9f8",
-                "reference": "cc68796ae694a873afa89ff3e7022cfd1864e9f8",
+                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/746407fd1d718ad7251d1ad7e324936cce1dcfe2",
+                "reference": "746407fd1d718ad7251d1ad7e324936cce1dcfe2",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +978,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-08-20T23:24:19+00:00"
+            "time": "2019-11-11T04:01:02+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -1253,9 +1253,9 @@
             "authors": [
                 {
                     "name": "Oscar Otero",
-                    "role": "Developer",
                     "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com"
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP library to retrieve page info using oembed, opengraph, etc",
@@ -1671,9 +1671,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
-                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia"
+                    "homepage": "https://github.com/jeremeamia",
+                    "role": "Developer"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -1755,7 +1755,7 @@
                 "reference": "cda988b4e04e5629b1523932b9c42a120ae2defa"
             },
             "require": {
-                "silverstripe/framework": "^4.3"
+                "silverstripe/framework": "^4.0"
             },
             "type": "silverstripe-vendormodule",
             "extra": {
@@ -2035,9 +2035,9 @@
             "authors": [
                 {
                     "name": "Miles Croxford",
-                    "role": "Developer",
                     "email": "hello@milescroxford.com",
-                    "homepage": "http://milescroxford.com"
+                    "homepage": "http://milescroxford.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Env is a lightweight library bringing .env file parser compatibility to PHP. In short - it enables you to read .env files with PHP.",
@@ -2790,16 +2790,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -2808,7 +2808,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -2833,7 +2833,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-20T15:27:04+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -3911,8 +3911,8 @@
                 },
                 {
                     "name": "Damian Mooyman",
-                    "role": "Maintainer",
-                    "email": "damian@silverstripe.com"
+                    "email": "damian@silverstripe.com",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Module for running tasks with a standard cron timeschedule",
@@ -4337,8 +4337,8 @@
                 },
                 {
                     "name": "Damian Mooyman",
-                    "role": "Developer",
-                    "email": "damian@silverstripe.com"
+                    "email": "damian@silverstripe.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Adds support for Fulltext Search engines like Sphinx and Solr to SilverStripe CMS",
@@ -5671,16 +5671,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.4.30",
+            "version": "v3.4.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "8c6e162f0f7626771edbfa0a0e45b46623bbae1c"
+                "reference": "3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/8c6e162f0f7626771edbfa0a0e45b46623bbae1c",
-                "reference": "8c6e162f0f7626771edbfa0a0e45b46623bbae1c",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3",
+                "reference": "3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3",
                 "shasum": ""
             },
             "require": {
@@ -5737,7 +5737,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2019-06-17T17:26:15+00:00"
+            "time": "2019-12-01T10:45:41+00:00"
         },
         {
             "name": "symfony/config",
@@ -5979,16 +5979,16 @@
         },
         {
             "name": "symfony/polyfill-apcu",
-            "version": "v1.12.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "71ce80635d5dcd67772b4dda00b86068595f64d5"
+                "reference": "a8e961c841b9ec52927a87914f8820a1ad8f8116"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/71ce80635d5dcd67772b4dda00b86068595f64d5",
-                "reference": "71ce80635d5dcd67772b4dda00b86068595f64d5",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/a8e961c841b9ec52927a87914f8820a1ad8f8116",
+                "reference": "a8e961c841b9ec52927a87914f8820a1ad8f8116",
                 "shasum": ""
             },
             "require": {
@@ -5997,7 +5997,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -6031,7 +6031,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -7219,8 +7219,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",

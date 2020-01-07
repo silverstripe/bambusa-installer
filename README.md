@@ -12,6 +12,39 @@ This project is used to build the demonstration environment when a user request 
 
 It's not meant to be used directly by the community. However, there's nothing stopping third party from re-using it for their own demo. SilverStripe doesn't provide official support for this project.
 
+## Custom Demos
+
+Bambusa can serve as a great starting point for custom demos,
+e.g. as part of sales pitches. It comes with great default content
+that shows off CMS capabilities, and a well polished theme.
+
+There's some parts which aren't often required in those custom demos,
+so you should start by cloning the repo into a copy,
+then modifying `composer.json` to your needs.
+Don't forget to contribute back anything that's useful though!
+
+For example, you might want to remove `silverstripe/bambusa-selfservice`
+which is only required for self-service demos created through silverstripe.com/demo.
+
+```
+composer remove silverstripe/bambusa-selfservice
+```
+
+If you're using the default content (which includes translations),
+those won't show in the CMS or frontend because they're kept in separate database tables.
+
+## Removing Fluent
+
+Our multilingual capabilities are important, but sometimes not required for custom demos.
+Given that the underlying module (`silverstripe/fluent`) can
+have side effects on other modules, it's often easiest to remove it.  
+
+```
+composer remove silverstripe/bambusa-fluent tractorcow/silverstripe-fluent
+```
+
+
+
 ## Local Development
 
 This project is aimed to be deployed in an internal Kubernetes stack,

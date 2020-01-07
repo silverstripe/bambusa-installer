@@ -19,7 +19,6 @@ class BlocksPage extends Page
 
     private static $extensions = [
         ElementalPageExtension::class,
-        BlocksPageFluentExtension::class,
     ];
 
     private static $has_one = [
@@ -70,24 +69,5 @@ class BlocksPage extends Page
 
         // New lines become <br> in ContextSummary
         return str_replace("\n", '', $result);
-    }
-
-    public function onBeforeWrite()
-    {
-        parent::onBeforeWrite();
-
-        if (!$this->isDraftedInLocale() && $this->isInDB()) {
-            // Duplicate main area
-            $area = $this->ElementalArea();
-            $areaNew = $area->duplicate();
-            $this->ElementalAreaID = $areaNew->ID;
-
-            // Duplicate header area
-            $area = $this->HeaderElements();
-            $areaNew = $area->duplicate();
-            $this->HeaderElementsID = $areaNew->ID;
-        }
-
-        return;
     }
 }

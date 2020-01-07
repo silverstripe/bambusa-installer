@@ -1,6 +1,6 @@
 <?php
 
-use SilverStripe\Bambusa\Middleware\EnvVarSnapshotApplicationMiddleware;
+use SilverStripe\Bambusa\SelfService\Middleware\EnvVarSnapshotApplicationMiddleware;
 use SilverStripe\Control\HTTPApplication;
 use SilverStripe\Control\HTTPRequestBuilder;
 use SilverStripe\Core\CoreKernel;
@@ -22,6 +22,11 @@ $request = HTTPRequestBuilder::createFromEnvironment();
 // Default application
 $kernel = new CoreKernel(BASE_PATH);
 $app = new HTTPApplication($kernel);
-$app->addMiddleware(new EnvVarSnapshotApplicationMiddleware());
+
+// Requires silverstripe/bambusa-selfservice
+if (class_exists(EnvVarSnapshotApplicationMiddleware::class)) {
+    $app->addMiddleware(new EnvVarSnapshotApplicationMiddleware());
+}
+
 $response = $app->handle($request);
 $response->output();

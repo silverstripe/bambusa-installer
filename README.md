@@ -43,9 +43,28 @@ have side effects on other modules, it's often easiest to remove it.
 composer remove silverstripe/bambusa-fluent tractorcow/silverstripe-fluent
 ```
 
-
+Note that due to the fluent table structure, you can continue to use the
+default database content - any content in other languages simply won't show
+to visitors or authors. The sample content itself will mention multilingual
+capabilities though.
 
 ## Local Development
+
+### Vagrant
+
+This project can be spun up through our
+[default Vagrant setup](https://silverstripe.atlassian.net/wiki/spaces/DEV/pages/401506576/Vagrant).
+
+```
+vagrant up
+```
+
+It'll be available under `http://bambusa.vagrant`.
+
+Note that Solr search won't work out of the box unless you configure it
+in the Vagrant box.
+
+### Docker
 
 This project is aimed to be deployed in an internal Kubernetes stack,
 as a set of Docker containers. You can approximate this setup locally

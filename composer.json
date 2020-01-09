@@ -7,6 +7,14 @@
         "jonom/silverstripe-betternavigator": {
             "url": "https://github.com/unclecheese/silverstripe-betternavigator.git",
             "type": "git"
+        },
+        "silverstripe/bambusa-selfservice": {
+            "url": "https://github.com/open-sausages/bambusa-selfservice.git",
+            "type": "git"
+        },
+        "silverstripe/bambusa-fluent": {
+            "url": "https://github.com/open-sausages/bambusa-fluent.git",
+            "type": "git"
         }
     },
     "require": {
@@ -40,7 +48,9 @@
         "silverstripe/theme-fontpicker": "^1",
         "tractorcow/silverstripe-fluent": "^4.2",
         "symfony/process": "^3.2",
-        "silverstripe/fulltextsearch": "^3.5"
+        "silverstripe/fulltextsearch": "^3.5",
+        "silverstripe/bambusa-selfservice": "dev-master",
+        "silverstripe/bambusa-fluent": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

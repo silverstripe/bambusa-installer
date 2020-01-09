@@ -12,7 +12,69 @@ This project is used to build the demonstration environment when a user request 
 
 It's not meant to be used directly by the community. However, there's nothing stopping third party from re-using it for their own demo. SilverStripe doesn't provide official support for this project.
 
+## Custom Demos
+
+Bambusa can serve as a great starting point for custom demos,
+e.g. as part of sales pitches. It comes with great default content
+that shows off CMS capabilities, and a well polished theme.
+
+There's some parts which aren't often required in those custom demos,
+so you should start by cloning the repo into a copy,
+then modifying `composer.json` to your needs.
+Don't forget to contribute back anything that's useful though!
+
+For example, you might want to remove `silverstripe/bambusa-selfservice`
+which is only required for self-service demos created through silverstripe.com/demo.
+
+```
+composer remove silverstripe/bambusa-selfservice
+```
+
+If you're using the default content (which includes translations),
+those won't show in the CMS or frontend because they're kept in separate database tables.
+
+## Removing Fluent
+
+Our multilingual capabilities are important, but sometimes not required for custom demos.
+Given that the underlying module (`silverstripe/fluent`) can
+have side effects on other modules, it's often easiest to remove it.  
+
+```
+composer remove silverstripe/bambusa-fluent tractorcow/silverstripe-fluent
+```
+
+Note that due to the fluent table structure, you can continue to use the
+default database content - any content in other languages simply won't show
+to visitors or authors. The sample content itself will mention multilingual
+capabilities though.
+
+## Removing Raygun
+
+While it's probably a good idea to be aware of any errors you're receiving
+when preparing or running a demo, in case you don't want to set up a Raygun application for it,
+here's how to remove it and avoid complaints about a missing `SS_RAYGUN_APP_KEY`:
+
+```
+composer remove silverstripe/raygun
+```
+
 ## Local Development
+
+### Vagrant
+
+This project can be spun up through our
+[default Vagrant setup](https://silverstripe.atlassian.net/wiki/spaces/DEV/pages/401506576/Vagrant).
+
+```
+vagrant up
+```
+
+It'll be available under `http://bambusa.vagrant`.
+
+Note that Solr search won't work out of the box unless you configure it
+in the Vagrant box.
+
+### Docker
 
 This project is aimed to be deployed in an internal Kubernetes stack,
 as a set of Docker containers. You can approximate this setup locally

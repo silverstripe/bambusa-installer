@@ -12,6 +12,7 @@ _ss_environment.php
 /silverstripe-cache
 /public/resources
 /public/_resources
-/themes
+/themes/starter
+/themes/bambusa
 /public/assets
 /vendor

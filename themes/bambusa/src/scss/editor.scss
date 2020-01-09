@@ -1,0 +1,65 @@
+// Bootstrap functions
+@import "../../../starter/node_modules/bootstrap/scss/functions";
+
+// Our styling variables
+@import "./variables";
+
+// sass-lint:disable clean-import-paths
+@import "../../../starter/node_modules/bootstrap/scss/mixins";
+@import "../../../starter/node_modules/bootstrap/scss/variables";
+@import "../../../starter/node_modules/bootstrap/scss/alert";
+@import "../../../starter/node_modules/bootstrap/scss/tables";
+@import "../../../starter/node_modules/bootstrap/scss/media";
+@import "../../../starter/node_modules/bootstrap/scss/type";
+@import "../../../starter/node_modules/bootstrap/scss/utilities";
+@import "../../../starter/node_modules/font-awesome/scss/font-awesome";
+@import "../../../starter/src/scss/typography";
+@import "../../../starter/node_modules/bootstrap/scss/buttons";
+
+// Base font sizing
+
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis"), url("../../dist/fonts/Metropolis-Regular.woff") format("woff"), url("../../dist/fonts/Metropolis-Regular.woff") format("woff2");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Metropolis"), url("../../dist/fonts/Metropolis-SemiBold.woff") format("woff"), url("../../dist/fonts/Metropolis-SemiBold.woff2") format("woff2");
+}
+
+body.mce-content-body {
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  p,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.5rem;
+  }
+
+  .btn {
+    text-decoration: none;
+  }
+
+  .quote {
+    font-family: Georgia, ‘Times New Roman’, serif;
+  }
+
+  .btn-primary {
+    background: #111;
+    color: #FFF;
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+}

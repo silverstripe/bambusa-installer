@@ -1,0 +1,70 @@
+// Mobile first
+.footer-site {
+  color: $white;
+  margin-top: 96px;
+  background-color: $charcoal;
+  @include theme-color("footer", "background-color");
+
+  a {
+    color: $white;
+    @include theme-contrast-color("footer", "color");
+  }
+
+  // Don't add underlines when hovering over the logos
+  .container .footer-logo a:hover {
+    text-decoration: none;
+  }
+}
+
+// Horizontal divider line
+.footer-site-divider {
+  border-color: 1px solid $theme-bg-lighter;
+  @include theme-contrast-color("footer", "border-color");
+  opacity: 0.2;
+  margin-top: $navbar-padding-y * 3;
+  margin-bottom: $navbar-padding-y * 3;
+}
+
+.footer-site .footer-social-links .fa {
+  font-size: $font-size-lg;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+// Facebook, Twitter links etc
+.footer-social-links {
+  a {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Logo and copyright
+.footer-logo {
+  align-items: center;
+
+  a {
+    margin-bottom: $spacer;
+  }
+
+  .footer-logo__img {
+    @include theme-contrast-color("footer");
+  }
+}
+
+// Desktop only
+@include media-breakpoint-up(md) {
+  .footer-site-divider {
+    display: none;
+  }
+
+  .footer-logo {
+    margin-top: $navbar-padding-y * 6;
+  }
+}

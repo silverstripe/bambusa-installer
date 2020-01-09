@@ -1,0 +1,4 @@
+// Fix for .btn-secondary being a default variant. All other variants should take precedence.
+.btn-primary.btn-secondary {
+  @include button-variant($primary, $primary);
+}

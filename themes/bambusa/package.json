@@ -1,0 +1,42 @@
+{
+  "name": "bambusa-theme",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "build": "yarn lint && webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "package": "yarn lint && NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "yarn lint-js; yarn lint-sass",
+    "lint-js": "node_modules/.bin/eslint src/js",
+    "lint-sass": "node_modules/.bin/sass-lint -v",
+    "lint-js-fix": "node_modules/.bin/eslint src/js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silverstripeltd/bambusa-theme"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "debounce": "^1.2.0",
+    "ismobilejs": "^0.5.2",
+    "laravel-mix": "^4.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.0.0",
+    "sass": "^1.17.3",
+    "sass-lint": "^1.10.2",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

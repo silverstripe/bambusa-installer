@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c6edb2999f8fb81c00dc6df43e542ab",
+    "content-hash": "98ec268e39cda8f76b686c45a774b59b",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -884,47 +884,6 @@
                 "performance"
             ],
             "time": "2019-11-06T16:40:04+00:00"
-        },
-        {
-            "name": "cwp/starter-theme",
-            "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/cwp-starter-theme.git",
-                "reference": "00df6de333f1cf24a6716dc3ffafbb1492934d7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/cwp-starter-theme/zipball/00df6de333f1cf24a6716dc3ffafbb1492934d7d",
-                "reference": "00df6de333f1cf24a6716dc3ffafbb1492934d7d",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0"
-            },
-            "suggest": {
-                "cwp/cwp": "Much of the functionality in this theme is enabled by this module"
-            },
-            "type": "silverstripe-theme",
-            "extra": {
-                "installer-name": "starter",
-                "expose": [
-                    "dist",
-                    "ico",
-                    "images"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "CWP Theme",
-            "keywords": [
-                "cwp",
-                "silverstripe",
-                "theme"
-            ],
-            "time": "2019-11-15T03:30:32+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental",
@@ -3635,45 +3594,6 @@
             ],
             "description": "Self service additions for Bambusa demo to run on silverstripe.com/demo infrastructure.",
             "time": "2020-01-07T03:12:03+00:00"
-        },
-        {
-            "name": "silverstripe/bambusa-theme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/bambusa-theme.git",
-                "reference": "1354aa36a378094b448d6608f4e1fec890c4c1f6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/bambusa-theme/zipball/1354aa36a378094b448d6608f4e1fec890c4c1f6",
-                "reference": "1354aa36a378094b448d6608f4e1fec890c4c1f6",
-                "shasum": ""
-            },
-            "require": {
-                "cwp/starter-theme": "^3.0.0"
-            },
-            "type": "silverstripe-theme",
-            "extra": {
-                "installer-name": "bambusa",
-                "expose": [
-                    "dist",
-                    "ico",
-                    "images",
-                    "css"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "SilverStripe Bambusa theme",
-            "keywords": [
-                "bambusa",
-                "silverstripe",
-                "theme"
-            ],
-            "time": "2019-12-14T01:40:49+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -7718,7 +7638,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/bambusa-theme": 20,
         "jonom/silverstripe-betternavigator": 20,
         "sminnee/silverstripe-amplitude": 20,
         "sminnee/silverstripe-asknicely": 20,

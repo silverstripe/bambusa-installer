@@ -1,0 +1,146 @@
+// Main navigation (note: mobile first, responsive breakpoints for medium viewports and above are lower down)
+.main-nav {
+  .navbar {
+    min-height: 0;
+    border: 0;
+    display: block;
+    padding: 0;
+  }
+
+  .nav-link {
+    padding: $navbar-padding-y $navbar-padding-x;
+  }
+
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+
+    > .current > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $gray-100;
+      }
+    }
+  }
+
+  .dropdown {
+    &:hover .navbar-touch-caret,
+    &:focus .navbar-touch-caret {
+      background-color: transparent;
+    }
+
+    // When active
+    &.current {
+      .navbar-touch-caret,
+      &:hover .navbar-touch-caret,
+      &:focus .navbar-touch-caret {
+        background: $gray-100;
+
+        &:hover,
+        &:focus {
+          background-color: $gray-100;
+        }
+      }
+    }
+
+    &.open {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  // All sub-navigation menus
+  .dropdown-menu {
+    border-width: 0;
+    margin-top: 0;
+  }
+
+  .dropdown-item {
+    // All sub-navigation menu items
+    color: $navbar-light-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-light-hover-color;
+      text-decoration: none;
+    }
+
+    &:active {
+      background-color: $gray-100;
+    }
+  }
+
+  .active {
+    // Active (currently selected) sub-navigation menu items
+    .dropdown-item {
+      background-color: $gray-100;
+      color: $navbar-light-hover-color;
+    }
+  }
+}
+
+.navbar-touch-caret {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  color: $navbar-light-color;
+  padding: $navbar-padding-y $navbar-padding-x $navbar-padding-y 8px;
+}
+
+.navbar-form {
+  margin-bottom: 0;
+}
+
+.navbar-collapse {
+  border-top: 0;
+}
+
+// Medium and up viewports
+@include media-breakpoint-up(md) {
+  .main-nav {
+    .dropdown {
+      // Make room for the caret to be displayed
+      padding-right: $navbar-padding-x * 1.75;
+    }
+
+    .dropdown-menu {
+      border-width: 1px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .dropdown-item {
+      a {
+        color: $navbar-light-color;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav-link {
+      padding: $navbar-padding-x;
+    }
+
+    .navbar {
+      border-bottom: 1px solid $navbar-light-toggler-border-color;
+    }
+  }
+
+  .navbar-touch-caret {
+    padding: $navbar-padding-x;
+    border-radius: 0;
+  }
+}

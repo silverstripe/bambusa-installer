@@ -1,0 +1,13 @@
+.footer-site {
+  border-top: 1px solid $gray-300;
+  margin-top: 10px;
+  padding: 30px 0;
+}
+
+.footer-nav-links a {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

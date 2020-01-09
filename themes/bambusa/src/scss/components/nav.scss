@@ -1,0 +1,327 @@
+// Main navigation
+.navbar-dark {
+  @include theme-color("nav", "background-color");
+
+  .navbar-nav {
+
+    .show > .nav-link {
+      @include theme-contrast-color("nav", "color");
+    }
+  }
+
+  .btn-link {
+    color: currentColor;
+  }
+
+  .navbar-toggler {
+    border: 0;
+  }
+
+  // Special case for white/light-grey theme
+  .navbar-toggler-icon {
+    body.theme-header-white &,
+    body.theme-header-light-grey &,
+    body.theme-header-default-background & {
+      background: $navbar-light-toggler-icon-bg;
+    }
+  }
+}
+
+.main-nav {
+  .navbar {
+    z-index: $zindex-fixed;
+    border-bottom: 0;
+    padding-top: 0;
+
+    // Special case for white/light-grey theme
+    body.theme-nav-white &,
+    body.theme-nav-light-grey &,
+    body.theme-nav-default-background {
+      border-bottom: 1px solid $gray-300;
+    }
+  }
+
+  .navbar-nav > .nav-item {
+    @include theme-contrast-color("nav", "color");
+
+    &:hover,
+    &:focus {
+      @include theme-accent-or-contrast-color("nav", "color", rgba(255, 255, 255, 0.8));
+    }
+  }
+
+  .navbar-nav > .nav-item > .nav-link {
+    color: currentColor;
+
+    &:not(.current):hover,
+    &:not(.current):focus {
+      @include theme-accent-or-contrast-color("nav", "color", rgba(255, 255, 255, 0.8));
+    }
+  }
+
+  .navbar-nav .nav-item.current {
+    @include theme-accent-or-contrast-color("nav", "color");
+
+    &:hover,
+    &:focus {
+      @include theme-accent-or-contrast-color("nav", "color");
+    }
+
+    > a {
+      font-weight: $font-weight-bold;
+      color: currentColor;
+      background-color: unset;
+
+      &:focus,
+      &:hover {
+        background-color: unset;
+        color: currentColor;
+      }
+    }
+  }
+
+  // Change caret icon for dropdown to .fa-angle-down
+  .fa-caret-down:before {
+    content: "\F107";
+  }
+
+  // Change caret icon for active dropdown to .fa-angle-up
+  .fa-caret-up:before {
+    content: "\F106";
+  }
+
+  .dropdown {
+    &:hover .navbar-touch-caret,
+    &:focus .navbar-touch-caret {
+      background-color: transparent;
+    }
+
+    // When active
+    &.current {
+      .navbar-touch-caret,
+      &:hover .navbar-touch-caret,
+      &:focus .navbar-touch-caret {
+        background: unset;
+        color: currentColor;
+
+        &:hover,
+        &:focus {
+          background-color: unset;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    .dropdown-item {
+      padding: $nav-link-padding-y $navbar-padding-x * 2.5;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  // Desktop
+  @include media-breakpoint-up(md) {
+    .dropdown-menu {
+      .dropdown-item {
+        padding: $nav-link-padding-y $navbar-padding-x;
+      }
+    }
+  }
+
+  .active {
+    // Top level links with sub-menus underneath them
+    .dropdown-item,
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .dropdown-item:active {
+      background-color: transparent;
+    }
+
+    // Specific active links in a sub-menu
+    > .dropdown-item,
+    > .dropdown-item:hover,
+    > .dropdown-item:active,
+    > .dropdown-item:focus {
+      @include theme-color("accent", "background-color");
+      @include theme-contrast-color("accent", "color");
+    }
+  }
+
+  // Mobile only
+  @include media-breakpoint-down(sm) {
+    .navbar-nav {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .navbar-collapse {
+      box-shadow: none;
+    }
+
+    .search-container {
+      border-top: 1px solid rgba(255, 255, 255, .5);
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+      // Special case for white/light-grey theme
+      body.theme-header-white &,
+      body.theme-header-light-grey &,
+      body.theme-header-default-background & {
+        border-top: 1px solid $gray-400;
+        border-bottom: 1px solid $gray-400;
+      }
+    }
+
+    .navbar {
+      .form-inline {
+        margin-top: 0;
+        padding: 1rem 0;
+
+        .input-group {
+          justify-content: center;
+        }
+
+        // Special case for white/light-grey theme
+        body.theme-header-white &,
+        body.theme-header-light-grey &,
+        body.theme-header-default-background & {
+          border-color: $gray-300;
+        }
+      }
+    }
+
+    // Dropdown
+    .dropdown {
+      // Change caret direction pointing up
+      &.show .navbar-touch-caret .fa-caret-down:before {
+        content: "\f106";
+      }
+
+      .navbar-touch-caret {
+        padding-left: $input-padding-x-lg;
+      }
+
+      .dropdown-menu {
+        padding: 0;
+        @include theme-color("nav", "background-color");
+      }
+    }
+
+    .show .dropdown-menu {
+      > li {
+        padding: 0;
+      }
+
+      > li:not(.active) {
+        > a {
+          display: block;
+          @include theme-contrast-color("nav", "color");
+        }
+      }
+    }
+  }
+
+  // Desktop only
+  @include media-breakpoint-up(md) {
+    // 1st level
+    .nav-item {
+      > .section {
+        border-bottom: $nav-hover-border-width solid transparent;
+      }
+
+      > .link {
+        border-bottom: $nav-hover-border-width solid transparent;
+      }
+
+      // hide nav item border bottom with dropdown
+      &.dropdown > a.link {
+        &:focus,
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+
+      > .dropdown-menu {
+        margin-top: (-$nav-hover-border-width - 1px);
+        margin-left: -1px;
+        border-radius: 0;
+        min-width: 160px;
+      }
+
+      .dropdown-menu > .active > a {
+        color: $navbar-dark-active-color;
+        @include theme-color("accent", "background-color");
+      }
+    }
+
+    // Requires further nesting
+    .navbar-nav > .nav-item {
+      margin-bottom: -$nav-hover-border-width;
+
+      &:first-child a {
+        padding-left: 0;
+      }
+    }
+
+    // 1st level with dropdown
+    .dropdown {
+      > .link {
+        &:focus,
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-item {
+  // Extra specificity to override header link colour set by the theme colour picker
+  body .site-header .dropdown & {
+    color: inherit;
+  }
+
+  .active > & {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.nav-pills {
+  // Active state
+  > li.active > a {
+    &,
+    &:hover,
+    &:focus {
+      @include theme-color("accent", "background-color");
+    }
+  }
+}
+
+.badge-primary {
+  @include theme-color("accent", "background-color");
+  @include theme-contrast-color("accent", "color");
+
+  &:hover,
+  &:focus {
+    @include theme-color("accent", "background-color", "darken", 10%);
+  }
+}
+
+// Desktop only: add menu item hover colour for sub-navigations
+@include media-breakpoint-up(md) {
+  .navbar-nav {
+    .dropdown-menu {
+      .dropdown-item {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $gray-100;
+        }
+      }
+    }
+  }
+}

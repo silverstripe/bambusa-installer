@@ -1,0 +1,37 @@
+@media only print {
+  // sass-lint:disable no-ids
+  .site-header-brand-link-default:after,
+  #header-language-toggle,
+  .navbar-toggle,
+  .main-nav,
+  .breadcrumb,
+  .page-utilities .list-inline,
+  .news-events-date-range,
+  .news-events-archive,
+  article h2 a:after,
+  .news-events-tags .label:after,
+  .related-pages-link:after,
+  .search-results form,
+  .search-results article h1 a:after {
+    display: none;
+  }
+
+  // sass-lint:disable no-important
+  .header-search,
+  #ui-datepicker-div,
+  .treedropdownfield-panel,
+  .pagination,
+  footer {
+    display: none !important;
+  }
+  // sass-lint:disable no-important
+
+  // sass-lint:enable no-ids;
+  .page-utilities-last-modified {
+    float: left !important;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons / icon-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons-/-icon-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-arrow" fill-rule="nonzero">
+            <circle id="Oval" fill="#303B4D" cx="10" cy="10" r="10"></circle>
+            <path d="M8.39517992,10.6924099 L10.8703163,12.9811759 C11.1635968,13.2523733 11.1635968,13.6920712 10.8703163,13.9632686 C10.5770357,14.234466 10.1015339,14.234466 9.80825334,13.9632686 L6.05329378,10.4910464 C5.76001319,10.2198489 5.76001319,9.78015111 6.05329378,9.50895361 L9.80825334,6.03673142 C10.1015339,5.765534 10.5770357,5.765534 10.8703163,6.03673142 C11.1635968,6.30792885 11.1635968,6.74762675 10.8703163,7.01882417 L8.39958025,9.30352111 L13.4156748,9.30352111 C13.8304362,9.30352111 14.1666667,9.61443444 14.1666667,9.99796552 C14.1666667,10.3814966 13.8304362,10.6924099 13.4156748,10.6924099 L8.39517992,10.6924099 Z" id="Path" fill="#FFFFFF" transform="translate(10.000000, 10.000000) rotate(-180.000000) translate(-10.000000, -10.000000) "></path>
+        </g>
+    </g>
+</svg>

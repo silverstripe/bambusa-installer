@@ -1,0 +1,122 @@
+.step-navigation {
+  > .step-buttons {
+    padding-left: 0;
+    @include clearfix;
+
+    // Mimic BS .btn-toolbar
+    .btn,
+    .btn-group,
+    .input-group {
+      float: left;
+      margin-left: 5px;
+    }
+
+    .step-button-wrapper {
+      display: list-item;
+    }
+  }
+}
+
+// Requires nesting to override module
+.userform .step-navigation > .step-buttons {
+  margin-left: -5px;
+}
+
+.userform-progress {
+  .progress-bar-success {
+    background-color: $progress-bar-success-bg;
+  }
+
+  .step-buttons {
+    margin-bottom: $line-height-computed;
+  }
+}
+
+.step-buttons .step-button-wrapper {
+  > .step-button-jump {
+    opacity: 1;
+  }
+
+  &:not(.current):not(.viewed) .btn-default {
+    color: $text-muted;
+    border-color: $text-muted;
+  }
+}
+
+.userformsgroup legend {
+  margin-bottom: 0;
+}
+
+// sass-lint:disable no-important
+
+// CWP 1.6.0 recipe modification for userforms display rules bug
+// NOTE: Can be removed after userforms 4.3.2 is included
+// See: https://github.com/silverstripe/silverstripe-userforms/issues/607
+.userform .userformsstep.form-step .field .hide {
+  display: inherit !important;
+}
+
+// sass-lint:enable no-important;
+
+// sass-lint:disable class-name-format
+
+// Grouped buttons, convert SilverStripe convention to BS
+// Mimic BS .btn-toolbar;
+// Offset the first child's margin
+.Actions {
+  margin-left: -5px;
+  @include clearfix;
+
+  .btn,
+  .btn-group,
+  .input-group {
+    float: left;
+  }
+
+  > .btn,
+  > .btn-group,
+  > .input-group {
+    margin-left: 5px;
+  }
+}
+
+// sass-lint:enable class-name-format
+
+// Add focus status removed by Bootstrap
+.dropdown-toggler:focus,
+.btn:focus {
+  @include outline-focus();
+}
+
+.form-group-as-label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 0;
+  font-weight: $headings-font-weight;
+  border-bottom: 0;
+  font-size: $font-size-base;
+}
+
+// Text under inputs to provide additional info
+// Replicate BS .help-block but no validation (mixin colour) used here
+.form-text {
+  display: block; // account for any element using help-block
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: $text-muted;
+  font-size: $font-size-sm;
+}
+
+// Work around a CSSClean bug that mangles the background-position property
+@each $state, $data in $form-validation-states {
+  .form-control {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+
+      @if $enable-validation-icons {
+        background-position: calc(100% - #{$input-height-inner-quarter});
+      }
+    }
+  }
+}
+

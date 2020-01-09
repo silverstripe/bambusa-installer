@@ -1,0 +1,81 @@
+// Comments styles
+// Note: These styles don't follow the CSS theme conventions as they need to override the Comment Module styles
+$comment-text-padding: .5rem;
+$moderation-action-padding-x: 4px;
+$moderation-action-padding-y: 0;
+
+.comments-holder-container {
+  .comments-heading {
+    border-top: 2px solid $gray-600;
+    padding-top: $line-height-computed * 1.3; //26px
+    margin-top: $line-height-computed * 2.6;  //52px
+  }
+
+  // Requires nesting
+  .comments-holder {
+    .meta-info {
+      .author,
+      .date {
+        font-size: inherit;
+      }
+    }
+
+    .comments-list {
+      .comment {
+        padding: 0 0 $line-height-computed 0;
+
+        .comment-text {
+          padding: $comment-text-padding;
+          background-color: $gray-100;
+          min-height: auto;
+
+          p:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .date::before {
+          content: none;
+        }
+      }
+
+      .comment-action-link {
+        @include button-size($moderation-action-padding-y, $moderation-action-padding-x, $font-size-sm, $line-height-base, $border-radius);
+      }
+
+      .comment-action-links {
+        margin: $line-height-computed * 0.5 0 $line-height-computed * 0.5;
+      }
+
+      .comment-replies-container {
+        margin: $line-height-computed * 2 0 0 $line-height-computed;
+      }
+    }
+  }
+
+  p.commenting-rss-feed {
+    text-align: left;
+    margin-top: 0;
+
+    a {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.comments-holder-container .comments-holder .comments-list .comment.spam .comment-text {
+  @include alert-variant(
+    theme-color-level("warning", $alert-bg-level),
+    theme-color-level("warning", $alert-border-level),
+    theme-color-level("warning", $alert-color-level)
+  );
+}
+
+.comments-holder-container .comments-holder .comments-list .comment .info {
+  @include meta-info();
+}
+
+.comments-holder-container .comments-holder .comment-replies-container .comment-reply-form-holder {
+  display: none;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+// WebKit-style focus
+@mixin outline-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Info under headings like dates and authors
+@mixin meta-info() {
+  color: $text-muted;
+  font-size: $font-size-sm;
+
+  header + &,
+  h1 + &,
+  .h1 + &,
+  h2 + &,
+  .h2 + &,
+  h3 + &,
+  .h3 + &,
+  h4 + &,
+  .h4 + & {
+    margin-top: -$line-height-computed / 3;
+  }
+
+  p {
+    font-size: $font-size-sm;
+  }
+}
+
+@mixin adjust-label-size($popularity) {
+  // Default sizes x popularity value
+  font-size: 75% * $popularity;
+  padding: (.2em * $popularity) (.6em * $popularity);
+}
+
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

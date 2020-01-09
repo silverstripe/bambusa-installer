@@ -1,0 +1,336 @@
+// Generic page styles
+
+.main {
+  // No underlines for certain components
+  a,
+  .label,
+  .btn,
+  .fa {
+    text-decoration: none;
+  }
+
+  .pagination .active a {
+    @include theme-color("accent", "background-color");
+    @include theme-color("accent", "border-color");
+
+    &:hover {
+      color: $white;
+      cursor: default;
+    }
+  }
+
+  ol,
+  ul {
+    margin-bottom: 1.5rem;
+  }
+
+  p + ol,
+  p + ul {
+    margin-top: -0.5rem;
+  }
+}
+
+// General pages
+.page-utilities {
+  border-top: 1px solid $gray-300;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed / 5;
+
+  .fa {
+    color: $gray-600;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $gray-600;
+    }
+  }
+}
+
+.page-utilities-actions {
+  margin-top: -$line-height-computed * .66;
+  margin-bottom: 0;
+
+  > li {
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+.page-utilities-last-modified {
+  color: $gray-600;
+  float: left;
+  text-align: left;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page-header {
+  margin: $line-height-computed 0 1.6rem;
+  border-bottom: 0;
+  background-color: $primary;
+  @include theme-color("accent", "background-color");
+  color: $white;
+  margin: 0 -9999rem 0;
+  padding: 3.5rem 9999rem;
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3 {
+    margin-bottom: ($line-height-computed / 3);
+    color: $white;
+  }
+}
+
+.label {
+  border-radius: $border-radius;
+  padding-bottom: .2em;
+}
+
+.label-primary {
+  @include theme-color("accent", "background-color");
+  @include theme-contrast-color("accent", "color");
+}
+
+.well {
+  box-shadow: none;
+}
+
+// Page sidebar
+.page-sidebar-header {
+  border-bottom: 1px solid $gray-600;
+  padding-bottom: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.tags-list {
+  li {
+    display: inline-block;
+  }
+
+  .badge {
+    text-decoration: none;
+  }
+}
+
+.page-sidebar-widget {
+  @include media-breakpoint-down(sm) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// News sidebar
+.news-item {
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    margin-bottom: 0.2rem;
+  }
+
+  .meta-info {
+    margin-bottom: 0.5rem;
+  }
+
+  .summary {
+    font-size: $font-size-sm;
+  }
+}
+
+// Blogholder widget
+.blog-tags-widget a {
+  text-decoration: none;
+}
+
+// Homepage Jumbotron
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -$line-height-computed; //24px
+  margin-bottom: $line-height-computed * 3; //72px
+}
+
+// Align homepage content with sidebar news header
+.home-page h1:first-of-type {
+  margin-top: 0;
+}
+
+// Page features & quicklinks, used on homepage
+.page-showcase {
+  background-color: $lgtgrey;
+  padding-bottom: $line-height-computed;
+  padding-top: $line-height-computed * 2.5;
+
+  a {
+    @include theme-color("accent", "color", "darken", 5%);
+  }
+}
+
+.page-showcase-quicklinks,
+.page-showcase-feature {
+  margin-bottom: $line-height-computed * 2;
+}
+
+.page-showcase-quicklinks {
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: $line-height-computed / 3;
+  }
+}
+
+.h5.news-events-archive-year {
+  margin-top: 3px;
+}
+
+// Search styling
+
+.page-searchform {
+  margin-bottom: 3rem;
+}
+
+.search-results {
+  &__heading {
+    margin-bottom: 2.1rem;
+    margin-top: 4rem;
+  }
+
+  &__summary {
+    margin-bottom: 3.3rem;
+
+    .text-muted {
+      margin-bottom: 0;
+      margin-top: 0.9rem;
+    }
+  }
+
+  &__message {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  &__no-result {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Blog holder/page
+.blog-holder__content {
+  margin-bottom: 4rem;
+}
+
+.blog-entry--paginated {
+  margin-bottom: 4rem;
+
+  &:last-child {
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Generic listing classes with modifiers
+.listing {
+  &__item {
+    margin-bottom: 3rem;
+
+    &--news-events {
+      margin-bottom: 4.2rem;
+    }
+
+    &--search-result {
+      margin-bottom: 3.7rem;
+
+      .h4 {
+        margin-bottom: 0.5rem;
+      }
+
+      .breadcrumb {
+        margin-bottom: 0.7rem;
+
+        &-item {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.breadcrumb {
+  font-size: 12px;
+  background-color: unset;
+
+  > .breadcrumb-item {
+    a {
+      color: $white;
+    }
+
+    &.active {
+      color: $white;
+
+      &::before {
+        color: $white;
+      }
+    }
+  }
+}
+
+.listing__item--search-result {
+  .breadcrumb {
+
+    > .breadcrumb-item {
+
+      a {
+        color: $gray-800;
+      }
+
+      &.active {
+        color: $gray-800;
+
+        &::before {
+          color: $gray-800;
+        }
+      }
+
+      & + .breadcrumb-item {
+        &::before {
+          color: $gray-800;
+        }
+      }
+    }
+  }
+}
+
+.header-elements {
+  .element-holder:last-child {
+    margin-bottom: 0;
+
+    .carousel {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+.content,
+.sidebar {
+  margin-top: 4rem;
+}

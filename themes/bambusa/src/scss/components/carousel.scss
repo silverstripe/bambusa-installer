@@ -1,0 +1,223 @@
+.carousel {
+  margin-bottom: $jumbotron-padding * 2;
+  border-bottom: 1px solid $gray-300;
+
+  .container {
+    position: relative;
+  }
+
+  // Slides
+  .carousel-item {
+    padding-top: $jumbotron-padding * 2.5;
+    padding-bottom: $jumbotron-padding * 2.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 360px;
+    color: $carousel-caption-color;
+    @include theme-contrast-color("carousel", "color");
+
+    a:not(.btn) {
+      color: $carousel-caption-color;
+      @include theme-contrast-color("carousel", "color");
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      color: $carousel-caption-color;
+      @include theme-contrast-color("carousel", "color");
+    }
+
+    // Remove lighter border-top if there is an image
+    &.carousel-has-image[class] {
+      h1,
+      h2,
+      h3,
+      p,
+      a:not(.btn) {
+        color: $carousel-caption-color;
+      }
+    }
+
+    .btn {
+      margin-left: $line-height-computed * 0.45;
+      margin-right: $line-height-computed * 0.45;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: floor($line-height-computed * 0.45);
+      }
+    }
+
+    &:not(.carousel-has-image) .carousel-secondary-action {
+      @include theme-contrast-color("carousel", "color");
+      border-color: currentColor;
+
+      &:hover {
+        @include theme-contrast-color("carousel", "color", #000);
+      }
+    }
+  }
+
+  .theme-carousel-default-background & a:not(.btn) {
+    color: $carousel-caption-color;
+  }
+}
+
+// Carousel content
+.carousel-content p {
+  // Mimic .lead
+  // Increase distance between text and actions
+  margin-bottom: $line-height-computed * 1.25;
+  font-size: $font-size-base * 1.2;
+  font-weight: $font-weight-light;
+  line-height: 1.4;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base;
+  }
+
+  // Custom carousel link style for theme
+  a {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    @include theme-color("accent", "border-bottom-color");
+    text-decoration: none;
+
+    div.carousel-has-image & {
+      border-color: $carousel-control-color;
+    }
+
+    &:hover {
+      @include theme-color("accent", "border-bottom-color", "lighten", 20%);
+    }
+  }
+}
+
+// Controls wrapper
+.carousel-controls-wrapper {
+  position: absolute;
+  bottom: 30px;
+  // Center
+  left: 50%;
+  z-index: 2;
+  // Not to obstruct left/right arrows
+  width: 60%;
+  // Back half of width to center
+  margin-left: -30%;
+  text-align: center;
+}
+
+.carousel-controls-inner-wrapper {
+  display: inline-flex;
+  @include theme-color("nav", "background-color");
+  border-radius: 2rem;
+  padding: 0 #{$spacer - $btn-padding-x-sm} 0 $spacer;
+}
+
+// Controls navigate left or right
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  z-index: 2;
+  border: 0;
+  opacity: 1;
+
+  &.carousel-item-left,
+  &.carousel-item-right {
+    background-image: none;
+
+    .fa {
+      font-size: 3.5rem;
+    }
+  }
+
+  &:hover {
+    background-color: rgba($gray-600, 0.2);
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  &:focus {
+    @include outline-focus;
+  }
+}
+
+
+// Carousel slides indicators
+.carousel-indicators {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0;
+  margin-right: $line-height-computed / 2;
+  position: static;
+
+  .carousel-indicator-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    width: $carousel-indicator-width;
+    height: 100%;
+    padding: 0;
+    @include transition($carousel-indicator-transition);
+
+    &::before {
+      content: "";
+      @include theme-contrast-color("nav", "background-color");
+      opacity: $carousel-control-opacity;
+      width: 100%;
+      margin: 0 $carousel-indicator-spacer;
+      height: $carousel-indicator-height;
+    }
+
+    &:hover::before {
+      opacity: $carousel-control-hover-opacity;
+    }
+
+    &.active::before {
+      @include theme-contrast-color("nav", "background-color");
+      opacity: 1;
+    }
+  }
+}
+
+// Play and pause button
+.carousel-play-controls {
+  position: relative;
+
+  .carousel-controls {
+    @include theme-contrast-color("nav", "color");
+
+    &:hover {
+      opacity: $carousel-control-hover-opacity;
+    }
+  }
+}
+
+// If only single carousel item center text vertically as no carousel controls
+.carousel-static .item {
+  padding-top: $jumbotron-padding * 3;
+}
+
+// Overlay carousel mask
+.carousel-mask {
+  position: absolute;
+  background: $lgtblue;
+  @include theme-color("carousel", "background-color");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  div.carousel-has-image & {
+    background: transparent;
+  }
+}
+
+.carousel-element__title {
+  padding: 0.8rem;
+}

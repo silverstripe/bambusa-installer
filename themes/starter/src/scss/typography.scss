@@ -1,0 +1,314 @@
+.typography {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+p {
+  margin-bottom: $line-height-computed / 2;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+
+  &.right {
+    float: right;
+    clear: right;
+    margin: 0 0 $image-spacing $image-spacing;
+  }
+
+  &.left {
+    float: left;
+    clear: left;
+    margin: 0 $image-spacing $image-spacing 0;
+  }
+
+  // sass-lint:disable class-name-format
+  &.leftAlone {
+    margin: 0 $image-spacing $image-spacing 0;
+    display: block;
+    clear: both;
+  }
+
+  // sass-lint:disable class-name-format
+  &.rightAlone {
+    margin-left: auto;
+    display: flex;
+  }
+
+  // sass-lint:enable class-name-format
+  &.center {
+    margin-bottom: $image-spacing;
+    display: flex;
+    margin: auto;
+  }
+
+  &.center-block {
+    display: flex;
+    margin: auto;
+  }
+}
+
+// sass-lint:disable class-name-format
+.captionImage {
+  width: 100%;
+  max-width: 100%;
+
+  &.pull-left,
+  &.left {
+    margin: 0 $image-spacing $image-spacing 0;
+    float: left;
+  }
+
+  &.pull-right,
+  &.right {
+    margin: 0 0 $image-spacing $image-spacing;
+    float: right;
+  }
+
+  &.leftAlone {
+    margin: 0 $image-spacing $image-spacing 0;
+  }
+
+  &.rightAlone {
+    margin-left: auto;
+  }
+
+  &.center {
+    margin-bottom: $image-spacing;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.center-block {
+    margin-bottom: $image-spacing;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    clear: both;
+    margin: $table-cell-padding 0;
+  }
+
+  img {
+    margin: 0 0 $table-cell-padding 0;
+  }
+}
+// sass-lint:enable class-name-format
+
+// Table styles
+table {
+  // Using default BS .table styles
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-computed;
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-cell-padding;
+        line-height: $line-height-base;
+        vertical-align: top;
+        border-top: 1px solid $table-border-color;
+      }
+    }
+  }
+
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+  }
+
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid $table-border-color;
+  }
+
+  // Nesting
+  .table {
+    background-color: $body-bg;
+  }
+
+  // Watea theme table styles from here on
+  caption {
+    text-align: left;
+    padding: $table-cell-padding 0;
+  }
+
+  thead td {
+    font-weight: $headings-font-weight;
+  }
+
+  tfoot td {
+    color: $text-muted;
+    font-size: $font-size-sm;
+  }
+}
+
+// Specified here so they can be seen and used within the editor styles dropdown
+.table-hover,
+.table-striped,
+.table-bordered {
+  background-color: $table-bg;
+}
+
+// Example of how you could combine bootstrap table styles
+.table-bordered-striped {
+  // BS Table-bordered styles
+  border: 1px solid $table-border-color;
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid $table-border-color;
+      }
+    }
+  }
+
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+
+  // BS Table striped styles
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-accent-bg;
+  }
+}
+
+
+// Links
+// Icons
+a.fa,
+a.fa:hover,
+i.fa,
+i.fa:hover {
+  text-decoration: none;
+}
+
+// EXTERNAL LINKS
+a.external {
+  display: inline-block;
+
+  &::after {
+    content: "\f08e";
+    font-size: $font-size-sm;
+    font-family: FontAwesome;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    display: inline-block;
+  }
+}
+
+a[href$=".doc"],
+a[href$=".DOC"],
+a[href$=".docx"],
+a[href$=".DOCX"],
+.doc {
+  &::before {
+    margin-right: 5px;
+    content: "\f016";
+    font-family: FontAwesome;
+  }
+}
+
+a[href$=".xls"],
+a[href$=".XLS"],
+a[href$=".xlsx"],
+a[href$=".XLSX"],
+.xls {
+  &::before {
+    margin-right: 5px;
+    content: "\f1c3";
+    font-family: FontAwesome;
+  }
+}
+
+a[href$=".gz"],
+a[href$=".GZ"],
+a[href$=".gzip"],
+a[href$=".GZIP"],
+a[href$=".zip"],
+a[href$=".ZIP"],
+.archive {
+  &::before {
+    margin-right: 5px;
+    content: "\f1c6";
+    font-family: FontAwesome;
+  }
+}
+
+a[href$=".exe"],
+a[href$=".EXE"],
+.application {
+  &::before {
+    margin-right: 5px;
+    content: "\f022";
+    font-family: FontAwesome;
+  }
+}
+
+a[href$=".pdf"],
+a[href$=".PDF"],
+.pdf {
+  &::before {
+    margin-right: 5px;
+    content: "\f1c1";
+    font-family: FontAwesome;
+  }
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: $text-muted;
+
+  &::before {
+    content: "\2014 \00A0";
+  }
+}
+
+// Using Bootstrap default sizes for the CMS editor
+pre {
+  padding: (($line-height-computed - 1) / 2);
+  margin: 0 0 ($line-height-computed / 2);
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: $gray-100;
+  border: 1px solid $pre-color;
+  white-space: pre-wrap;
+}
+
+// Meta info typically under a header to provide additional info like author or dates.
+.meta-info {
+  color: $text-muted;
+  font-size: $font-size-sm;
+}

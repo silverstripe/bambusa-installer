@@ -1,0 +1,70 @@
+// Generic pages
+
+.page-header {
+  border-bottom: 1px solid $page-header-border-color;
+  margin: ($line-height-computed * 2) 0 $line-height-computed;
+  padding-bottom: (($line-height-computed / 2) - 1);
+}
+
+
+// Page utilities
+.page-utilities {
+  margin-top: $line-height-computed * 1.5;
+}
+
+.page-utilities-last-modified {
+  font-size: $font-size-sm;
+  color: $text-muted;
+
+  @include media-breakpoint-up(md) {
+    float: right;
+    text-align: right;
+  }
+}
+
+// Home page jumbotron font formatting/
+.home-page {
+  .jumbotron {
+    border-radius: 0;
+
+    p {
+      font-size: $lead-font-size;
+      font-weight: $lead-font-weight;
+      line-height: $line-height-base;
+      margin-bottom: $paragraph-margin-bottom;
+    }
+  }
+}
+
+// sass-lint:disable class-name-format
+// IFramePage
+.Iframepage-iframe {
+  border: 0;
+}
+// sass-lint:enable class-name-format
+
+// Page features & quicklinks, used on homepage
+.page-showcase {
+  padding-bottom: $line-height-computed * 1.5;
+}
+
+// Sidebar Widget Spacing
+// Used for side menus, News and Events widgets and Blog widgets
+.page-sidebar-widget {
+  margin-bottom: $line-height-computed * 1.5;
+}
+
+@include media-breakpoint-down(sm) {
+  .container {
+    max-width: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .home-page {
+    .jumbotron {
+      // Compensate for the nav margin on bottom
+      margin-top: -20px; // see nav.scss .main-nav.navbar
+    }
+  }
+}

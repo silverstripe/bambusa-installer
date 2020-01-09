@@ -1,0 +1,45 @@
+.multicolumn-block {
+  &__title {
+    margin: 1rem 0 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -1.5rem;
+  }
+
+  &__item {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+
+    > p {
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+
+    .multicolumn-block--2 & {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    .multicolumn-block--2 &,
+    .multicolumn-block--3 & {
+      @include media-breakpoint-up(md) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    .multicolumn-block--3 & {
+      @include media-breakpoint-up(lg) {
+        flex: 1 1 33%;
+        margin-bottom: 0;
+        max-width: auto;
+      }
+    }
+  }
+}

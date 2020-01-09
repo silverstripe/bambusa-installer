@@ -1,0 +1,21 @@
+{
+  "name": "silverstripe/bambusa-theme",
+  "description": "SilverStripe Bambusa theme",
+  "type": "silverstripe-theme",
+  "keywords": ["silverstripe", "theme", "bambusa"],
+  "license": "BSD-3-Clause",
+  "extra": {
+    "installer-name": "bambusa",
+    "expose": [
+      "dist",
+      "ico",
+      "images",
+      "css"
+    ]
+  },
+  "require": {
+  	"cwp/starter-theme": "^3.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

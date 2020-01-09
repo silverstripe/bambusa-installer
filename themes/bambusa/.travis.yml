@@ -1,0 +1,36 @@
+language: php
+
+php: 7.2
+
+env:
+  global:
+  - TRAVIS_NODE_VERSION="10"
+
+cache:
+  directories:
+    - node_modules
+
+before_script:
+  # Install composer dependencies
+  - composer validate
+  - composer install --prefer-dist --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
+
+  # Install node
+  - nvm install "$TRAVIS_NODE_VERSION"
+  - npm install -g yarn;
+
+  # Shift the starter theme to a sibling directory of the current (required for yarn run build to work)
+  # Note that if Behat or other functional tests are required in future, we'll need to install a CWP installer
+  # project and copy the current working bambusa dir (installed by Travis) into `themes/bambusa` instead of doing this.
+  - mv themes/starter ../
+  - (cd ../starter && yarn install --silent)
+  - yarn install --silent
+
+script:
+  # Linting
+  - yarn run lint-js
+  - yarn run lint-sass
+  # Check that dist files are built correctly
+  - yarn run package
+  - git diff-files --quiet -w --relative=dist
+  - git diff --name-status --relative=dist

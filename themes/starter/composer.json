@@ -1,0 +1,21 @@
+{
+  "name": "cwp/starter-theme",
+  "description": "CWP Theme",
+  "type": "silverstripe-theme",
+  "keywords": ["silverstripe", "theme", "cwp"],
+  "license": "BSD-3-Clause",
+  "require": {
+    "silverstripe/framework": "^4.0"
+  },
+  "extra": {
+    "installer-name": "starter",
+    "expose": [
+      "dist",
+      "ico",
+      "images"
+    ]
+  },
+  "suggest": {
+    "cwp/cwp": "Much of the functionality in this theme is enabled by this module"
+  }
+}

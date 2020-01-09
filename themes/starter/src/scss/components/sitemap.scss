@@ -1,0 +1,47 @@
+// Sitemap formatting
+.sitemap {
+  border-bottom: 1px solid $table-border-color;
+  list-style-type: none;
+  margin: 40px 0 ($line-height-computed * 3);
+  padding-left: 0;
+
+  ul {
+    list-style-type: none;
+    padding-bottom: $input-btn-padding-y;
+  }
+}
+
+// Todo change class name to .sitemap-toggle in module
+.page-toggle {
+  padding: $input-btn-padding-y 15px;
+  display: inline-block;
+  float: left;
+}
+
+.sitemap-link {
+  padding: $input-btn-padding-y 0;
+  display: block;
+  margin-left: 40px;
+}
+
+// Target first level only and give more spacing
+.sitemap-initial {
+  border-top: 1px solid $table-border-color;
+  position: relative;
+
+  &:hover {
+    background-color: $table-hover-bg;
+  }
+
+  // Todo change class name in module to .sitemap-toggle-children
+  > .page-toggle__children > .sitemap-link {
+    padding-top: $input-btn-padding-y-lg;
+    padding-bottom: $input-btn-padding-y-lg;
+  }
+
+  // Todo change class name to .sitemap-toggle in module
+  > .page-toggle {
+    padding-top: $input-btn-padding-y-lg;
+    padding-bottom: $input-btn-padding-y-lg;
+  }
+}

@@ -1,0 +1,232 @@
+body {
+  @include theme-font;
+}
+
+a:not(.btn, .dropdown-item) {
+  @include theme-color("link", "color");
+}
+
+.btn {
+  transition: unset;
+}
+
+.btn-default {
+  @include theme-color("accent", "border-color");
+  @include theme-color("accent", "color");
+
+  &:hover,
+  &:focus {
+    @include theme-color("accent", "border-color", "darken", 10%);
+  }
+}
+
+.btn-primary {
+  @include theme-color("accent", "background-color");
+  @include theme-color("accent", "border-color");
+  @include theme-contrast-color("accent", "color");
+
+  &:hover,
+  &:focus {
+    @include theme-color("accent", "background-color", "darken", 10%);
+    @include theme-color("accent", "border-color", "darken", 10%);
+  }
+}
+
+h1,
+.h1 {
+  font-size: $h1-font-size;
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base * 2.25;
+  }
+
+  .theme-font-fira-sans & {
+    font-weight: 500;
+  }
+
+  .theme-font-merriweather & {
+    font-size: $font-size-base * 2.65;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base * 2.25;
+    }
+  }
+}
+
+h2,
+.h2 {
+  font-size: $h2-font-size;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base * 1.75;
+  }
+
+  .theme-font-fira-sans & {
+    font-weight: 400;
+  }
+
+  .theme-font-merriweather & {
+    font-weight: 400;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $h3-font-size;
+
+  .theme-font-fira-sans & {
+    font-weight: 500;
+  }
+}
+
+h4,
+.h4 {
+  .theme-font-fira-sans & {
+    font-weight: 600;
+  }
+}
+
+h5,
+.h5 {
+  font-size: $h5-font-size;
+
+  .theme-font-fira-sans & {
+    font-weight: 600;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $h6-font-size;
+
+  .theme-font-fira-sans & {
+    font-weight: 600;
+  }
+}
+
+p {
+  margin-bottom: $paragraph-margin-bottom;
+
+  .theme-font-fira-sans & {
+    font-weight: 300;
+  }
+
+  .theme-font-merriweather & {
+    font-size: $font-size-base * 0.875;
+    line-height: 1.6;
+  }
+}
+
+ul,
+ol {
+  .theme-font-fira-sans & {
+    font-weight: 300;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  letter-spacing: -.5px;
+}
+
+.lead {
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base * 1.25;
+  }
+
+  .theme-font-merriweather & {
+    font-size: $font-size-base * 1.25;
+    line-height: 1.5;
+  }
+}
+
+blockquote {
+  padding: 0 20px;
+  border-left: 5px solid $primary;
+  @include theme-color("accent", "border-color");
+
+  p,
+  ul,
+  ol {
+    font-size: $blockquote-font-size;
+    font-weight: 300;
+    line-height: 1.4;
+
+    .theme-font-merriweather & {
+      font-size: $font-size-base * 1.125;
+      line-height: 1.5;
+    }
+  }
+
+  .blockquote-footer:before {
+    content: "\2014 "; // em dash, space
+  }
+}
+
+.captionImage { // sass-lint:disable-line class-name-format
+  border-bottom: 2px solid $gray-200;
+
+  p {
+    color: $text-muted;
+    font-size: $font-size-sm;
+  }
+}
+
+// Table styles
+
+// Replicate th from Bootstrap
+.table > thead > tr > td {
+  border-top: 0;
+  vertical-align: bottom;
+  border-bottom: 2px solid $table-border-color;
+}
+
+.table-bordered,
+.table-bordered-striped {
+  border: 0;
+  border-top: 1px solid $table-border-color;
+
+  > thead:first-child > tr:first-child > {
+    td,
+    th {
+      border-top: 1px solid $table-border-color;
+    }
+  }
+}
+
+
+// Nesting required to override bs styles
+.table,
+.table-striped,
+.table-bordered {
+  > tfoot > tr > {
+    td,
+    th {
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+    }
+  }
+}
+
+tfoot {
+  td:first-child::before,
+  th:first-child::before {
+    content: "\2014 "; // em dash, space
+  }
+}
+
+pre {
+  border: 0;
+  border-radius: 1rem;
+  background-color: $gray-200;
+  padding: 0.5rem 1rem;
+}

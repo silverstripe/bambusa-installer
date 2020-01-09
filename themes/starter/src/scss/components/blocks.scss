@@ -1,0 +1,45 @@
+// Content block styles
+
+//-- Banner block
+.banner-element {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+// Override defaults from .jumbotron, shift them to content instead
+.container .banner-element.jumbotron {
+  padding: 0;
+  margin: $line-height-computed 0;
+}
+
+.silverstripe__elementalbannerblock__block__bannerblock {
+  background-color: #001F2C;
+
+  .banner-element__image {
+    display: flex;
+    flex-grow: 1;
+    max-height: 450px;
+    opacity: .55;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .banner-element__content {
+    color: #fff;
+    left: 0;
+    padding: 2rem;
+    position: absolute;
+    text-shadow: $carousel-text-shadow;
+    top: 0;
+    width: 100%;
+  }
+}
+
+//-- File block
+.file-element__file {
+  margin-bottom: $line-height-computed * 2;
+}

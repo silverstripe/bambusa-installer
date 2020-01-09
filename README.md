@@ -48,6 +48,16 @@ default database content - any content in other languages simply won't show
 to visitors or authors. The sample content itself will mention multilingual
 capabilities though.
 
+## Removing Raygun
+
+While it's probably a good idea to be aware of any errors you're receiving
+when preparing or running a demo, in case you don't want to set up a Raygun application for it,
+here's how to remove it and avoid complaints about a missing `SS_RAYGUN_APP_KEY`:
+
+```
+composer remove silverstripe/raygun
+```
+
 ## Local Development
 
 ### Vagrant

@@ -32,3 +32,12 @@ SilverStripe\View\Parsers\URLSegmentFilter:
 SilverStripe\Admin\LeftAndMain:
   extensions:
     - SilverStripe\Bambusa\Extensions\LeftAndMainExtension
+
+# Display a privacy warning on first pae visit
+PageController:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\PrivacyWarningPopupExtension
+
+SilverStripe\Security\Security:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\PrivacyWarningPopupExtension

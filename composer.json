@@ -12,7 +12,7 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "^4.6",
+        "silverstripe/recipe-cms": "^4.7",
         "silverstripe/bambusa-theme": "dev-master",
         "silverstripe/recipe-content-blocks": "^2.3",
         "silverstripe/crontask": "^2.1.2",
@@ -50,6 +50,7 @@
             "app/.htaccess",
             "app/_config.php",
             "app/_config/contentblocks.yml",
+            "app/_config/database.yml",
             "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/BlocksPage.php",

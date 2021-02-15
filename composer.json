@@ -8,7 +8,7 @@
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/recipe-cms": "^4.7",
         "silverstripe/bambusa-theme": "dev-master",
-        "silverstripe/recipe-content-blocks": "^2.3",
+        "silverstripe/recipe-content-blocks": "^2.7.0@stable",
         "silverstripe/crontask": "^2.1.2",
         "silverstripe/dynamodb": "^4.0.2",
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",

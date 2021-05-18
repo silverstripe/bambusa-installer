@@ -33,7 +33,9 @@
         "silverstripe/theme-fontpicker": "^1",
         "tractorcow/silverstripe-fluent": "^4.2",
         "symfony/process": "^3.2",
-        "silverstripe/fulltextsearch": "^3.5"
+        "silverstripe/fulltextsearch": "^3.5",
+        "symbiote/silverstripe-local-personalisation": "dev-master",
+        "silverstripe/multivaluefield": "^5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

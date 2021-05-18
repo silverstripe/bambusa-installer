@@ -1,0 +1,3 @@
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - Symbiote\Personalisation\PersonalisationExtension

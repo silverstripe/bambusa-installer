@@ -6,9 +6,9 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "^4.7",
+        "silverstripe/recipe-cms": "^4.10",
         "silverstripe/bambusa-theme": "dev-master",
-        "silverstripe/recipe-content-blocks": "^2.3",
+        "silverstripe/recipe-content-blocks": "^2.10",
         "silverstripe/crontask": "^2.1.2",
         "silverstripe/dynamodb": "^4.0.2",
         "dnadesign/silverstripe-elemental-userforms": "^3.0.0",
@@ -66,7 +66,12 @@
         ]
     },
     "config": {
-        "process-timeout": 600
+        "process-timeout": 600,
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true,
+            "silverstripe/recipe-plugin": true
+        }
     },
     "autoload": {
         "psr-4": {

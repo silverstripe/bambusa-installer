@@ -33,7 +33,8 @@
         "tractorcow/silverstripe-fluent": "^4.2",
         "symfony/process": "^3.2",
         "silverstripe/fulltextsearch": "^3.5",
-        "silverstripe/totp-authenticator": "^4.3"
+        "silverstripe/totp-authenticator": "^4.3",
+        "dynamic/silverstripe-elemental-accordion": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

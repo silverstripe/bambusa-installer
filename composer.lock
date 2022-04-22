@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f220e7dd22048b48ce3a8e8244201089",
+    "content-hash": "57fb409f56c8650541baac20aba5f9bc",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1708,6 +1708,139 @@
             "time": "2022-01-18T15:43:28+00:00"
         },
         {
+            "name": "dynamic/silverstripe-elemental-accordion",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dynamic/silverstripe-elemental-accordion.git",
+                "reference": "1c1e64376f0362505bac2dcb3be98c369d408a0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-accordion/zipball/1c1e64376f0362505bac2dcb3be98c369d408a0c",
+                "reference": "1c1e64376f0362505bac2dcb3be98c369d408a0c",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": "^4.0",
+                "dynamic/silverstripe-elemental-baseobject": "^2.0",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "^2.5",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^5.7",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "theseer/phpdox": "^0.11.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "thirdparty",
+                    "client/dist"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dynamic\\Elements\\Accordion\\": "src/",
+                    "Dynamic\\Elements\\Accordion\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dynamic",
+                    "email": "dev@dynamicagency.com",
+                    "homepage": "http://www.dynamicagency.com"
+                }
+            ],
+            "description": "Display content in collapsable panels",
+            "keywords": [
+                "accordion",
+                "blocks",
+                "elemental",
+                "panels",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/dynamic/silverstripe-elemental-accordion/issues",
+                "source": "https://github.com/dynamic/silverstripe-elemental-accordion/tree/2.1.0"
+            },
+            "time": "2020-01-08T18:08:40+00:00"
+        },
+        {
+            "name": "dynamic/silverstripe-elemental-baseobject",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dynamic/silverstripe-elemental-baseobject.git",
+                "reference": "85370b0dd2a604c37c6d95933eeca42f7bbd2dcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-baseobject/zipball/85370b0dd2a604c37c6d95933eeca42f7bbd2dcf",
+                "reference": "85370b0dd2a604c37c6d95933eeca42f7bbd2dcf",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": "^4.0",
+                "dynamic/silverstripe-linkable": "^1.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "^2.5",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^5.7",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "theseer/phpdox": "^0.11.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dynamic\\BaseObject\\": "src/",
+                    "Dynamic\\BaseObject\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dynamic",
+                    "email": "dev@dynamicagency.com",
+                    "homepage": "http://www.dynamicagency.com"
+                }
+            ],
+            "description": "A simple base DataObject to use with Elemental Content Blocks",
+            "keywords": [
+                "blocks",
+                "content",
+                "elemental",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/dynamic/silverstripe-elemental-baseobject/issues",
+                "source": "https://github.com/dynamic/silverstripe-elemental-baseobject/tree/2.1.0"
+            },
+            "time": "2020-01-08T03:56:46+00:00"
+        },
+        {
             "name": "dynamic/silverstripe-elemental-blog",
             "version": "2.1.3",
             "source": {
@@ -1770,6 +1903,81 @@
                 "source": "https://github.com/dynamic/silverstripe-elemental-blog/tree/2.1.3"
             },
             "time": "2020-10-30T19:33:18+00:00"
+        },
+        {
+            "name": "dynamic/silverstripe-linkable",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dynamic/silverstripe-linkable.git",
+                "reference": "2148dac5970fdff93f61947fdda4e621f225bc8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dynamic/silverstripe-linkable/zipball/2148dac5970fdff93f61947fdda4e621f225bc8d",
+                "reference": "2148dac5970fdff93f61947fdda4e621f225bc8d",
+                "shasum": ""
+            },
+            "require": {
+                "embed/embed": "^3.0",
+                "silverstripe/framework": "^4.0",
+                "silverstripe/vendor-plugin": "^1.0",
+                "unclecheese/display-logic": "^2.0"
+            },
+            "replace": {
+                "sheadawson/silverstripe-linkable": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "suggest": {
+                "silverstripe/cms": "To allow for a linking of the SiteTree data object."
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sheadawson\\Linkable\\": "src/",
+                    "Sheadawson\\Linkable\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dynamic",
+                    "email": "dev@dynamicagency.com"
+                },
+                {
+                    "name": "Shea Dawson",
+                    "email": "shea@silverstripe.com.au"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                }
+            ],
+            "description": "A couple of handy form fields and objects for managing external and internal links on DataObjects",
+            "homepage": "http://github.com/dynamic/silverstripe-linkable",
+            "keywords": [
+                "cms",
+                "link",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "http://github.com/dynamic/silverstripe-linkable/issues",
+                "source": "https://github.com/dynamic/silverstripe-linkable/tree/1.0.2"
+            },
+            "time": "2020-04-13T23:33:10+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -9843,6 +10051,70 @@
                 "source": "https://github.com/ua-parser/uap-php/tree/v3.9.14"
             },
             "time": "2020-10-02T23:36:20+00:00"
+        },
+        {
+            "name": "unclecheese/display-logic",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
+                "reference": "c5f807dc24765438b427814350cc884ca70498b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/c5f807dc24765438b427814350cc884ca70498b0",
+                "reference": "c5f807dc24765438b427814350cc884ca70498b0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "replace": {
+                "silverstripe/display-logic": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "se/selenium-server-standalone": "2.41.0",
+                "silverstripe/behat-extension": "^3@dev",
+                "silverstripe/serve": "^2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "display-logic",
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "UncleCheese\\DisplayLogic\\": "src/",
+                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
+                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "display",
+                "logic",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/unclecheese/silverstripe-display-logic/issues",
+                "source": "https://github.com/unclecheese/silverstripe-display-logic/tree/master"
+            },
+            "time": "2019-10-15T23:31:03+00:00"
         },
         {
             "name": "webmozart/assert",

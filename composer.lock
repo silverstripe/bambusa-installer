@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57fb409f56c8650541baac20aba5f9bc",
+    "content-hash": "ae3bd40dbf86196862b9f0bcbc561d07",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1343,6 +1343,55 @@
                 "source": "https://github.com/silverstripe/silverstripe-elemental/tree/4.8.1"
             },
             "time": "2022-02-04T03:28:07+00:00"
+        },
+        {
+            "name": "dnadesign/silverstripe-elemental-decisiontree",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dnadesign/silverstripe-elemental-decisiontree.git",
+                "reference": "7bfbee9c5bd1c46e7a6a89cd6bafad032c021dce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental-decisiontree/zipball/7bfbee9c5bd1c46e7a6a89cd6bafad032c021dce",
+                "reference": "7bfbee9c5bd1c46e7a6a89cd6bafad032c021dce",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": ">=3",
+                "silvershop/silverstripe-hasonefield": "3.x-dev",
+                "unclecheese/display-logic": "^2.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Saelens",
+                    "email": "alexandre.saelens@dna.co.nz"
+                }
+            ],
+            "description": "Element displaying information in regards to answers given to questions",
+            "keywords": [
+                "decision tree",
+                "element",
+                "elemental",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/dnadesign/silverstripe-elemental-decisiontree/issues",
+                "source": "https://github.com/dnadesign/silverstripe-elemental-decisiontree/tree/2.0.3"
+            },
+            "time": "2021-05-06T21:26:53+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -4716,6 +4765,56 @@
                 "source": "https://github.com/sheadawson/silverstripe-dependentdropdownfield/tree/2.0.3"
             },
             "time": "2020-07-05T23:00:56+00:00"
+        },
+        {
+            "name": "silvershop/silverstripe-hasonefield",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silvershop/silverstripe-hasonefield.git",
+                "reference": "1f632d1b4c760cb99b8aba812dbded515e8791f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silvershop/silverstripe-hasonefield/zipball/1f632d1b4c760cb99b8aba812dbded515e8791f4",
+                "reference": "1f632d1b4c760cb99b8aba812dbded515e8791f4",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "replace": {
+                "hchokshi/silverstripe-hasonefield": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverShop\\HasOneField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Edit a has_one relationship using a GridField, triggered by clicking a button.",
+            "support": {
+                "issues": "https://github.com/silvershop/silverstripe-hasonefield/issues",
+                "source": "https://github.com/silvershop/silverstripe-hasonefield/tree/3.0.6"
+            },
+            "time": "2022-03-13T20:20:36+00:00"
         },
         {
             "name": "silverstripe/admin",

@@ -16,6 +16,7 @@ namespace {
         {
             parent::init();
             Requirements::block('silverstripe/elemental-bannerblock:client/dist/styles/frontend-default.css');
+            Requirements::javascript('//code.jquery.com/jquery-3.6.0.min.js');
         }
 
         /**

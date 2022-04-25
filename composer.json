@@ -34,7 +34,8 @@
         "symfony/process": "^3.2",
         "silverstripe/fulltextsearch": "^3.5",
         "silverstripe/totp-authenticator": "^4.3",
-        "dynamic/silverstripe-elemental-accordion": "^2.1"
+        "dynamic/silverstripe-elemental-accordion": "^2.1",
+        "dnadesign/silverstripe-elemental-decisiontree": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

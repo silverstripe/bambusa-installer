@@ -14,6 +14,14 @@ namespace {
         /**
          * @var string[]
          */
+        private static $db = [
+            'ShowPageUtilities' => 'Boolean',
+            'HidePrintButton' => 'Boolean',
+        ];
+
+        /**
+         * @var string[]
+         */
         private static $many_many = [
             'Terms' => TaxonomyTerm::class,
         ];
@@ -26,6 +34,16 @@ namespace {
                 'Terms',
                 'ExtraMeta' // Not something we want users playing with
             ]);
+
+            $fields->addFieldsToTab(
+                'Root.Utilities',
+                [
+                    CheckboxField::create('ShowPageUtilities')
+                        ->setDescription('Show page utilities at the bottom of the content'),
+                    CheckboxField::create('HidePrintButton')
+                        ->setDescription('Hide the print page utility'),
+                ]
+            );
 
             return $fields;
         }

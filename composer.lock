@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28ca599b68ab63d8d9400f783e236478",
+    "content-hash": "7a012707b938a321f66ccebc57dfc781",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -608,6 +608,65 @@
                 "source": "https://github.com/bringyourownideas/silverstripe-maintenance/tree/2.5.0"
             },
             "time": "2022-01-26T08:00:03+00:00"
+        },
+        {
+            "name": "codecraft/silverstripe-pathfinder",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecraft/silverstripe-pathfinder.git",
+                "reference": "30aa3f8d7da869249e8e39f730c72753831281a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecraft/silverstripe-pathfinder/zipball/30aa3f8d7da869249e8e39f730c72753831281a8",
+                "reference": "30aa3f8d7da869249e8e39f730c72753831281a8",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/admin": "^1.0",
+                "silverstripe/framework": "^4.0",
+                "silverstripe/taxonomy": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "symbiote/silverstripe-gridfieldextensions": "Allows for questions, answers, and choices to be sorted"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodeCraft\\Pathfinder\\": "src/",
+                    "CodeCraft\\Pathfinder\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Lead visitors to content with a succession of questions and answers that suggest content tagged by taxonomy terms",
+            "keywords": [
+                "cms",
+                "decision tree",
+                "pathfinder",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/codecraft/silverstripe-pathfinder/issues",
+                "source": "https://github.com/codecraft/silverstripe-pathfinder/tree/0.1"
+            },
+            "time": "2022-04-11T05:25:55+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -6906,6 +6965,62 @@
             "time": "2021-11-24T04:21:14+00:00"
         },
         {
+            "name": "silverstripe/taxonomy",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-taxonomy.git",
+                "reference": "a4701333d41c7d5163ccbc06e96e0de89b37d2f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-taxonomy/zipball/a4701333d41c7d5163ccbc06e96e0de89b37d2f2",
+                "reference": "a4701333d41c7d5163ccbc06e96e0de89b37d2f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "silverstripe/admin": "^1.0.2",
+                "silverstripe/framework": "^4.10"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "symbiote/silverstripe-gridfieldextensions": "Allows sorting of TaxonomyTerm objects via drag-and-drop",
+                "undefinedoffset/sortablegridfield": "Allows sorting of TaxonomyTerm objects via drag-and-drop"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Taxonomy\\": "src/",
+                    "SilverStripe\\Taxonomy\\Tests\\": "tests/",
+                    "SilverStripe\\Taxonomy\\Tests\\Behat\\Context\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Curry",
+                    "email": "robert@silverstripe.com"
+                }
+            ],
+            "description": "Provide extra taxonomy for cataloguing the data.",
+            "keywords": [
+                "cwp",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-taxonomy/issues",
+                "source": "https://github.com/silverstripe/silverstripe-taxonomy/tree/2.3.0"
+            },
+            "time": "2021-11-18T04:49:38+00:00"
+        },
+        {
             "name": "silverstripe/theme-colorpicker",
             "version": "dev-master",
             "source": {
@@ -11291,7 +11406,8 @@
     "stability-flags": {
         "silverstripe/bambusa-theme": 20,
         "sminnee/silverstripe-amplitude": 20,
-        "sminnee/silverstripe-asknicely": 20
+        "sminnee/silverstripe-asknicely": 20,
+        "codecraft/silverstripe-pathfinder": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

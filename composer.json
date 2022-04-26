@@ -35,7 +35,8 @@
         "silverstripe/fulltextsearch": "^3.5",
         "silverstripe/totp-authenticator": "^4.3",
         "dynamic/silverstripe-elemental-accordion": "^2.1",
-        "dnadesign/silverstripe-elemental-decisiontree": "^2.0"
+        "dnadesign/silverstripe-elemental-decisiontree": "^2.0",
+        "nzta/silverstripe-sitebanner": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

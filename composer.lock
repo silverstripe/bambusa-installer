@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee805d45d56e737f6ce99fc8309d1421",
+    "content-hash": "5deceb8e0292fe2895634dc6402fc4f3",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -5468,6 +5468,75 @@
                 "source": "https://github.com/silverstripe/silverstripe-config/tree/1.3.1"
             },
             "time": "2022-02-08T03:28:42+00:00"
+        },
+        {
+            "name": "silverstripe/contentreview",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-contentreview.git",
+                "reference": "7fde3cf28aa709b1a780cc0af519ea1ffe1d0918"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-contentreview/zipball/7fde3cf28aa709b1a780cc0af519ea1ffe1d0918",
+                "reference": "7fde3cf28aa709b1a780cc0af519ea1ffe1d0918",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "silverstripe/cms": "^4.2",
+                "silverstripe/framework": "^4.10",
+                "silverstripe/reports": "^4.2",
+                "silverstripe/siteconfig": "^4.2",
+                "silverstripe/vendor-plugin": "^1"
+            },
+            "require-dev": {
+                "silverstripe/recipe-testing": "^2",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "suggest": {
+                "symbiote/silverstripe-queuedjobs": "Automatically schedules content review emails to be sent, only requiring one crontask to be created"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\ContentReview\\": "src/",
+                    "SilverStripe\\ContentReview\\Tests\\": "tests/php/",
+                    "SilverStripe\\ContentReview\\Tests\\Behat\\Context\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "SilverStripe",
+                    "homepage": "http://silverstripe.com"
+                },
+                {
+                    "name": "The SilverStripe Community",
+                    "homepage": "http://silverstripe.org"
+                }
+            ],
+            "description": "Flags pages for periodical author review (incl. reporting)",
+            "homepage": "http://silverstripe.org",
+            "keywords": [
+                "cms",
+                "silverstripe",
+                "workflow"
+            ],
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-contentreview/issues",
+                "source": "https://github.com/silverstripe/silverstripe-contentreview/tree/4.4.0"
+            },
+            "time": "2021-11-18T04:03:49+00:00"
         },
         {
             "name": "silverstripe/crontask",

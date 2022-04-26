@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5deceb8e0292fe2895634dc6402fc4f3",
+    "content-hash": "7e42dd4467cd84a939dab4f9034ab1e8",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -2213,6 +2213,184 @@
                 "source": "https://github.com/oscarotero/Embed/tree/3.4.17"
             },
             "time": "2021-05-30T11:21:47+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.12.47.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "dc6bce9772404a4e4fd48ec30310f51e1b5f027f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/dc6bce9772404a4e4fd48ec30310f51e1b5f027f",
+                "reference": "dc6bce9772404a4e4fd48ec30310f51e1b5f027f",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7|^2.0",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "support": {
+                "irc": "irc://irc.appliedirc.com/lobby",
+                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
+                "source": "https://github.com/giggsey/libphonenumber-for-php"
+            },
+            "time": "2022-04-20T14:51:46+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.5|^9.5",
+                "symfony/console": "^5.0",
+                "symfony/filesystem": "^5.0",
+                "symfony/finder": "^5.0",
+                "symfony/process": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "support": {
+                "issues": "https://github.com/giggsey/Locale/issues",
+                "source": "https://github.com/giggsey/Locale/tree/2.2"
+            },
+            "time": "2022-04-06T07:33:59+00:00"
+        },
+        {
+            "name": "gorriecoe/silverstripe-link",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gorriecoe/silverstripe-link.git",
+                "reference": "03ebaa1f33c4680ec3c4bb8cbe5657e5eddbc507"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gorriecoe/silverstripe-link/zipball/03ebaa1f33c4680ec3c4bb8cbe5657e5eddbc507",
+                "reference": "03ebaa1f33c4680ec3c4bb8cbe5657e5eddbc507",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/libphonenumber-for-php": "^8.0",
+                "silverstripe/framework": "^4",
+                "unclecheese/display-logic": "^2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "link"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Gorrie Coe",
+                    "email": "gorriecoe@gmail.com"
+                }
+            ],
+            "description": "Adds a Link Object that can be link to a URL, Email, Phone number, an internal Page or File.",
+            "homepage": "https://gorriecoe.github.io/silverstripe-link/en/",
+            "keywords": [
+                "link",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/gorriecoe/silverstripe-link/issues",
+                "source": "https://github.com/gorriecoe/silverstripe-link/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://ko-fi.com/gorrie",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2020-04-20T04:51:25+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

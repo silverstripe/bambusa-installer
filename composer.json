@@ -37,7 +37,8 @@
         "dynamic/silverstripe-elemental-accordion": "^2.1",
         "dnadesign/silverstripe-elemental-decisiontree": "^2.0",
         "nzta/silverstripe-sitebanner": "^2.0",
-        "codecraft/silverstripe-pathfinder": "0.1.x-dev"
+        "codecraft/silverstripe-pathfinder": "0.1.x-dev",
+        "silverstripe/redirectedurls": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

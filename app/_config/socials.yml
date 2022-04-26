@@ -1,0 +1,3 @@
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\SocialsSiteConfigExtension

@@ -1,0 +1,12 @@
+DNADesign\SilverStripeElementalDecisionTree\Model\ElementDecisionTree:
+  extensions:
+    - SilverStripe\Bambusa\Extensions\ElementDecisionTreeExtension
+
+DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep:
+  extensions:
+    - SilverStripe\Versioned\Versioned
+
+DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeAnswer:
+  extensions:
+    - SilverStripe\Versioned\Versioned
+    - SilverStripe\Bambusa\Extensions\DecisionTreeAnswerExtension

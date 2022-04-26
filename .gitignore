@@ -8,6 +8,7 @@ _ss_environment.php
 .DS_Store
 .env
 .vagrant
+Vagrantfile
 /assets
 /silverstripe-cache
 /public/resources

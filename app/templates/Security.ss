@@ -14,6 +14,8 @@ Override silverstripe/login-forms default template to add $ModalWindow
         <meta name="color-scheme" content="light dark" />
         <% require css("silverstripe/admin: client/dist/styles/bundle.css") %>
         <% require css("silverstripe/login-forms: client/dist/styles/bundle.css") %>
+        <% require css("silverstripe/login-forms: client/dist/styles/darkmode.css") %>
+        <% require javascript("silverstripe/login-forms: client/dist/js/bundle.js") %>
         <style>
             @font-face {
                 font-family: 'Metropolis';
@@ -46,9 +48,11 @@ Override silverstripe/login-forms default template to add $ModalWindow
         </header>
 
         <main class="login-form">
-            <% if $Title %>
-                <h2 class="login-form__title">$Title</h2>
-            <% end_if %>
+            <div class="login-form__header">
+                <% if $Title %>
+                    <h2 class="login-form__title">$Title</h2>
+                <% end_if %>
+            </div>
 
             <% if $Message %>
                 <p class="login-form__message

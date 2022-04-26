@@ -1,0 +1,4 @@
+gorriecoe\Link\Models\Link:
+  extensions:
+    - SilverStripe\Versioned\Versioned
+    - SilverStripe\Bambusa\Extensions\LinkExtension
